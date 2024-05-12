@@ -32,6 +32,11 @@ const MainPage = () => {
                     <div className={cl.circle}>
                         <p className={cl.caption}>Для дома</p>
                     </div>
+                    <div className = {cl.rightColumnText}>
+                        <p>Кроссфит</p>
+                        <p>Стретчинг</p>
+                        <p>Калланетика</p>
+                    </div>
                 </div>
             </div>
             <Footer/>
