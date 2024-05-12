@@ -3,10 +3,12 @@ import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
 import mainPageWoman from "../../../images/mainPageWoman.jpg";
 import Navigation from "../../navigation/navigation";
+import Help from "../../popup/help/help";
 
 const MainPage = () => {
     return (
         <div className={cl.mainPage}>
+            <Help/>
             <Navigation/>
             <div className={cl.woman}>
                 <img src={mainPageWoman}/>
@@ -20,12 +22,12 @@ const MainPage = () => {
                         <p className={cl.caption}>Для зала</p>
                     </div>
                 </div>
+                <div className = {cl.stick}></div>
                 <div className = {cl.rightColumn}>
                     <div className={cl.circle}>
                         <p className={cl.caption}>Для дома</p>
                     </div>
                 </div>
-                <div className = {cl.stick}></div>
             </div>
             <Footer/>
         </div>

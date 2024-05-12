@@ -72,8 +72,8 @@
 }
 
 .stick{
-    width: 5px;
+    width: 3.5px;
     height: 766px;
     background-color: #3E563E;
-    align-self:stretch;
+    margin: auto;
 }

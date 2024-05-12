@@ -1,0 +1,6 @@
+.help {
+    position: fixed;
+    height: 90%;
+    width: 90%;
+    visibility: hidden;
+}
