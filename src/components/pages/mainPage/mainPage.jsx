@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
-import mainpageWoman from "../../../images/mainpageWoman.png";
+import mainPageWoman from "../../../images/mainPageWoman.jpg";
 import Navigation from "../../navigation/navigation";
 
 const MainPage = () => {
@@ -12,7 +12,7 @@ const MainPage = () => {
                 <img src={mainpageWoman}/>
                 <div className ={cl.topLayer}></div>
                 <div className = {cl.textOverlay}>
-                
+                    <h1>Тренируйтесь с нами</h1>
                 </div>
             </div>
         </div>
