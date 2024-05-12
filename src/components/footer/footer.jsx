@@ -11,8 +11,8 @@ const Footer = () => {
                     alt="Логотип"
                     style={{
                         position: "relative",
-                        top: "2270px",
-                        left: "126px",
+                        top: "150px",
+                        left: "926px",
                         width: "232px",
                         height: "45px",
                     }}
