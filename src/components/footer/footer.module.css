@@ -12,7 +12,7 @@
     height: 40px;
 }
 
-.links {
+.footer__contacts {
     display: flex;
     justify-content: space-between;
     width: 900px;
