@@ -2,7 +2,10 @@ import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
 import mainPageWoman from "../../../images/mainPageWoman.png";
-
+import phone from "../../../images/phone.png";
+import pad from "../../../images/pad.png";
+import laptop from "../../../images/laptop.png";
+import desktop from "../../../images/desktop.png"; 
 const MainPage = () => {
     return (
         <div className={cl.mainPage}>
@@ -38,8 +41,16 @@ const MainPage = () => {
             <div className ={cl.rectangle}>
                 <div className={cl.startTraining}>
                     <div className = {cl.textInRectangle}>
+                        <div>
                         <p>Занимайся в любое время, в любом месте</p>
                         <p1>Доступно на любых устройствах</p1>
+                        </div>
+                        <div className={cl.icons}>
+                            <img src={phone} alt="" />
+                            <img src={pad} alt="" />
+                            <img src={laptop} alt="" />
+                            <img src={desktop} alt="" />
+                        </div>
                     </div>
                     <div className ={cl.stickRectangle}></div>
                     <div className ={cl.startTrainingButton}>
