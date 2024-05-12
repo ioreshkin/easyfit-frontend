@@ -60,12 +60,20 @@
     height:98px;
     background-color: #3E563E;
     border-radius:30px;
-    text-align: center;
     z-index:3;
+    margin: auto;
+    text-align:center;
 }
 
 .caption{
     font-size: 60px;
     font-family: Ubuntu;
     color:white;
+}
+
+.stick{
+    width: 5px;
+    height: 766px;
+    background-color: #3E563E;
+    align-self:stretch;
 }
