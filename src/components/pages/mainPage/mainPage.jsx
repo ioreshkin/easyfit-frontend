@@ -21,6 +21,7 @@ const MainPage = () => {
                 <div className = {cl.rightColumn}></div>
                 <div className = {cl.stick}></div>
             </div>
+            <Footer/>
         </div>
     )
 }

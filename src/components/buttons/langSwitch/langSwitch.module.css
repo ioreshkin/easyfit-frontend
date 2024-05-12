@@ -1,0 +1,12 @@
+.langSwitch {
+    width: 80px;
+    height: 39px;
+    background-color: #C9C8C8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.langSwitch img {
+    height: 39px;
+    height: 39px;
+}
