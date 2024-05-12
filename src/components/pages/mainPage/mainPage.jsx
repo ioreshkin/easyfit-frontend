@@ -7,8 +7,11 @@ const MainPage = () => {
     return (
         <div className={cl.mainPage}>
             <div>
-            <img src={mainpageWoman} className = {cl.woman}/>
-            <div className ={cl.topLayer}></div>
+                <img src={mainpageWoman} className = {cl.woman}/>
+                <div className ={cl.topLayer}></div>
+                <div className = {cl.textOverlay}>
+                
+                </div>
             </div>
         </div>
     )
