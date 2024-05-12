@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
+    width: 1440px;
     margin: 105px auto 0;
 }
 .leftColumn{
@@ -78,7 +78,7 @@
 
 .stick{
     width: 4px;
-    height: 620px;
+    height: 550px;
     background-color: #3E563E;
     margin: auto;
     border-radius:3px;

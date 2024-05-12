@@ -1,38 +1,37 @@
 .footer {
     background-color: #1F2F22;
     padding: 10px;
-    justify-content: space-between;
     display: flex;
     width: 100%;
     height: 327px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+}
 .logo img{
     width: 200px;
-    height: 40px;;
+    height: auto;
 }
 
 .footer__text {
-    top: "2769px";
-    left: "259px";
     color: white;
-    width: "346px";
-    height: "48PX";
+    width: 346px;
+    height: 48px;
 
 }
 
 .footer__contacts {
-    position: absolute;
-    bottom: 130px; /* Значение, которое устанавливает расстояние между контактами и надписью "Контакты" */
-    left: 14px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-}
-
-.contactInfo {
-    margin-bottom: 10px;
+    align-items: center;
+    margin-left: 20px;
 }
