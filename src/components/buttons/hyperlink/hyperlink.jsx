@@ -1,8 +1,8 @@
 import React from "react";
 
-const Hyperlink = () => {
+const Hyperlink = ({text, btnSrc}) => {
     return (
-        <div></div>
+        <a href={btnSrc}>text</a>
     )
 }
 
