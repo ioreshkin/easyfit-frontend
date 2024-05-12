@@ -42,6 +42,9 @@ const MainPage = () => {
             <div className ={cl.startTraining}>
                 <div className={cl.rectangle}>
                     <div className ={cl.stickRectangle}></div>
+                    <div className ={cl.startTrainingButton}>
+                        <p>Начать тренироваться</p>
+                    </div>
                 </div>
             </div>
             <Footer/>
