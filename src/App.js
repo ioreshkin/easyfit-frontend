@@ -1,9 +1,10 @@
-import './App.css';
+import './reset.css';
+import './components/pages/mainPage/mainPage';
 
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <MainPage/>
     </div>
   );
 }
