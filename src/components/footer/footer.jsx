@@ -6,27 +6,19 @@ const Footer = () => {
     return (
         <footer className={cl.footer}>
             <div className={cl.footer__content}>
-                <img
-                    src="/logo.png"
-                    alt="Логотип"
-                    style={{
-                        position: "relative",
-                        top: "150px",
-                        left: "926x",
-                        width: "232px",
-                        height: "45px",
-                    }}
-                />
+                <div className ={cl.logo}>
+                    <img src={logo}/>
+                </div>
                 <div className={cl.footer__contacts}>
-                    <div className={cl.contactInfo}>+7(902)471-65-14</div>
-                    <div className={cl.contactInfo}>example@mail.ru</div>
+                    <p>Контакты</p>
+                    <p>+7(902)471-65-14</p>
+                    <p>example@mail.ru</p>
+                </div>
+                <div className={cl.footer__text}>
+                    <div>©2024 La JuliaGoshaVaryaIlya</div>
+                    <div>Easy FIT</div>
                 </div>
             </div>
-            <div className={cl.footer__text}>
-                <div>©2024 La JuliaGoshaVaryaIlya</div>
-                <div>Easy FIT</div>
-            </div>
-            <div className={cl.footer__contacts}>Контакты</div>
         </footer>
     );
 }
