@@ -51,8 +51,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #83d16b; /* Цвет бегунка */
-    opacity: 0.5;
+    background-color: #478335; /* Цвет бегунка */
     border-radius: 20px; /* Округление бегунка */
 }
 
