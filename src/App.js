@@ -2,7 +2,7 @@ import './reset.css';
 import './components/pages/mainPage/mainPage';
 import Navigation from "./components/navigation/navigation";
 import MainPage from './components/pages/mainPage/mainPage';
-import Help from './components/popup/help/help';
+import Help from './components/popup/help/helpModal';
 import { useState } from 'react';
 
 function App() {

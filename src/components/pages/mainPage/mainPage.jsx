@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
 import mainPageWoman from "../../../images/mainPageWoman.png";
-import Help from "../../popup/help/help";
+import Help from "../../popup/help/helpModal";
 
 const MainPage = () => {
     return (
