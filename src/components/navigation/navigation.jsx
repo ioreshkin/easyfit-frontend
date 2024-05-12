@@ -7,14 +7,14 @@ import logo from "../../images/blackLogo.png";
 const Navigation = () => {
     return (
         <div className={cl.navigation}>
-            <a href="#">
+            <a href="#" className={cl.logo}>
                 <img src={logo}/>
             </a>
             <div className={cl.links}>
-                <Hyperlink text="Программы"/>
-                <Hyperlink text="Упражнения"/>
-                <Hyperlink text="Помощь"/>
-                <Hyperlink text="О нас"/>
+                <Hyperlink text="Программы" btnSrc="#"/>
+                <Hyperlink text="Упражнения" btnSrc="#"/>
+                <Hyperlink text="Помощь" btnSrc="#"/>
+                <Hyperlink text="О нас" btnSrc="#"/>
             </div>
             <LangSwitch/>
         </div>

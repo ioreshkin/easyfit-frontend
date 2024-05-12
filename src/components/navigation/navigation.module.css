@@ -1,0 +1,12 @@
+.navigation {
+    background-color: #BEDFAF;
+    padding: 50px;
+    justify-content: space-between;
+    display: inline-block;
+    width: 100%;
+}
+
+.logo img{
+    width: 232px;
+    height: 45px;
+}
