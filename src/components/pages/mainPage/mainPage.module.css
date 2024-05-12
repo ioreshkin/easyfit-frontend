@@ -27,7 +27,17 @@
 }
 
 .textOverlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    text-align: center;
+}
+
+.textOverlay text{
     font-size: 100;
     font-weight: bold;
-    font-family: U;
+    font-family: Ubuntu;
 }
