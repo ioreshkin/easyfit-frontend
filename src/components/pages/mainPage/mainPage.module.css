@@ -77,3 +77,15 @@
     background-color: #3E563E;
     margin: auto;
 }
+
+.leftColumnText{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.leftColumnText p{
+    font-family: Ubuntu;
+    font-size: 60px;
+    margin: 60px;
+}
