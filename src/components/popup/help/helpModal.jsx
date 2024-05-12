@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./help.module.css";
+import cl from "./helpModal.module.css";
 
 const Help = ({active, setActive}) => {
     return (
