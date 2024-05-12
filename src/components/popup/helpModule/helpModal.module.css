@@ -12,6 +12,20 @@
     z-index: 6;
 }
 
+.helpModal ul {
+    list-style: none;
+}
+
+.helpModal ul li:before {
+    content:  "-";
+    position: relative;
+    left: -1px;  
+}
+
+.helpModal p {
+    margin: 10px 0;
+}
+
 .active {
     visibility: visible;
 }
@@ -21,7 +35,6 @@
     padding: 20px;
     border-radius: 12px;
     background-color: #e2e2e2;
-    height: 200px;
-    width: 200px;
+    width: 50%;
     z-index: 7;
 }

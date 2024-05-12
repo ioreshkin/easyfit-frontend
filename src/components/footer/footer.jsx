@@ -10,9 +10,9 @@ const Footer = () => {
                     <p>©2024 La JuliaGoshaVaryaIlya</p>
                     <p>Easy FIT</p>
                 </div>
-                <div className ={cl.logo}>
+                <a className ={cl.logo} href="#">
                     <img src={logo}/>
-                </div>
+                </a>
                 <div className={cl.footer__contacts}>
                     <p>Контакты</p>
                     <p>+7(902)471-65-14</p>
