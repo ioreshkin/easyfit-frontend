@@ -1,0 +1,33 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 327px;
+    background-color: #1F2F22; /* Цвет фона футера */
+    color: #ffffff; /* Цвет текста */
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif; /* Шрифт текста */
+}
+
+.footer__text {
+    font-size: 16px;
+    line-height: 24px; /* Устанавливаем меньшую высоту строки для двух строк текста */
+    margin-bottom: 20px; /* Добавляем небольшой отступ между текстом и нижним краем футера */
+}
+
+.footer__contacts {
+    position: absolute;
+    left: 688px;
+    top: 2223px;
+}
+
+.footer__email {
+    position: absolute;
+    bottom: 216px; /* Отступ от нижнего края страницы */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Ubuntu', sans-serif; /* Шрифт текста */
+}

@@ -10,7 +10,6 @@ const MainPage = () => {
             <Navigation/>
             <div className={cl.woman}>
                 <img src={mainPageWoman}/>
-                <div className ={cl.topLayer}></div>
                 <div className = {cl.textOverlay}>
                     <h1>Тренируйтесь с нами</h1>
                 </div>
