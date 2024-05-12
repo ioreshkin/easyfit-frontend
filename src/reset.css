@@ -42,6 +42,20 @@ table {
 	border-spacing: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 15px; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #83d16b; /* Цвет бегунка */
+    opacity: 0.5;
+    border-radius: 20px; /* Округление бегунка */
+}
+
 @font-face {
     font-family: Ubuntu;
     font-weight: 400;
