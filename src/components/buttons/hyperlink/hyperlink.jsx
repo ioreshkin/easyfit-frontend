@@ -1,9 +1,9 @@
 import React from "react";
 
-const Navigation = () => {
+const Hyperlink = () => {
     return (
         <div></div>
     )
 }
 
-export default Navigation;
+export default Hyperlink;
