@@ -136,11 +136,4 @@
 
 .inRectangle{
     display: flex;
-
-}
-
-.inRectangle p{
-    font-size: 50px;
-    font-family: Ubuntu;
-    color: white;
 }
