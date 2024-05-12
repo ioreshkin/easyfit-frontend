@@ -40,11 +40,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 107px;
+    width: 90%;
+    margin: 105px auto 0;
 }
-.Leftcolumn{
+.leftColumn{
     flex-basis: 45%;
-    height:764px;
+    height:800px;
+    position: relative;
+}
+.rightColumn{
+    flex-basis: 45%;
+    height:800px;
     position: relative;
 }
 
@@ -55,4 +61,10 @@
     border-radius:30px;
     text-align: center;
     z-index:3;
+}
+
+.caption{
+    font-size: 60px;
+    font-family: Ubuntu;
+    color:white;
 }
