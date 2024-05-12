@@ -18,15 +18,15 @@ const Footer = () => {
                     }}
                 />
                 <div className={cl.footer__contacts}>
-                    <div>+7(902)471-65-14</div>
-                    <div>example@mail.ru</div>
+                    <div className={cl.contactInfo}>+7(902)471-65-14</div>
+                    <div className={cl.contactInfo}>example@mail.ru</div>
                 </div>
             </div>
             <div className={cl.footer__text}>
                 <div>©2024 La JuliaGoshaVaryaIlya</div>
                 <div>Easy FIT</div>
             </div>
-            <div className={cl.footer__contacts}>Contacts</div>
+            <div className={cl.footer__contacts}>Контакты</div>
         </footer>
     );
 }
