@@ -17,22 +17,22 @@ const MainPage = () => {
                 </div>
             </div>
             <div className = {cl.splitSection}>
-                <div className = {cl.leftColumn}>
+                <div className = {cl.column}>
                     <div className={cl.circle}>
                         <p className={cl.caption}>Для зала</p>
                     </div>
-                    <div className = {cl.leftColumnText}>
+                    <div className = {cl.columnText}>
                         <p>Степ-аэробика</p>
                         <p>Body Sculpt</p>
                         <p>Body Pump</p>
                     </div>
                 </div>
                 <div className = {cl.stick}></div>
-                <div className = {cl.rightColumn}>
+                <div className = {cl.column}>
                     <div className={cl.circle}>
                         <p className={cl.caption}>Для дома</p>
                     </div>
-                    <div className = {cl.rightColumnText}>
+                    <div className = {cl.columnText}>
                         <p>Кроссфит</p>
                         <p>Стретчинг</p>
                         <p>Калланетика</p>
