@@ -37,7 +37,7 @@ const MainPage = () => {
             </div>
             <div className ={cl.startTraining}>
                 <div className={cl.rectangle}>
-                    <div className = {cl.inRectagle}>
+                    <div className = {cl.inRectangle}>
                         <p>Занимайся в любое время, в любом месте</p>
                         <p1>Доступно на любых устройствах</p1>
                     </div>

@@ -136,4 +136,17 @@
 
 .inRectangle{
     display: flex;
+    flex-direction: column;
+}
+
+.inRectangle p{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
+.inRectangle p1{
+    color:white;
+    font-size: 20px;
+    font-family: Ubuntu;
 }
