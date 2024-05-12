@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './reset.css';
+import './components/pages/mainPage/mainPage';
+import Navigation from "./components/navigation/navigation";
+import MainPage from './components/pages/mainPage/mainPage';
+import HelpModal from './components/popup/helpModule/helpModal';
+import { useState } from 'react';
 
 function App() {
+  const [helpActive, setHelpActive] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div onClick={() => setHelpActive(false)}></div>
+      <Navigation active={helpActive} setActive={setHelpActive}/>
+      <MainPage/>
+      <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
   );
 }
