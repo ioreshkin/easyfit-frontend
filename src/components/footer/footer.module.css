@@ -10,10 +10,18 @@
 .logo img{
     width: 200px;
     height: 40px;
+    margin-left: auto;
 }
 
 .footer__contacts {
+    top: "2805px";
+    left: "1479px";
+    color: white;
     display: flex;
-    justify-content: space-between;
-    width: 900px;
+    justify-content: center;
+    width: 1000px;
+}
+
+.contactInfo {
+    margin-bottom: 10px;
 }
