@@ -122,6 +122,7 @@
     border-radius: 50px;
     top:65%;
     left:40%;
+    display:flex;
 }
 
 .startTrainingButton p{
@@ -130,5 +131,5 @@
     font-size: 30px;
     font-weight: bold;
     text-align:center;
-    top:50%;
+    margin:auto;
 }
