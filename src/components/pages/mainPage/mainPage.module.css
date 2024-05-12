@@ -35,3 +35,24 @@
     font-weight: bold;
     font-family: Ubuntu;
 }
+
+.splitSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 107px;
+}
+.Leftcolumn{
+    flex-basis: 45%;
+    height:764px;
+    position: relative;
+}
+
+.circle{
+    width: 423px;
+    height:98px;
+    background-color: #3E563E;
+    border-radius:30px;
+    text-align: center;
+    z-index:3;
+}

@@ -14,6 +14,13 @@ const MainPage = () => {
                     <h1>Тренируйтесь с нами</h1>
                 </div>
             </div>
+            <div className = {cl.splitSection}>
+                <div className = {cl.leftColumn}>
+                    <div className={cl.circle}></div>
+                </div>
+                <div className = {cl.rightColumn}></div>
+                <div className = {cl.stick}></div>
+            </div>
         </div>
     )
 }
