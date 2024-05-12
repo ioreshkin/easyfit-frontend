@@ -1,32 +1,26 @@
 .footer {
     background-color: #1F2F22;
     padding: 10px;
-    display: flex;
     width: 100%;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .footer__content{
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px; 
+    width: 1440px; 
 }
 .logo img{
     width: 200px;
     height: auto;
-    margin-left:-90px;
 }
 
 .footer__text {
     color: white;
     font-size: 25px;
-    margin-right: -300px;
-
 }
 
 .footer__contacts {
