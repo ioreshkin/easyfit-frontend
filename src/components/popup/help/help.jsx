@@ -3,8 +3,10 @@ import cl from "./help.module.css";
 
 const Help = ({active, setActive}) => {
     return (
-        <div className={cl.help}>
-            <div className={cl.help__content}></div>
+        <div className={active ? cl.help + ' ' + cl.active : cl.help} onClick={() => setActive(false)}>
+            <div className={cl.help__content} onClick={e => e.stopPropagation()}>
+
+            </div>
         </div>
     )
 }
