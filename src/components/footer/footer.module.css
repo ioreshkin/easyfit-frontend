@@ -22,15 +22,15 @@
 }
 
 .footer__contacts {
-    position: relative;
-    top: "2805px";
-    left: "1479px";
+    position: absolute;
+    bottom: 130px; /* Значение, которое устанавливает расстояние между контактами и надписью "Контакты" */
+    left: 14px;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width: 1000px;
+    width: 100%;
 }
 
 .contactInfo {
