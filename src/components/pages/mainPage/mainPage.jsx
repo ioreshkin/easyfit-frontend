@@ -18,9 +18,15 @@ const MainPage = () => {
             </div>
             <div className = {cl.splitSection}>
                 <div className = {cl.leftColumn}>
-                    <div className={cl.circle}></div>
+                    <div className={cl.circle}>
+                        <p className={cl.caption}>Для зала</p>
+                    </div>
                 </div>
-                <div className = {cl.rightColumn}></div>
+                <div className = {cl.rightColumn}>
+                    <div className={cl.circle}>
+                        <p className={cl.caption}>Для дома</p>
+                    </div>
+                </div>
                 <div className = {cl.stick}></div>
             </div>
             <Footer/>

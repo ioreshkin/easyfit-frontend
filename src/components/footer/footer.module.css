@@ -4,16 +4,32 @@
     justify-content: space-between;
     display: flex;
     width: 100%;
-    height: 327px; /* Задаем высоту блока 100 пикселей */
+    height: 327px;
 }
 
 .logo img{
     width: 200px;
-    height: 40px;
+    height: 40px;;
+}
+
+.footer__text {
+    top: "2769px";
+    left: "259px";
+    color: white;
+    width: "346px";
+    height: "48PX";
+    
 }
 
 .footer__contacts {
+    top: "2805px";
+    left: "1479px";
+    color: white;
     display: flex;
-    justify-content: space-between;
-    width: 900px;
+    justify-content: center;
+    width: 1000px;
+}
+
+.contactInfo {
+    margin-bottom: 10px;
 }

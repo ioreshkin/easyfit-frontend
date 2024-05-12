@@ -41,11 +41,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 107px;
+    width: 90%;
+    margin: 105px auto 0;
 }
-.Leftcolumn{
+.leftColumn{
     flex-basis: 45%;
-    height:764px;
+    height:800px;
+    position: relative;
+}
+.rightColumn{
+    flex-basis: 45%;
+    height:800px;
     position: relative;
 }
 
@@ -54,6 +60,20 @@
     height:98px;
     background-color: #3E563E;
     border-radius:30px;
-    text-align: center;
     z-index:3;
+    margin: auto;
+    text-align:center;
+}
+
+.caption{
+    font-size: 60px;
+    font-family: Ubuntu;
+    color:white;
+}
+
+.stick{
+    width: 5px;
+    height: 766px;
+    background-color: #3E563E;
+    align-self:stretch;
 }
