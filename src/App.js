@@ -2,16 +2,17 @@ import './reset.css';
 import './components/pages/mainPage/mainPage';
 import Navigation from "./components/navigation/navigation";
 import MainPage from './components/pages/mainPage/mainPage';
-import Help from './components/popup/help/helpModal';
+import HelpModal from './components/popup/helpModule/helpModal';
 import { useState } from 'react';
 
 function App() {
-  const [helpActive, setHelpActive] = useState(true);
+  const [helpActive, setHelpActive] = useState(false);
   return (
     <div className="App">
-      <Navigation/>
+      <div onClick={() => setHelpActive(false)}></div>
+      <Navigation active={helpActive} setActive={setHelpActive}/>
       <MainPage/>
-      <Help active={helpActive} setActive={setHelpActive}/>
+      <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
   );
 }

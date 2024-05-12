@@ -1,9 +1,8 @@
-.help {
+.helpModal {
     position: fixed;
     height: 100%;
     width: 100%;
     background-color: #0000003d;
-    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -12,11 +11,12 @@
     visibility: hidden;
 }
 
-.help.active {
+.active {
     visibility: visible;
 }
 
-.help__content {
+.helpModal__content {
+    position: relative;
     padding: 20px;
     border-radius: 12px;
     background-color: #e2e2e2;
