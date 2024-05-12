@@ -16,5 +16,6 @@
 .links {
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 800px;
+    margin-right: 120px;
 }
