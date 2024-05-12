@@ -8,8 +8,8 @@ const MainPage = () => {
     return (
         <div className={cl.mainPage}>
             <Navigation/>
-            <div>
-                <img src={mainpageWoman} className = {cl.woman}/>
+            <div className={cl.woman}>
+                <img src={mainpageWoman}/>
                 <div className ={cl.topLayer}></div>
                 <div className = {cl.textOverlay}>
                 

@@ -44,5 +44,12 @@ table {
 
 @font-face {
     font-family: Ubuntu;
+    font-weight: 400;
     src: url("./components/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+    font-family: Ubuntu;
+    font-weight: 700;
+    src: url("./components/fonts/Ubuntu-Bold.ttf");
 }
