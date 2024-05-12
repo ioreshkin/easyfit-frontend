@@ -57,18 +57,20 @@
 
 .circle{
     width: 423px;
-    height:98px;
+    height:88px;
+    padding-bottom: 10px;
     background-color: #3E563E;
     border-radius:30px;
     z-index:3;
     margin: auto;
-    text-align:center;
+    display: flex;
 }
 
 .caption{
     font-size: 60px;
     font-family: Ubuntu;
     color:white;
+    margin: auto;
 }
 
 .stick{
@@ -78,27 +80,13 @@
     margin: auto;
 }
 
-.leftColumnText{
+.columnText{
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
-.leftColumnText p{
-    font-family: Ubuntu;
-    font-size: 60px;
-    margin: 60px;
-    color:#1F2F22;
-    font-weight:bold;
-}
-
-.rightColumnText{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.rightColumnText p{
+.columnText p{
     font-family: Ubuntu;
     font-size: 60px;
     margin: 60px;
