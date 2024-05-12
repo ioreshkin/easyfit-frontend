@@ -1,5 +1,6 @@
 import React from "react";
 import cl from "./helpModal.module.css";
+import userGuide from "../../../files/UserGuide.pdf"
 
 const HelpModal = ({active, setActive}) => { 
     const classes = cl.helpModal + " " + cl.active;
@@ -24,6 +25,8 @@ const HelpModal = ({active, setActive}) => {
                 <p>Каждое направление есть с инвентарём и без. Специально, чтобы был выбор. Также большое количество тренировок сделано с подручными средствами для удобства использования в домашних условиях.</p>
                 <p>Если вы не нашли ответа на свой вопрос, пожалуйста, свяжитесь с нами.</p>
                 <p>Наши контакты: +79024716514, example@mail.ru.</p>
+                <p>Ссылка на полное руководство пользователя:</p>
+                <a href={userGuide}>Руководство пользователя</a>
             </div>
         </div>
     )
