@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
-import mainPageWoman from "../../../images/mainPageWoman.png";
 import phone from "../../../images/phone.png";
 import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
@@ -9,12 +8,14 @@ import desktop from "../../../images/desktop.png";
 const MainPage = () => {
     return (
         <div className={cl.mainPage}>
-            <div className={cl.woman}>
-                <img src={mainPageWoman}/>
-                <div className = {cl.textOverlay}>
-                    <h1>Тренируйтесь с нами</h1>
+            <div className={cl.over}>
+                <div className={cl.woman}>
                 </div>
+                <div className = {cl.textOverlay}>
+                        <h1>Тренируйтесь с нами</h1>
+                    </div>
             </div>
+            
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
                     <div className={cl.circle}>
