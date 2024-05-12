@@ -12,7 +12,7 @@ const Footer = () => {
                     style={{
                         position: "relative",
                         top: "150px",
-                        left: "926px",
+                        left: "452x",
                         width: "232px",
                         height: "45px",
                     }}
