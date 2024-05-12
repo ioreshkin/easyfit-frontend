@@ -21,7 +21,7 @@ const MainPage = () => {
                     </div>
                 </div>
                 <div className = {cl.rightColumn}>
-                <div className={cl.circle}>
+                    <div className={cl.circle}>
                         <p className={cl.caption}>Для дома</p>
                     </div>
                 </div>
