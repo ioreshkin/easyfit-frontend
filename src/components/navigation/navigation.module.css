@@ -1,13 +1,14 @@
 .navigation {
     box-sizing: border-box;
     background-color: #BEDFAF;
-    padding: 36px;
+    padding: 15px;
     justify-content: space-between;
     display: flex;
     width: 100%;
     position: fixed;
     z-index: 5;
-    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;    
 }
 
 .logo img{
