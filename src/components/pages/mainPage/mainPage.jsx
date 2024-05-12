@@ -39,6 +39,10 @@ const MainPage = () => {
             </div>
             <div className ={cl.startTraining}>
                 <div className={cl.rectangle}>
+                    <div className = {cl.inRectagle}>
+                        <p>Занимайся в любое время, в любом месте</p>
+                        <p1>Доступно на любых устройствах</p1>
+                    </div>
                     <div className ={cl.stickRectangle}></div>
                     <div className ={cl.startTrainingButton}>
                         <p>Начать тренироваться</p>
