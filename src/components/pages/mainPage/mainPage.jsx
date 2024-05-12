@@ -63,6 +63,6 @@ const MainPage = () => {
         </div>
     )
 }
-// эщкере
+// эщкереee
 
 export default MainPage;
