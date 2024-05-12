@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/easyfit/static/css/main.3d91caf1.css",
+    "main.js": "/easyfit/static/js/main.ddf7564c.js",
+    "static/js/453.0b35de44.chunk.js": "/easyfit/static/js/453.0b35de44.chunk.js",
+    "static/media/mainPageWoman.png": "/easyfit/static/media/mainPageWoman.01b700c4f053fb988d74.png",
+    "static/media/UserGuide.pdf": "/easyfit/static/media/UserGuide.e196ed1c294a0dbe753e.pdf",
+    "static/media/Ubuntu-Regular.ttf": "/easyfit/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/Ubuntu-Bold.ttf": "/easyfit/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/ru.png": "/easyfit/static/media/ru.e314a09bbab1844bfaea.png",
+    "index.html": "/easyfit/index.html",
+    "main.3d91caf1.css.map": "/easyfit/static/css/main.3d91caf1.css.map",
+    "main.ddf7564c.js.map": "/easyfit/static/js/main.ddf7564c.js.map",
+    "453.0b35de44.chunk.js.map": "/easyfit/static/js/453.0b35de44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d91caf1.css",
+    "static/js/main.ddf7564c.js"
+  ]
+}
