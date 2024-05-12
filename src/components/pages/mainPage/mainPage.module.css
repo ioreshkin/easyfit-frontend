@@ -12,13 +12,12 @@
 .woman{
     position: relative;
     height: 910px;
-    
 }
 
 .woman img{
     width: 100%;
     height: 800px;
-    opacity: 0.6;
+    opacity: 0.8;
     margin-top: 70px;
     
 }
