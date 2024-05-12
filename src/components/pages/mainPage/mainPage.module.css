@@ -1,1 +1,7 @@
-.mainPage {}
+.mainPage{
+    background: linear-gradient(to bottom,
+    #ffffff 0%,
+    #bedfaf 29%,
+    #c2ddba 69%,
+    #ced9df 100%);
+}
