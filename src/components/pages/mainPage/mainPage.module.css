@@ -72,10 +72,11 @@
 }
 
 .stick{
-    width: 3.5px;
-    height: 766px;
+    width: 4px;
+    height: 620px;
     background-color: #3E563E;
     margin: auto;
+    border-radius:3px;
 }
 
 .leftColumnText{
