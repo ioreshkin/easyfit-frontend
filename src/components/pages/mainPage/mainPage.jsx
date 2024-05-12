@@ -39,6 +39,11 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+            <div className ={cl.startTraining}>
+                <div className={cl.rectangle}>
+                    <div className ={cl.stickRectangle}></div>
+                </div>
+            </div>
             <Footer/>
         </div>
     )
