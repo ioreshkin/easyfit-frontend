@@ -9,8 +9,16 @@
 
 .logo img{
     width: 200px;
-    height: 40px;
-    margin-left: auto;
+    height: 40px;;
+}
+
+.footer__text {
+    top: "2769px";
+    left: "259px";
+    color: white;
+    width: "346px";
+    height: "48PX";
+    
 }
 
 .footer__contacts {
