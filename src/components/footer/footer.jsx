@@ -1,20 +1,33 @@
 import React from "react";
+import cl from "./footer.module.css";
 import logo from "../../images/whiteLogo.png";
 
 const Footer = () => {
     return (
-    <div className={cl.footer}>
-            <a href="#" className={cl.logo}>
-                <img src={logo}/>
-            </a>
-            <div className={cl.links}>
-                <Hyperlink text="©2024  La JuliaGoshaVaryaIlya Easy FIT" btnSrc="#"/>
-                <Hyperlink text="Контакты" btnSrc="#"/>
-                <Hyperlink text="+7(902)471-65-14" btnSrc="#"/>
-                <Hyperlink text="example@mail.ru" btnSrc="#"/>
+        <footer className={cl.footer}>
+            <div className={cl.footer__content}>
+                <img
+                    src="/logo.png"
+                    alt="Логотип"
+                    style={{
+                        position: "relative",
+                        top: "2270px",
+                        left: "126px",
+                        width: "232px",
+                        height: "45px",
+                    }}
+                />
+                <div className={cl.footer__contacts}>
+                    <div>+7(902)471-65-14</div>
+                    <div>example@mail.ru</div>
+                </div>
             </div>
-            <LangSwitch/>
-        </div>
+            <div className={cl.footer__text}>
+                <div>©2024 La JuliaGoshaVaryaIlya</div>
+                <div>Easy FIT</div>
+            </div>
+            <div className={cl.footer__contacts}>Contacts</div>
+        </footer>
     );
 }
 

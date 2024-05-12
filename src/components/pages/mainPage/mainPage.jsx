@@ -14,6 +14,7 @@ const MainPage = () => {
                     <h1>Тренируйтесь с нами</h1>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
