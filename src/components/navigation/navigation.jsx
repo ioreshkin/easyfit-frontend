@@ -8,8 +8,8 @@ import Help from "../buttons/help/help";
 const Navigation = ({active, setActive}) => {
     return (
         <div className={cl.navigation}>
-            <a href="#" className={cl.logo}>
-                <img src={logo}/>
+            <a className={cl.logo}>
+                <img src={logo} alt=""/>
             </a>
             <div className={cl.links}>
                 <Hyperlink text="Программы" btnSrc="#"/>
