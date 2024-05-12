@@ -1,4 +1,6 @@
 .navigation {
+    position: relative;
+    box-sizing: border-box;
     background-color: #BEDFAF;
     padding: 50px;
     justify-content: space-between;
