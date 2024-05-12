@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     visibility: hidden;
+    z-index: 6;
 }
 
 .active {
@@ -22,4 +23,5 @@
     background-color: #e2e2e2;
     height: 200px;
     width: 200px;
+    z-index: 7;
 }
