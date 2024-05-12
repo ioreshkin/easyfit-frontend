@@ -3,7 +3,7 @@
     padding: 10px;
     display: flex;
     width: 100%;
-    height: 327px;
+    height: 120px;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -19,19 +19,21 @@
 .logo img{
     width: 200px;
     height: auto;
+    margin-left:-90px;
 }
 
 .footer__text {
     color: white;
-    width: 346px;
-    height: 48px;
+    font-size: 25px;
+    margin-right: -300px;
 
 }
 
 .footer__contacts {
     color: white;
+    font-size:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
+    margin-right: 50px;
 }

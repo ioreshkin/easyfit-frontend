@@ -15,8 +15,8 @@ const Footer = () => {
                     <p>example@mail.ru</p>
                 </div>
                 <div className={cl.footer__text}>
-                    <div>©2024 La JuliaGoshaVaryaIlya</div>
-                    <div>Easy FIT</div>
+                    <p>©2024 La JuliaGoshaVaryaIlya</p>
+                    <p>Easy FIT</p>
                 </div>
             </div>
         </footer>
