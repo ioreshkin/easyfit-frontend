@@ -36,8 +36,8 @@
     text-align: center;
 }
 
-.textOverlay text{
-    font-size: 100;
+.textOverlay h1{
+    font-size: 80px;
     font-weight: bold;
     font-family: Ubuntu;
 }
