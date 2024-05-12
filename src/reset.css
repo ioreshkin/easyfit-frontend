@@ -15,7 +15,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -25,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: Ubuntu;
 }
 ol, ul {
 	list-style: none;
@@ -40,4 +40,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url("./components/fonts/Ubuntu-Regular.ttf");
 }
