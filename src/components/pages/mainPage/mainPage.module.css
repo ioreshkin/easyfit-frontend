@@ -114,6 +114,9 @@
     border-radius: 20px;
 }
 
+.startTraining{
+    width: 1440px;
+}
 .startTrainingButton{
     position:absolute;
     width:384px;
@@ -134,18 +137,21 @@
     margin:auto;
 }
 
-.inRectangle{
+.startTraining{
+    width: 1440px;
+}
+.textInRectangle{
     display: flex;
     flex-direction: column;
 }
 
-.inRectangle p{
+.textInRectangle p{
     color:white;
     font-size: 30px;
     font-weight: bold;
     font-family: Ubuntu;
 }
-.inRectangle p1{
+.textInRectangle p1{
     color:white;
     font-size: 20px;
     font-family: Ubuntu;
