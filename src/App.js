@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div onClick={() => setHelpActive(false)}></div>
-      <Navigation active={helpActive} setActive={setHelpActive}/>
+      <Navigation setActive={setHelpActive}/>
       <MainPage/>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>

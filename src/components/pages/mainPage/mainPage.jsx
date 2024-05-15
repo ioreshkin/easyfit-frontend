@@ -10,10 +10,8 @@ const MainPage = () => {
         <div className={cl.mainPage}>
             <div className={cl.over}>
                 <div className={cl.woman}>
+                    <h1>Тренируйтесь с нами</h1>
                 </div>
-                <div className = {cl.textOverlay}>
-                        <h1>Тренируйтесь с нами</h1>
-                    </div>
             </div>
             
             <div className = {cl.splitSection}>

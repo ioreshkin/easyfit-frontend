@@ -5,16 +5,16 @@ import Hyperlink from "../buttons/hyperlink/hyperlink";
 import logo from "../../images/blackLogo.png";
 import Help from "../buttons/help/help";
 
-const Navigation = ({active, setActive}) => {
+const Navigation = ({setActive}) => {
     return (
         <div className={cl.navigation}>
-            <a className={cl.logo}>
+            <a className={cl.logo} href="#">
                 <img src={logo} alt=""/>
             </a>
             <div className={cl.links}>
                 <Hyperlink text="Программы" btnSrc="#"/>
                 <Hyperlink text="Упражнения" btnSrc="#"/>
-                <Help text="Помощь" active={active} setActive={setActive}/>
+                <Help text="Помощь" setActive={setActive}/>
                 <Hyperlink text="О нас" btnSrc="#"/>
             </div>
             <LangSwitch/>

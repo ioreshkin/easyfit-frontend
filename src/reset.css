@@ -43,17 +43,19 @@ table {
 }
 
 body::-webkit-scrollbar {
-    width: 15px; /* Ширина всего элемента навигации */
+    width: 12px; /* Ширина всего элемента навигации */
+	background-color: #3E563E;
 }
 
 body::-webkit-scrollbar-track {
     background: #e0e0e0; /* Цвет дорожки */
+	border-radius: 20px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #3E563E; /* Цвет бегунка */
     opacity: 0.5;
-    border-radius: 20px; /* Округление бегунка */
+    border-radius: 6px; /* Округление бегунка */
 }
 
 @font-face {
