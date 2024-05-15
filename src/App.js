@@ -9,7 +9,6 @@ function App() {
   const [helpActive, setHelpActive] = useState(false);
   return (
     <div className="App">
-      <div onClick={() => setHelpActive(false)}></div>
       <Navigation setActive={setHelpActive}/>
       <MainPage/>
       <HelpModal active={helpActive} setActive={setHelpActive}/>

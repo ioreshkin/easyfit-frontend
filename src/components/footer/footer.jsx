@@ -10,7 +10,7 @@ const Footer = () => {
                     <p>©2024 La JuliaGoshaVaryaIlya</p>
                     <p>Easy FIT</p>
                 </div>
-                <a className ={cl.logo} >
+                <a className ={cl.logo} href="#">
                     <img src={logo} alt=""/>
                 </a>
                 <div className={cl.footer__contacts}>
