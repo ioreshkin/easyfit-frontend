@@ -1,39 +1,35 @@
 .Page{
     padding-top: 50px;
-    padding-bottom: 130px;
 }
+
 .Rectangle{
     background-color:#A2D18C;
     width: 900px;
     height: 1440px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100 px;
-    border-radius: 15 px;
+    margin-top: 100px;
+    border-radius: 15px;
 }
 
 .Search{
-    background-color:#91df6d;
+    background-color:#A2D18C;
     width: 900px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100 px;
-    border-radius: 15 px;
+    margin-top: 100px;
+    border-radius: 15px;
 }
 
 .Picture{
-
+    margin-left: 20px;
 } 
 
-.Search p1{
-    text-align:center;
+.Search p{
     font-family: Ubuntu;
-    font-size: 100px;
-    width: 900px;
-    height: 100px;
-    font-family: Ubuntu;
-    margin: 60px;
-    color:#1F2F22;
-    font-weight:bold;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: text-top;
 }
