@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Navigation = ({setActive}) => {
     return (
         <div className={cl.navigation}>
-            <Link className={cl.logo} to="/"><img src={logo} alt=""/></Link>
+            <Link className={cl.logo} to="/easyfit"><img src={logo} alt=""/></Link>
 
             <div className={cl.links}>
                 <Link to={"/easyfit/programs"}><span>Программы</span></Link>
