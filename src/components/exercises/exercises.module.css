@@ -1,5 +1,6 @@
 .Page{
     padding-top: 50px;
+    padding-bottom: 130px;
 }
 .Rectangle{
     background-color:#A2D18C;
@@ -20,3 +21,7 @@
     margin-top: 100 px;
     border-radius: 15 px;
 }
+
+.Picture{
+
+} 
