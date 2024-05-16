@@ -5,28 +5,27 @@
 .Rectangle{
     background-color:#A2D18C;
     width: 900px;
-    height: 250px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     border-radius: 15px;
+    display: flex;
+    padding: 20px;
 }
 
-.Rectangle p{
+.Rectangle__info p{
     font-family: Ubuntu;
-    font-size: 20px;
-    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.Picture{
-    width: 100px;
+.Picture img{
+    width: 210px;
+    height: 210px;
 }
 
-.Rectangle p1{
-    text-align:center;
+.Rectangle__info p1{
     font-family: Ubuntu;
+    font-weight: regular;
     font-size: 10px;
-    text-align: center;
-    width: 900px;
-    height: 250px;
 }
