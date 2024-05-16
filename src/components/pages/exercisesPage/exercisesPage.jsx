@@ -3,7 +3,7 @@ import cl from "./exercisesPage.module.css";
 
 const ExercisesPage = () => {
     return (
-        <div></div>
+        <div></div>   
     )
 }
 
