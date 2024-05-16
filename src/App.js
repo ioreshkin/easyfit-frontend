@@ -16,6 +16,7 @@ function App() {
       {/* <MainPage/> */}
       <ProgramsPage/>
       {/* <ExercisesPage/> */}
+      <Footer/>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
   );

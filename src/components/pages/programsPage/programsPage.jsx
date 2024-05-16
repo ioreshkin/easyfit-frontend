@@ -3,7 +3,9 @@ import cl from "./programsPage.module.css";
 
 const ProgramsPage = () => {
     return (
-        <div></div>
+        <div>
+            
+        </div>
     )
 }
 
