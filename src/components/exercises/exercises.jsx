@@ -7,8 +7,9 @@ const Exercises = () => {
         <div>
             <div className={cl.Page}>
               <div className={cl.Search}>
-                <div className={cl.Picture}
-                   <img src={search exercieses} alt="" />
+                <div className={cl.Picture}>
+                  <img src={Picture} alt="" />
+                </div>
               </div>
               <div className={cl.Rectangle}></div>
 
