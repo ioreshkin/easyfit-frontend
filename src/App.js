@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage setActive={setHelpActive}/>}/>
-          <Route path="/programs" element={<ProgramsPage setActive={setHelpActive}/>}/>
-          <Route path="/exercises" element={<ExercisesPage setActive={setHelpActive}/>}/>
-          <Route path="/about" element={<AboutPage setActive={setHelpActive}/>}/>
+          <Route path="easyfit" element={<MainPage setActive={setHelpActive}/>}/>
+          <Route path="easyfit/programs" element={<ProgramsPage setActive={setHelpActive}/>}/>
+          <Route path="easyfit/exercises" element={<ExercisesPage setActive={setHelpActive}/>}/>
+          <Route path="easyfit/about" element={<AboutPage setActive={setHelpActive}/>}/>
         </Routes>
       </BrowserRouter>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
