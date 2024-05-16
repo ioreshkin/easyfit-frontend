@@ -1,11 +1,15 @@
 import React from "react";
+import cl from "./exercises.module.css";
 
-const Program = () => {
+const Exercises = () => {
     return (
         <div>
+            <div className={cl.Rectangle}>
+
+            </div>
             
         </div>
     )
 }
 
-export default Program;
+export default Exercises;
