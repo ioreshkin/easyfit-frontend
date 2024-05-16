@@ -1,20 +1,32 @@
-.Rectangle{
-    background-color:#A2D18C;
-    width: 1440px;
-    height: 440px;
-    margin-left: auto;
-    margin-right: auto;
-    
+.Page{
+    padding-top: 50px;
 }
 
-.Caption{
+.Rectangle{
+    background-color:#A2D18C;
+    width: 900px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+}
 
+.Rectangle p{
+    font-family: Ubuntu;
+    font-size: 20px;
+    text-align: center;
 }
 
 .Picture{
-
+    width: 100px;
 }
 
-.Description{
-
+.Rectangle p1{
+    text-align:center;
+    font-family: Ubuntu;
+    font-size: 10px;
+    text-align: center;
+    width: 900px;
+    height: 250px;
 }

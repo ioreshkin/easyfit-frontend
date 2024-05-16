@@ -1,13 +1,19 @@
 import React from "react";
 import cl from "./programsPage.module.css";
 import Program from "../../program/program";
+import Navigation from "..//..//navigation/navigation";
+import Footer from "..//..//footer/footer";
 
 
-const ProgramsPage = () => {
+const ProgramsPage = ({setActive}) => {
     return (
         <div>
-            <Program/>
-        </div>
+            <Navigation setActive={setActive}/>
+            <div className ={cl.Program}>
+                <Program/>
+            </div>
+            <Footer/>
+        </div>    
     )
 }
 
