@@ -1,0 +1,22 @@
+.Page{
+    padding-top: 50px;
+}
+.Rectangle{
+    background-color:#A2D18C;
+    width: 900px;
+    height: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100 px;
+    border-radius: 15 px;
+}
+
+.Search{
+    background-color:#91df6d;
+    width: 900px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100 px;
+    border-radius: 15 px;
+}
