@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navigation setActive={setHelpActive}/>
-      {/* <MainPage/> */}
+      <MainPage/>
       {/* <ProgramsPage/> */}
       {/* <ExercisesPage/> */}
       <Footer/>
