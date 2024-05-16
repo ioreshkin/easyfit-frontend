@@ -15,8 +15,9 @@ function App() {
     <div className="App">
       <Navigation setActive={setHelpActive}/>
       {/* <MainPage/> */}
-      {/* {<ProgramsPage/>} */}
-      <ExercisesPage/>
+      {/* <ProgramsPage/> */}
+      {/* <ExercisesPage/> */}
+      <AboutPage/>
       <Footer/>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
