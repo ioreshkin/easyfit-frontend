@@ -7,16 +7,21 @@ import HelpModal from './components/popup/helpModule/helpModal';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
+import AboutPage from './components/pages/aboutPage/aboutPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [helpActive, setHelpActive] = useState(false);
   return (
     <div className="App">
-      <Navigation setActive={setHelpActive}/>
-      {/* <MainPage/> */}
-      {<ProgramsPage/>}
-      {/* <ExercisesPage/> */}
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage setActive={setHelpActive}/>}/>
+          <Route path="/programs" element={<ProgramsPage setActive={setHelpActive}/>}/>
+          <Route path="/exercises" element={<ExercisesPage setActive={setHelpActive}/>}/>
+          <Route path="/about" element={<AboutPage setActive={setHelpActive}/>}/>
+        </Routes>
+      </BrowserRouter>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
   );
