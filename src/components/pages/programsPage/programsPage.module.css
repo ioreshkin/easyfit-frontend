@@ -1,4 +1,4 @@
-.programsPage{
+.rogramsPage{
     background: linear-gradient(to bottom,
     #ffffff 0%,
     #bedfaf 29%,
@@ -6,7 +6,7 @@
     #ced9df 100%);
     width: 100%;
     height: 100%;
-    position: relative;
+    position:fixed;
 }
 
 

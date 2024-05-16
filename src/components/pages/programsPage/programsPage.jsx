@@ -7,12 +7,12 @@ import Footer from "..//..//footer/footer";
 
 const ProgramsPage = ({setActive}) => {
     return (
-        <div>
+        <div className={cl.rogramsPage}>
             <Navigation setActive={setActive}/>
             <div className ={cl.Program}>
                 <Program/>
             </div>
-            <Footer/>
+            <Footer></Footer>
         </div>    
     )
 }
