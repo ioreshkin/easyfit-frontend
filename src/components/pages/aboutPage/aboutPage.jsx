@@ -7,13 +7,12 @@ const AboutPage = ({setActive}) => {
     return (
         <div className={cl.aboutPage}>
             <Navigation setActive={setActive}/>
-            <div>
+            <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>Фитнес-платформа для тренировок дома и в зале</h1>
-                </div>
-            </div>
-            
-            <Footer/>
+                </div> 
+            </div> 
+                <Footer/>
             </div>
     )
 }
