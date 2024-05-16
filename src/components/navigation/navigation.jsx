@@ -12,10 +12,10 @@ const Navigation = ({setActive}) => {
             <Link className={cl.logo} to="/"><img src={logo} alt=""/></Link>
 
             <div className={cl.links}>
-                <Link to={"/programs"}><span>Программы</span></Link>
-                <Link to={"/exercises"}><span>Упражнения</span></Link>
+                <Link to={"/easyfit/programs"}><span>Программы</span></Link>
+                <Link to={"/easyfit/exercises"}><span>Упражнения</span></Link>
                 <Help text="Помощь" setActive={setActive}/>
-                <Link to={"/about"}><span>О нас</span></Link>
+                <Link to={"/easyfit/about"}><span>О нас</span></Link>
             </div>
             <LangSwitch/>
         </div>
