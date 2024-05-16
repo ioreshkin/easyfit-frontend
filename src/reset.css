@@ -58,6 +58,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px; /* Округление бегунка */
 }
 
+.App {
+	position: relative;
+	min-height: 100%;
+}
+
 @font-face {
     font-family: Ubuntu;
     font-weight: 400;
