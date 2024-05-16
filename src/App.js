@@ -2,7 +2,7 @@ import './reset.css';
 import './components/pages/mainPage/mainPage';
 import Navigation from "./components/navigation/navigation";
 import MainPage from './components/pages/mainPage/mainPage';
-
+import Footer from "./components/footer/footer";
 import HelpModal from './components/popup/helpModule/helpModal';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
@@ -14,8 +14,9 @@ function App() {
     <div className="App">
       <Navigation setActive={setHelpActive}/>
       {/* <MainPage/> */}
-      {/* <ProgramsPage/> */}
+      {<ProgramsPage/>}
       {/* <ExercisesPage/> */}
+      <Footer/>
       <HelpModal active={helpActive} setActive={setHelpActive}/>
     </div>
   );
