@@ -5,7 +5,7 @@ import Program from "../../program/program";
 
 const ProgramsPage = () => {
     return (
-        <div>
+        <div className ={cl.Program}>
             <Program/>
         </div>
     )

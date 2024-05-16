@@ -4,18 +4,18 @@ import LangSwitch from "../buttons/langSwitch/langSwitch";
 import Hyperlink from "../buttons/hyperlink/hyperlink";
 import logo from "../../images/blackLogo.png";
 import Help from "../buttons/help/help";
+import { Link } from "react-router-dom";
 
 const Navigation = ({setActive}) => {
     return (
         <div className={cl.navigation}>
-            <a className={cl.logo} href="#">
-                <img src={logo} alt=""/>
-            </a>
+            <Link className={cl.logo} to="/"><img src={logo} alt=""/></Link>
+
             <div className={cl.links}>
-                <Hyperlink text="Программы" btnSrc="#"/>
-                <Hyperlink text="Упражнения" btnSrc="#"/>
+                <Link to={"/programs"}><span>Программы</span></Link>
+                <Link to={"/exercises"}><span>Упражнения</span></Link>
                 <Help text="Помощь" setActive={setActive}/>
-                <Hyperlink text="О нас" btnSrc="#"/>
+                <Link to={"/about"}><span>О нас</span></Link>
             </div>
             <LangSwitch/>
         </div>
