@@ -4,6 +4,7 @@ import cs from "./exercisesPage.module.css";
 const ExercisesPage = () => {
     return (
         <div></div>
+        
     )
 }
 
