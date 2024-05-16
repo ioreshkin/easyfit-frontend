@@ -5,9 +5,11 @@ import phone from "../../../images/phone.png";
 import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
 import desktop from "../../../images/desktop.png"; 
-const MainPage = () => {
+import Navigation from "../../navigation/navigation";
+const MainPage = ({setActive}) => {
     return (
         <div className={cl.mainPage}>
+            <Navigation setActive={setActive}/>
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>Тренируйтесь с нами</h1>
@@ -57,6 +59,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }
