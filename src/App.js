@@ -7,6 +7,7 @@ import HelpModal from './components/popup/helpModule/helpModal';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
+import AboutPage from './components/pages/aboutPage/aboutPage';
 
 function App() {
   const [helpActive, setHelpActive] = useState(false);
