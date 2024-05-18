@@ -4,7 +4,7 @@
 
 .Search{
     background-color:#A2D18C;
-    width: 900px;
+    width: 1000px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -51,9 +51,9 @@
     font-size: 35px;
     text-align: center;
     display: flex;
-    justify-content: center; /* Центрирует текст по горизонтали */
-    margin-top: -218px; /* Отступ сверху как у картинки */
-    font-weight: bold; /* Делает текст жирным */
+    justify-content: center; 
+    margin-top: -208px; 
+    font-weight: bold; 
 }
 
 .Rectangle__info p1 {
@@ -62,21 +62,55 @@
     font-size: 30px;
     text-align: center;
     display: flex;
-    justify-content: center; /* Центрирует текст по горизонтали */
-    margin-top: 20px; /* Отступ сверху как у картинки */
+    justify-content: center; 
+    margin-top: 10px; 
     width: 160px;
     margin-left: 254px;
-    line-height: 42px
+    line-height: 42px;
 }
 
 .Rectangle__info p2 {
     font-family: Ubuntu;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
+    display: flex;
+    margin-top: 20px; 
+    line-height: 30px;
+    width: 840px;
+    margin-left: 30px;
+}
+
+.Rectangle__info p3 {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 35px;
     text-align: center;
     display: flex;
-    justify-content: center; /* Центрирует текст по горизонтали */
-    margin-top: 20px; /* Отступ сверху как у картинки */
-    line-height: 42px
+    justify-content: center; 
+    margin-top: 50px; 
+    font-weight: bold; 
+}
+
+.Howtodoit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; /* Равное расстояние между элементами и от краев */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+}
+
+.Picture2 img{
+    max-width: 400px;
+}
+
+.Picture3 img{
+    max-width: 400px;
+}
+
+.Picture4 img{
+    margin-top: 50px;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 

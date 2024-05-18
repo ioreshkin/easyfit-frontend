@@ -2,6 +2,9 @@ import React from "react";
 import cl from "./exercises.module.css";
 import Picture from "../../images/searchexercieses.png";
 import Picture1 from "../../images/exercises.png"
+import Picture2 from "../../images/howtodoit2.png";
+import Picture3 from "../../images/howtodoit.png";
+import Picture4 from "../../images/video.png";
 
 const Exercises = () => {
     return (
@@ -30,6 +33,19 @@ const Exercises = () => {
                         тут очень длинное описание упражнения тут очень длинное описание упражнения 
                         тут очень длинное описание упражнения тут очень длинное описание упражнения
                     </p2>
+                    <p3>Выполнение упражнения</p3>
+                    <div className={cl.Howtodoit}>
+                        <div className={cl.Picture2}>
+                            <img src={Picture2} alt="" />
+                        </div>
+                        <div className={cl.Picture3}>
+                            <img src={Picture3} alt="" />
+                         </div>  
+                    </div>
+                    <p3>Видео выполнения упражнения</p3>
+                    <div className={cl.Picture4}>
+                        <img src={Picture4} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
