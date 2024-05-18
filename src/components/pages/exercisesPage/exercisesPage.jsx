@@ -6,7 +6,7 @@ import Footer from "../../footer/footer";
 
 const ExercisesPage = ({setActive}) => {
     return (
-        <div className={ExercisesPage}>
+        <div className={cl.ExercisesPage}>
             <Navigation setActive={setActive}/>
             <Exercises/>
             <Footer/>

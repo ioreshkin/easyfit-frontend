@@ -2,8 +2,34 @@
     padding-top: 50px;
 }
 
-.Rectangle{
+.Search{
     background-color:#A2D18C;
+    width: 900px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 100px;
+    display: flex; 
+    align-items: center;
+}
+
+.Picture{
+    margin-left: 30px;
+} 
+
+.Search p {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.Rectangle{
+    background-color: #A2D18C;
     width: 900px;
     height: 1440px;
     margin-left: auto;
@@ -12,24 +38,45 @@
     border-radius: 15px;
 }
 
-.Search{
-    background-color:#A2D18C;
-    width: 900px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border-radius: 15px;
+.Picture1 img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
 }
 
-.Picture{
-    margin-left: 20px;
-} 
+.Rectangle__info p {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Центрирует текст по горизонтали */
+    margin-top: -218px; /* Отступ сверху как у картинки */
+    font-weight: bold; /* Делает текст жирным */
+}
 
-.Search p{
+.Rectangle__info p1 {
     font-family: Ubuntu;
     color: black;
     font-size: 30px;
     text-align: center;
-    vertical-align: text-top;
+    display: flex;
+    justify-content: center; /* Центрирует текст по горизонтали */
+    margin-top: 20px; /* Отступ сверху как у картинки */
+    width: 160px;
+    margin-left: 254px;
+    line-height: 42px
 }
+
+.Rectangle__info p2 {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Центрирует текст по горизонтали */
+    margin-top: 20px; /* Отступ сверху как у картинки */
+    line-height: 42px
+}
+
