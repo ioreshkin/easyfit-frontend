@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./exercises.module.css";
+import cl from "./exercisesSearch.module.css";
 import Picture from "../../images/searchexercieses.png";
 import Picture1 from "../../images/exercises.png"
 import Picture2 from "../../images/howtodoit2.png";

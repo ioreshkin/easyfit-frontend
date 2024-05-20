@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./exercisesPage.module.css";
+import cl from "./exercisesPageSearch.module.css";
 import ExercisesSearch from "../../exercisesSearch/exercisesSearch";
 import Navigation from "../../navigation/navigation";
 import Footer from "../../footer/footer";

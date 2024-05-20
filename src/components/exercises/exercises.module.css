@@ -38,7 +38,8 @@
     margin-right: auto;
     border-radius: 15px;
     display: flex;
-    padding: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
 }
 
 .Picture1 img{
@@ -61,4 +62,17 @@
     line-height: 1.5;
     display: flex;
     justify-content: space-around; 
+}
+
+.Link{
+    margin-left: 20px;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: bold; 
+}
+
+.Link * {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
