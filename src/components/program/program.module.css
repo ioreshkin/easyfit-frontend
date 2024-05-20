@@ -14,6 +14,7 @@
 }
 
 .Rectangle__info p{
+    margin-left: 20px;
     font-family: Ubuntu;
     font-size: 32px;
     font-weight: bold;
@@ -25,7 +26,12 @@
 }
 
 .Rectangle__info p1{
+    margin-left: 20px;
+    margin-top: 10px;
     font-family: Ubuntu;
     font-weight: regular;
-    font-size: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-around; 
 }

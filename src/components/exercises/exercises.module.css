@@ -1,118 +1,64 @@
 .Page{
     padding-top: 50px;
-    padding-bottom: 200px
+    padding-bottom: 200px;
 }
 
-.Search{
-    background-color:#A2D18C;
-    width: 900px;
-    height: 100px;
+.Start{
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     border-radius: 100px;
     display: flex; 
-    align-items: center;
+    justify-content: space-evenly; 
 }
 
-.Picture{
-    margin-left: 30px;
-} 
+.Picture img{
+    width: 510px;
+}
 
-.Search p {
+.Choice p{
     font-family: Ubuntu;
-    color: black;
-    font-size: 30px;
-    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.Choice p1{
+    font-size: 55px;
+    line-height: 1.5;
+    font-family: Ubuntu;
     display: flex;
-    margin-left: 30px;
-    align-items: center;
+    justify-content: space-around; 
+    height: 500px;
 }
 
 .Rectangle{
-    background-color: #A2D18C;
+    background-color:#A2D18C;
     width: 900px;
-    height: 1400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     border-radius: 15px;
-    padding-bottom: 140px
+    display: flex;
+    padding: 20px;
 }
 
 .Picture1 img{
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
+    width: 210px;
 }
 
-.Rectangle__info p {
+.Rectangle__info p{
+    margin-left: 20px;
     font-family: Ubuntu;
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    margin-top: -208px; 
-    font-weight: bold; 
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.Rectangle__info p1 {
+.Rectangle__info p1{
+    margin-left: 20px;
+    margin-top: 10px;
     font-family: Ubuntu;
-    color: black;
-    font-size: 30px;
-    text-align: center;
+    font-weight: regular;
+    font-size: 18px;
+    line-height: 1.5;
     display: flex;
-    justify-content: center; 
-    margin-top: 10px; 
-    width: 160px;
-    margin-left: 254px;
-    line-height: 42px;
+    justify-content: space-around; 
 }
-
-.Rectangle__info p2 {
-    font-family: Ubuntu;
-    color: black;
-    font-size: 25px;
-    display: flex;
-    margin-top: 20px; 
-    line-height: 30px;
-    width: 840px;
-    margin-left: 30px;
-}
-
-.Rectangle__info p3 {
-    font-family: Ubuntu;
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    margin-top: 50px; 
-    font-weight: bold; 
-}
-
-.Howtodoit {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around; /* Равное расстояние между элементами и от краев */
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
-}
-
-.Picture2 img{
-    max-width: 400px;
-}
-
-.Picture3 img{
-    max-width: 400px;
-}
-
-.Picture4 img{
-    margin-top: 50px;
-    max-width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-

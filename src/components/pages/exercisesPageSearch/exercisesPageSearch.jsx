@@ -1,17 +1,17 @@
 import React from "react";
 import cl from "./exercisesPage.module.css";
-import Exercises from "../../exercises/exercises";
+import ExercisesSearch from "../../exercisesSearch/exercisesSearch";
 import Navigation from "../../navigation/navigation";
 import Footer from "../../footer/footer";
 
-const ExercisesPageMain = ({setActive}) => {
+const ExercisesPageSearch = ({setActive}) => {
     return (
-        <div className={cl.ExercisesPageMain}>
+        <div className={cl.ExercisesPageSearch}>
             <Navigation setActive={setActive}/>
-            <Exercises/>
+            <ExercisesSearch/>
             <Footer/>
         </div>   
     )
 }
 
-export default ExercisesPageMain;
+export default ExercisesPageSearch;

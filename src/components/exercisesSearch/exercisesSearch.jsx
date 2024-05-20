@@ -6,7 +6,7 @@ import Picture2 from "../../images/howtodoit2.png";
 import Picture3 from "../../images/howtodoit.png";
 import Picture4 from "../../images/video.png";
 
-const ExercisesMain = () => {
+const ExercisesSearch = () => {
     return (
         
         <div className={cl.Page}>
@@ -52,4 +52,4 @@ const ExercisesMain = () => {
     );
 }
 
-export default ExercisesMain;
+export default ExercisesSearch;
