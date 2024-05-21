@@ -9,9 +9,7 @@ const ProgramsPage2 = ({setActive}) => {
     return (
         <div className={cl.ProgramsPage2}>
             <Navigation setActive={setActive}/>
-            <div className ={cl.Program2}>
-                <Program2/>
-            </div>
+            <Program2/>
             <Footer/>
         </div>    
     )

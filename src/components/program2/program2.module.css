@@ -6,16 +6,18 @@
 .Rectangle{
     background-color:#A2D18C;
     width: 900px;
-    height: 1400px;
+    height: 1760px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     border-radius: 15px;
-    display: flex;
+    display: block;
     padding: 25px;
     padding-bottom: 140px;
 }
-
+.Rectangle_info{
+    display: flex;
+}
 .Rectangle__info p{
     margin-left: 20px;
     font-family: Ubuntu;
@@ -37,4 +39,84 @@
     display: flex;
     line-height: 42px;
 }
+
+.Rectangle_Program{
+    display: block;
+}
+
+.Rectangle_Program p {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 20px;
+    line-height: 30px;
+    width: 840px;
+}
+
+.Rectangle_Program p1 {
+    font-family: Ubuntu;
+    font-size: 35px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px; 
+    font-weight: bold; 
+}
+
+.Rectangle_Program p2 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    line-height: 30px;
+    width: 840px;
+    font-weight: bold;
+}
+
+.Rectangle_Program p3 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    font-weight: bold;
+    justify-content: center; 
+}
+
+.Rectangle_Program p4 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center; 
+}
+
+.Picture2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Picture2 img {
+    margin-top: 30px;
+    height: 350px;
+}
+
+.Picture3 img{
+    margin-top: 50px;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Picture4 img{
+    margin-top: 100px;
+    max-width: 300px;
+
+}
+
+.Picture4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 
