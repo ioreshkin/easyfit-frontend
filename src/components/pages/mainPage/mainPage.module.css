@@ -165,3 +165,22 @@
     height: 76px;
 }
 
+@media (max-width: 1500px) {
+    .splitSection {
+        width: 1200px;
+    }
+
+    .startTraining {
+        width: 1100px;
+    }
+}
+
+@media (max-width:1220px) {
+    .splitSection {
+        width: 1000px;
+    }
+
+    .startTraining {
+        width: 900px;
+    }
+}

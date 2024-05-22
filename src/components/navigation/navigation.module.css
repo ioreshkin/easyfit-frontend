@@ -31,3 +31,9 @@
     font-size: 28px;
     font-weight: 700;
 }
+
+@media (max-width: 1500px) {
+    .links {
+        margin-right: 0;
+    }    
+}
