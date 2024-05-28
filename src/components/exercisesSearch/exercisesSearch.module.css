@@ -6,7 +6,7 @@
 .Rectangle{
     background-color: #A2D18C;
     width: 900px;
-    height: 1400px;
+    height: 1300px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -43,18 +43,17 @@
     line-height: 42px;
 }
 
-.Rectangle__info p2 {
-    font-family: Ubuntu;
+.ExcInf span {
     color: black;
-    font-size: 25px;
     display: flex;
     margin-top: 20px; 
     line-height: 30px;
     width: 840px;
     margin-left: 30px;
+    text-align:left;
 }
 
-.Rectangle__info p3 {
+.Head p {
     font-family: Ubuntu;
     color: black;
     font-size: 35px;

@@ -10,7 +10,8 @@ const AboutPage = ({setActive}) => {
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>Фитнес-платформа для тренировок дома и в зале</h1>
-                </div> 
+                </div>
+                <h2>Easy FIT — это</h2> 
             </div> 
                 <Footer/>
             </div>
