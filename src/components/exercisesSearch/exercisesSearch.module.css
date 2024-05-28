@@ -32,10 +32,8 @@
     font-weight: bold; 
 }
 
-.Rectangle__info p1 {
-    font-family: Ubuntu;
+.Rectangle__info span {
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: center; 
