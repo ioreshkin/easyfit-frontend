@@ -21,7 +21,7 @@ const Exercises = () => {
             </div>
             <div className={cl.Start}>
                 <div className={cl.Choice}>
-                    <p>Группы мышц:</p>
+                    <h2>Группы мышц:</h2>
                     <p1>Грудь
                         <br></br>
                         Ноги
