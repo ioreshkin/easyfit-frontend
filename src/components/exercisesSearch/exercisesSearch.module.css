@@ -20,9 +20,7 @@
 } 
 
 .Search p {
-    font-family: Ubuntu;
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     margin-left: 30px;
@@ -58,10 +56,8 @@
     font-weight: bold; 
 }
 
-.Rectangle__info p1 {
-    font-family: Ubuntu;
+.Rectangle__info span {
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: center; 
