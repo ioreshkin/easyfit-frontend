@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navigation setActive={setHelpActive} langCode = {langCode}/>
+        <Navigation setActive={setHelpActive} langCode = {langCode} setLangCode={setLangCode}/>
         <Routes>
           <Route path="easyfit" element={<MainPage langCode = {langCode}/>}/>
           <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode}/>}/>
