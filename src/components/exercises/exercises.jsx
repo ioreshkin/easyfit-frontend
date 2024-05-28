@@ -17,7 +17,7 @@ const Exercises = () => {
                <div className={cl.Picturea}>
                   <img src={Picture6} alt="" />
                 </div>
-                <p>Введите упражнение для поиска</p>
+                <span>Введите упражнение для поиска</span>
             </div>
             <div className={cl.Start}>
                 <div className={cl.Choice}>
