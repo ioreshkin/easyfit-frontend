@@ -67,8 +67,8 @@
 .Howtodoit {
     margin-top: 50px;
     display: flex;
-    justify-content: space-around; /* Равное расстояние между элементами и от краев */
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    justify-content: space-around; 
+    align-items: center; 
 }
 
 .Picture2 img{

@@ -102,3 +102,82 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 1500px) {
+    .Search {
+        width: 800px;
+        height: 90px;
+    }
+
+    .Picture img {
+        width: 460px;
+    }
+
+    .Rectangle {
+        width: 800px;
+    }
+
+    .Picture1 img {
+        width: 180px;
+    }
+
+    .Rectangle__info p {
+        font-size: 30px;
+    }
+
+    .Rectangle__info p1 {
+        font-size: 16px;
+    }
+
+    .Link {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .Search {
+        width: 700px;
+        height: 80px;
+    }
+
+    .Search p {
+        font-size: 22px;
+    }
+
+    .Start {
+        margin-top: 60px;
+    }
+
+    .Picture img {
+        width: 400px;
+    }
+
+    .Choice p {
+        font-size: 45px;
+    }
+
+    .Choice p1 {
+        font-size: 40px;
+        height: 400px;
+    }
+
+    .Rectangle {
+        width: 700px;
+    }
+
+    .Picture1 img {
+        width: 150px;
+    }
+
+    .Rectangle__info p {
+        font-size: 28px;
+    }
+
+    .Rectangle__info p1 {
+        font-size: 14px;
+    }
+
+    .Link {
+        font-size: 28px;
+    }
+}
