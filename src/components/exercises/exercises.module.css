@@ -104,12 +104,33 @@
 
 @media (max-width: 1500px) {
     .Search {
-        width: 800px;
-        height: 90px;
+        width: 700px;
+        height: 45px;
+    }
+
+    .Picturea img {
+        height: 38px;
+    }
+
+    .Search span {
+        font-size: 24px;
+    }
+
+    .Start {
+        margin-top: 80px;
     }
 
     .Picture img {
-        width: 460px;
+        width: 450px;
+    }
+
+    .Choice p {
+        font-size: 50px;
+    }
+
+    .Choice p1 {
+        font-size: 45px;
+        height: 450px;
     }
 
     .Rectangle {
@@ -120,19 +141,28 @@
         width: 180px;
     }
 
-    .Link {
+    .Rectangle__info p {
         font-size: 30px;
     }
+
+    .Rectangle__info p1 {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 1220px) {
     .Search {
-        width: 700px;
-        height: 80px;
+        width: 600px;
+        height: 40px;
     }
 
-    .Search p {
-        font-size: 22px;
+    .Picturea img {
+        height: 34px;
+    }
+
+    .Search span {
+        font-size: 20px;
     }
 
     .Start {
