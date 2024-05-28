@@ -1,9 +1,8 @@
 import './reset.css';
 import './components/pages/mainPage/mainPage';
-import Navigation from "./components/navigation/navigation";
 import MainPage from './components/pages/mainPage/mainPage';
-import Footer from "./components/footer/footer";
 import HelpModal from './components/popup/helpModule/helpModal';
+import Navigation from './components/navigation/navigation';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ProgramsPage2 from './components/pages/programsPage2/programsPage2';
@@ -14,19 +13,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   const [helpActive, setHelpActive] = useState(false);
+  const [langCode, setLangCode] = useState("ru");
   return (
     <div className="App">
       <BrowserRouter>
+        <Navigation setActive={setHelpActive} langCode = {langCode}/>
         <Routes>
-          <Route path="easyfit" element={<MainPage setActive={setHelpActive}/>}/>
-          <Route path="easyfit/programs" element={<ProgramsPage setActive={setHelpActive}/>}/>
-          <Route path="easyfit/exercises" element={<ExercisesPage setActive={setHelpActive}/>}/>
-          <Route path="easyfit/about" element={<AboutPage setActive={setHelpActive}/>}/>
-          <Route path="easyfit/exercisesSearch" element={<ExercisesPageSearch setActive={setHelpActive}/>}/>
-          <Route path="easyfit/programs2" element={<ProgramsPage2 setActive={setHelpActive}/>}/>
+          <Route path="easyfit" element={<MainPage langCode = {langCode}/>}/>
+          <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode}/>}/>
+          <Route path="easyfit/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
+          <Route path="easyfit/about" element={<AboutPage langCode = {langCode}/>}/>
+          <Route path="easyfit/exercisesSearch" element={<ExercisesPageSearch langCode = {langCode}/>}/>
+          <Route path="easyfit/programs2" element={<ProgramsPage2 langCode = {langCode}/>}/>
         </Routes>
       </BrowserRouter>
-      <HelpModal active={helpActive} setActive={setHelpActive}/>
+      <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>
     </div>
   );
 }

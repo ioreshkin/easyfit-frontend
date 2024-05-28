@@ -2,7 +2,7 @@ import React from "react";
 import cl from "./footer.module.css";
 import logo from "../../images/whiteLogo.png";
 
-const Footer = () => {
+const Footer = ({ langCode }) => {
     return (
         <footer className={cl.footer}>
             <div className={cl.footer__content}>

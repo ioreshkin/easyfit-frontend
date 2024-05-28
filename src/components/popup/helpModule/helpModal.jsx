@@ -2,7 +2,7 @@ import React from "react";
 import cl from "./helpModal.module.css";
 import userGuide from "../../../files/userGuide.pdf";
 
-const HelpModal = ({active, setActive}) => { 
+const HelpModal = ({active, setActive, lang}) => { 
     const classes = cl.helpModal + " " + cl.active;
     return (
         <div className={active ? classes : cl.helpModal} onClick={() => setActive(false)}>
