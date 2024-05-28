@@ -45,6 +45,7 @@
     font-weight: 700;
     width: 620px;
     user-select: none;
+    margin-left: 25px;
 }
 
 .stickRectangle{
@@ -52,6 +53,8 @@
     height: 5px;
     background-color: rgb(65, 87, 55);
     border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .rects{
@@ -64,8 +67,9 @@
     width: 300px;
     height: 600px;
     background-color:rgb(254, 254, 254);
-    margin-bottom: 130px;
-    border-radius: 15px;  
+    margin-bottom: 150px;
+    border-radius: 15px;
+
        
 }
 
@@ -73,7 +77,7 @@
     width: 300px;
     height: 600px;
     background-color:rgb(255, 255, 255);
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     border-radius: 15px;
 }
 
@@ -81,11 +85,11 @@
     width: 300px;
     height: 600px;
     background-color:rgb(255, 255, 255);
-    margin-bottom: 130px;
+    margin-bottom: 150px;
     border-radius: 15px;
 }
 
-.textRect1{
+.textRect1 h1{
     /* Команда */
 
 position: absolute;
@@ -100,8 +104,10 @@ font-weight: 500;
 font-size: 50px;
 line-height: 57px;
 text-align: center;
+}
 
-/* В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации */
+.textRect1 p{
+    /* В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации */
 
 position: absolute;
 width: 348px;
@@ -116,6 +122,8 @@ font-size: 35px;
 line-height: 40px;
 text-align: center;
 }
+
+
 
 
 
