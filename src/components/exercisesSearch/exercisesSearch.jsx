@@ -1,6 +1,5 @@
 import React from "react";
 import cl from "./exercisesSearch.module.css";
-import Picture from "../../images/searchexercieses.png";
 import Picture1 from "../../images/exercises.png"
 import Picture2 from "../../images/howtodoit2.png";
 import Picture3 from "../../images/howtodoit.png";
@@ -10,12 +9,6 @@ const ExercisesSearch = () => {
     return (
         
         <div className={cl.Page}>
-            <div className={cl.Search}>
-               <div className={cl.Picture}>
-                  <img src={Picture} alt="" />
-                </div>
-                <p>Введите упражнение для поиска</p>
-            </div>
             <div className={cl.Rectangle}>
                  <div className={cl.Picture1}>
                     <img src={Picture1} alt="" />
