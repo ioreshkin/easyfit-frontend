@@ -12,10 +12,16 @@ const AboutPage = ({setActive}) => {
                     <h1>Фитнес-платформа для тренировок дома и в зале</h1>
                     
                 </div>
-                <div className={cl.about}></div>
-                <h2>Easy FIT — это</h2>     
+                   
             </div>
-             
+            <div className={cl.about}></div>
+                <h2>Easy FIT — это</h2>
+                <div className={cl.stickRectangle}></div>
+                <div className={cl.rects}>
+                <div className={cl.rectangle1}></div> 
+                <div className={cl.rectangle2}></div>
+                <div className={cl.rectangle3}></div>
+                </div>
                 <Footer/>
             </div>
     )
