@@ -10,8 +10,8 @@
 }
 
 .woman{
-    width: 100%;
-    height: 100%;
+    width: 94%;
+    height: 94%;
     background-image: url(../../../images/womansex.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,6 @@
     width: 1257px;
 }
 
-
 .splitSection{
     display: flex;
     justify-content: space-between;
@@ -46,3 +45,14 @@
     width: 1440px;
     margin: 105px auto 0;
 }
+
+.about h2 {
+    padding-top: 250px;
+    color: rgb(255, 255, 255);
+    font-family: Ubuntu;
+    font-size: 64px;
+    font-weight: 700;
+    width: 620px;
+    user-select: none;
+}
+
