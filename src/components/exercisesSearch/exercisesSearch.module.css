@@ -1,0 +1,114 @@
+.Page{
+    padding-top: 50px;
+    padding-bottom: 200px
+}
+
+.Search{
+    background-color:#A2D18C;
+    width: 900px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 100px;
+    display: flex; 
+    align-items: center;
+}
+
+.Picture{
+    margin-left: 30px;
+} 
+
+.Search p {
+    color: black;
+    text-align: center;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.Rectangle{
+    background-color: #A2D18C;
+    width: 900px;
+    height: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding-bottom: 140px
+}
+
+.Picture1 img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.Rectangle__info p {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: -208px; 
+    font-weight: bold; 
+}
+
+.Rectangle__info span {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+    width: 160px;
+    margin-left: 254px;
+    line-height: 42px;
+}
+
+.Rectangle__info p2 {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    margin-top: 20px; 
+    line-height: 30px;
+    width: 840px;
+    margin-left: 30px;
+}
+
+.Rectangle__info p3 {
+    font-family: Ubuntu;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px; 
+    font-weight: bold; 
+}
+
+.Howtodoit {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; /* Равное расстояние между элементами и от краев */
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+}
+
+.Picture2 img{
+    max-width: 400px;
+}
+
+.Picture3 img{
+    max-width: 400px;
+}
+
+.Picture4 img{
+    margin-top: 50px;
+    max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

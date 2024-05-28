@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px; 
 }
 
 .logo {
@@ -48,4 +47,10 @@
 .phone {
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1500px) {
+    .logo {
+        margin-right: 0;
+    }
 }

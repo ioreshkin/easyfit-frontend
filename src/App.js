@@ -6,7 +6,9 @@ import Footer from "./components/footer/footer";
 import HelpModal from './components/popup/helpModule/helpModal';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
+import ProgramsPage2 from './components/pages/programsPage2/programsPage2';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
+import ExercisesPageSearch from './components/pages/exercisesPageSearch/exercisesPageSearch';
 import AboutPage from './components/pages/aboutPage/aboutPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="easyfit/programs" element={<ProgramsPage setActive={setHelpActive}/>}/>
           <Route path="easyfit/exercises" element={<ExercisesPage setActive={setHelpActive}/>}/>
           <Route path="easyfit/about" element={<AboutPage setActive={setHelpActive}/>}/>
+          <Route path="easyfit/exercisesSearch" element={<ExercisesPageSearch setActive={setHelpActive}/>}/>
+          <Route path="easyfit/programs2" element={<ProgramsPage2 setActive={setHelpActive}/>}/>
         </Routes>
       </BrowserRouter>
       <HelpModal active={helpActive} setActive={setHelpActive}/>

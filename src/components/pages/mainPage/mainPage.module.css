@@ -31,6 +31,7 @@
     font-family: Ubuntu;
     font-size: 40px;
     font-weight: 700;
+    user-select: none;
 }
 
 .splitSection{
@@ -63,8 +64,6 @@
 }
 
 .caption{
-    font-size: 60px;
-    font-family: Ubuntu;
     color:white;
     margin: auto;
 }
@@ -82,12 +81,9 @@
     align-items:center;
 }
 
-.columnText p{
-    font-family: Ubuntu;
-    font-size: 60px;
+.columnText h2{
     margin: 60px;
     color:#1F2F22;
-    font-weight:bold;
 }
 
 .rectangle{
@@ -117,9 +113,6 @@
 
 .startTrainingButton p{
     color: white;
-    font-family:Ubuntu;
-    font-size: 30px;
-    font-weight: bold;
     text-align:center;
     margin:auto;
 }
@@ -138,20 +131,14 @@
 
 .textInRectangle p{
     margin-bottom: 13px;
-    
 }
 
 .textInRectangle p {
     color: white;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Ubuntu;
 }
 
-.textInRectangle p1 {
+.textInRectangle span {
     color: white;
-    font-size: 20px;
-    font-family: Ubuntu;
 }
 
 .icons {
@@ -164,3 +151,22 @@
     height: 76px;
 }
 
+@media (max-width: 1500px) {
+    .splitSection {
+        width: 1200px;
+    }
+
+    .startTraining {
+        width: 1100px;
+    }
+}
+
+@media (max-width:1220px) {
+    .splitSection {
+        width: 1000px;
+    }
+
+    .startTraining {
+        width: 900px;
+    }
+}

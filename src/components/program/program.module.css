@@ -10,12 +10,13 @@
     margin-top: 100px;
     border-radius: 15px;
     display: flex;
-    padding: 20px;
+    padding: 25px;
 }
 
 .Rectangle__info p{
+    margin-left: 20px;
     font-family: Ubuntu;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: bold;
 }
 
@@ -25,7 +26,25 @@
 }
 
 .Rectangle__info p1{
+    margin-left: 20px;
+    margin-top: 10px;
     font-family: Ubuntu;
     font-weight: regular;
-    font-size: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.Link{
+    margin-left: 20px;
+    font-family: Ubuntu;
+    font-size: 35px;
+    font-weight: bold; 
+}
+
+.Link * {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
