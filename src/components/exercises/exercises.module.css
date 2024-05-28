@@ -1,5 +1,5 @@
 .Page{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 200px;
 }
 
@@ -31,24 +31,22 @@
 .Start{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    border-radius: 100px;
-    display: flex; 
-    justify-content: space-evenly; 
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
 
 .Picture img{
-    width: 510px;
+    width: 400px;
 }
 
-.Choice p{
+.Choice h2{
     font-family: Ubuntu;
-    font-size: 60px;
-    font-weight: bold;
 }
 
 .Choice p1{
-    font-size: 55px;
+    font-size: 40px;
     line-height: 1.5;
     font-family: Ubuntu;
     display: flex;

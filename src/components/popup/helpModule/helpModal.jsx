@@ -2,12 +2,12 @@ import React from "react";
 import cl from "./helpModal.module.css";
 import userGuide from "../../../files/userGuide.pdf";
 
-const HelpModal = ({active, setActive}) => { 
+const HelpModal = ({active, setActive, lang}) => { 
     const classes = cl.helpModal + " " + cl.active;
     return (
         <div className={active ? classes : cl.helpModal} onClick={() => setActive(false)}>
             <div className={cl.helpModal__content} onClick={e => e.stopPropagation()}>
-                <h1>Частые вопросы (FAQ)</h1>
+                <p>Частые вопросы (FAQ)</p>
                 <h3>1. Сайт внезапно перестал отвечать или закрылся, можно ли вернуться к тренировке на том же моменте?</h3>
                 <h3>К сожалению, у нас пока не предусмотрен личный кабинет пользователя, а значит, ваш процесс не сохраняется. Вы можете заново открыть то же упражнение и перемотать на нужный отрезок времени.</h3>
                 <h3>2. Подходят ли программы тренировок для новичков?</h3>

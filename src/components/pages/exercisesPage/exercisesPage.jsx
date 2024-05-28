@@ -1,13 +1,11 @@
 import React from "react";
 import cl from "./exercisesPage.module.css";
 import Exercises from "../../exercises/exercises";
-import Navigation from "../../navigation/navigation";
 import Footer from "../../footer/footer";
 
-const ExercisesPage = ({setActive}) => {
+const ExercisesPage = ({lang}) => {
     return (
         <div className={cl.ExercisesPage}>
-            <Navigation setActive={setActive}/>
             <Exercises/>
             <Footer/>
         </div>   

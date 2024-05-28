@@ -5,21 +5,22 @@ import phone from "../../../images/phone.png";
 import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
 import desktop from "../../../images/desktop.png"; 
-import Navigation from "../../navigation/navigation";
-const MainPage = ({setActive}) => {
+import { getLang } from "../../../utils/langs";
+
+const MainPage = ({langCode}) => {
+    const lang = getLang(langCode)
     return (
         <div className={cl.mainPage}>
-            <Navigation setActive={setActive}/>
             <div className={cl.over}>
                 <div className={cl.woman}>
-                    <h2>Тренируйтесь с нами</h2>
+                    <h1>{lang.train}</h1>
                 </div>
             </div>
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
                     <div className={cl.circle}>
-                        <h2 className={cl.caption}>Для зала</h2>
+                        <p className={cl.caption}></p>
                     </div>
                     <div className = {cl.columnText}>
                         <h2>Степ-аэробика</h2>
