@@ -1,11 +1,13 @@
 import React from "react";
 import cl from "./langSwitch.module.css";
-import ru from "../../../images/ru.png";
+import { getLang } from "../../../utils/langs";
 
-const LangSwitch = () => {
+const LangSwitch = ({langCode, setLangCode}) => {
+    const lang = getLang(langCode);
+    console.log(lang);
     return (
         <div className={cl.langSwitch}>
-            <img src={ru} alt="" />
+            <img src={lang.img} alt="" />
         </div>
     )
 }

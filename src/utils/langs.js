@@ -1,9 +1,13 @@
+import ruImg from "../images/ru.png";
+import enImg from "../images/en.png";
+
 const en = {
     //navigation
     programs: "",
     exercises: "",
     help: "",
     about: "",
+    img: enImg,
 
     //help
     faq: "",
@@ -60,6 +64,7 @@ const ru = {
     exercises: "Упражнения",
     help: "Помощь",
     about: "О нас",
+    img: ruImg,
 
     //help
     faq: "Частые вопросы (FAQ)",
