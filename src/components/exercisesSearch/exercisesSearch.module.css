@@ -3,36 +3,10 @@
     padding-bottom: 200px
 }
 
-.Search{
-    background-color:#A2D18C;
-    width: 900px;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    border-radius: 100px;
-    display: flex; 
-    align-items: center;
-}
-
-.Picture{
-    margin-left: 30px;
-} 
-
-.Search p {
-    font-family: Ubuntu;
-    color: black;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-}
-
 .Rectangle{
     background-color: #A2D18C;
     width: 900px;
-    height: 1400px;
+    height: 1300px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -58,10 +32,8 @@
     font-weight: bold; 
 }
 
-.Rectangle__info p1 {
-    font-family: Ubuntu;
+.Rectangle__info span {
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     justify-content: center; 
@@ -71,18 +43,17 @@
     line-height: 42px;
 }
 
-.Rectangle__info p2 {
-    font-family: Ubuntu;
+.ExcInf span {
     color: black;
-    font-size: 25px;
     display: flex;
     margin-top: 20px; 
     line-height: 30px;
     width: 840px;
     margin-left: 30px;
+    text-align:left;
 }
 
-.Rectangle__info p3 {
+.Head p {
     font-family: Ubuntu;
     color: black;
     font-size: 35px;
@@ -96,8 +67,8 @@
 .Howtodoit {
     margin-top: 50px;
     display: flex;
-    justify-content: space-around; /* Равное расстояние между элементами и от краев */
-    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    justify-content: space-around; 
+    align-items: center; 
 }
 
 .Picture2 img{
@@ -116,3 +87,74 @@
     margin-right: auto;
 }
 
+@media (max-width: 1500px) {
+    .Rectangle {
+        width: 800px;
+        height: 1200px;
+    }
+
+    .Picture1 img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .Picture2 img, .Picture3 img {
+        max-width: 350px;
+    }
+
+    .Picture4 img {
+        max-width: 700px;
+    }
+
+    .Rectangle__info p {
+        font-size: 30px;
+        margin-top: -180px;
+    }
+
+    .Rectangle__info span {
+        font-size: 25px;
+        width: 140px;
+        margin-left: 220px;
+    }
+
+    .Rectangle__info p2 {
+        font-size: 20px;
+        width: 700px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .Rectangle {
+        width: 700px;
+        height: 1000px;
+    }
+
+    .Picture1 img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Picture2 img, .Picture3 img {
+        max-width: 300px;
+    }
+
+    .Picture4 img {
+        max-width: 600px;
+    }
+
+    .Rectangle__info p {
+        font-size: 28px;
+        margin-top: -160px;
+    }
+
+    .Rectangle__info span {
+        font-size: 23px;
+        width: 130px;
+        margin-left: 200px;
+    }
+
+    .Rectangle__info p2 {
+        font-size: 18px;
+        width: 650px;
+    }
+}

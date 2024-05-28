@@ -7,16 +7,16 @@ const Footer = ({ langCode }) => {
         <footer className={cl.footer}>
             <div className={cl.footer__content}>
             <div className={cl.footer__text}>
-                    <p>©2024 La JuliaGoshaVaryaIlya</p>
-                    <p>Easy FIT</p>
+                    <span>©2024 La JuliaGoshaVaryaIlya</span>
+                    <span>Easy FIT</span>
                 </div>
                 <a className ={cl.logo} href="#">
                     <img src={logo} alt=""/>
                 </a>
                 <div className={cl.footer__contacts}>
-                    <p>Контакты</p>
+                    <span>Контакты</span>
                     <a href="tel:+79024716514" className={cl.phone}>+7(902)471-65-14</a>
-                    <p>example@mail.ru</p>
+                    <span>example@mail.ru</span>
                 </div>
             </div>
         </footer>

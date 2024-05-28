@@ -8,8 +8,12 @@ const AboutPage = ({langCode}) => {
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>Фитнес-платформа для тренировок дома и в зале</h1>
-                </div> 
-            </div> 
+                    
+                </div>
+                <div className={cl.about}></div>
+                <h2>Easy FIT — это</h2>     
+            </div>
+             
                 <Footer/>
             </div>
     )

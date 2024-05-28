@@ -23,20 +23,20 @@ const MainPage = ({langCode}) => {
                         <p className={cl.caption}></p>
                     </div>
                     <div className = {cl.columnText}>
-                        <p>Степ-аэробика</p>
-                        <p>Body Sculpt</p>
-                        <p>Body Pump</p>
+                        <h2>Степ-аэробика</h2>
+                        <h2>Body Sculpt</h2>
+                        <h2>Body Pump</h2>
                     </div>
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
                     <div className={cl.circle}>
-                        <p className={cl.caption}>Для дома</p>
+                        <h2 className={cl.caption}>Для дома</h2>
                     </div>
                     <div className = {cl.columnText}>
-                        <p>Кроссфит</p>
-                        <p>Стретчинг</p>
-                        <p>Калланетика</p>
+                        <h2>Кроссфит</h2>
+                        <h2>Стретчинг</h2>
+                        <h2>Калланетика</h2>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const MainPage = ({langCode}) => {
                     <div className = {cl.textInRectangle}>
                         <div>
                         <p>Занимайся в любое время, в любом месте</p>
-                        <p1>Доступно на любых устройствах</p1>
+                        <span>Доступно на любых устройствах</span>
                         </div>
                         <div className={cl.icons}>
                             <img src={phone} alt="" />

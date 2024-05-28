@@ -3,6 +3,31 @@
     padding-bottom: 200px;
 }
 
+.Search{
+    background-color:#A2D18C;
+    width: 800px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 100px;
+    display: flex; 
+    align-items: center;
+}
+
+.Picturea img{
+    margin-left: 20px;
+    height: 42px;
+} 
+
+.Search span {
+    color: black;
+    text-align: center;
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
 .Start{
     margin-left: auto;
     margin-right: auto;
@@ -75,4 +100,75 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .Search {
+        width: 800px;
+        height: 90px;
+    }
+
+    .Picture img {
+        width: 460px;
+    }
+
+    .Rectangle {
+        width: 800px;
+    }
+
+    .Picture1 img {
+        width: 180px;
+    }
+
+    .Link {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .Search {
+        width: 700px;
+        height: 80px;
+    }
+
+    .Search p {
+        font-size: 22px;
+    }
+
+    .Start {
+        margin-top: 60px;
+    }
+
+    .Picture img {
+        width: 400px;
+    }
+
+    .Choice p {
+        font-size: 45px;
+    }
+
+    .Choice p1 {
+        font-size: 40px;
+        height: 400px;
+    }
+
+    .Rectangle {
+        width: 700px;
+    }
+
+    .Picture1 img {
+        width: 150px;
+    }
+
+    .Rectangle__info p {
+        font-size: 28px;
+    }
+
+    .Rectangle__info p1 {
+        font-size: 14px;
+    }
+
+    .Link {
+        font-size: 28px;
+    }
 }
