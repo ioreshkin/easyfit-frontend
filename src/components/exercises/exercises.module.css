@@ -5,8 +5,8 @@
 
 .Search{
     background-color:#A2D18C;
-    width: 900px;
-    height: 100px;
+    width: 800px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -15,14 +15,13 @@
     align-items: center;
 }
 
-.Picturea{
-    margin-left: 30px;
+.Picturea img{
+    margin-left: 20px;
+    height: 42px;
 } 
 
-.Search p {
-    font-family: Ubuntu;
+.Search span {
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     margin-left: 30px;
