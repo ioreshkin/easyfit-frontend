@@ -17,11 +17,11 @@ const Exercises = () => {
                <div className={cl.Picturea}>
                   <img src={Picture6} alt="" />
                 </div>
-                <p>Введите упражнение для поиска</p>
+                <span>Введите упражнение для поиска</span>
             </div>
             <div className={cl.Start}>
                 <div className={cl.Choice}>
-                    <p>Группы мышц:</p>
+                    <h2>Группы мышц:</h2>
                     <p1>Грудь
                         <br></br>
                         Ноги

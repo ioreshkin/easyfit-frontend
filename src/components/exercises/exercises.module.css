@@ -1,12 +1,12 @@
 .Page{
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 200px;
 }
 
 .Search{
     background-color:#A2D18C;
-    width: 900px;
-    height: 100px;
+    width: 800px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -15,14 +15,13 @@
     align-items: center;
 }
 
-.Picturea{
-    margin-left: 30px;
+.Picturea img{
+    margin-left: 20px;
+    height: 42px;
 } 
 
-.Search p {
-    font-family: Ubuntu;
+.Search span {
     color: black;
-    font-size: 30px;
     text-align: center;
     display: flex;
     margin-left: 30px;
@@ -32,24 +31,22 @@
 .Start{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    border-radius: 100px;
-    display: flex; 
-    justify-content: space-evenly; 
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
 }
 
 .Picture img{
-    width: 510px;
+    width: 400px;
 }
 
-.Choice p{
+.Choice h2{
     font-family: Ubuntu;
-    font-size: 60px;
-    font-weight: bold;
 }
 
 .Choice p1{
-    font-size: 55px;
+    font-size: 40px;
     line-height: 1.5;
     font-family: Ubuntu;
     display: flex;
@@ -101,4 +98,105 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+    .Search {
+        width: 700px;
+        height: 45px;
+    }
+
+    .Picturea img {
+        height: 38px;
+    }
+
+    .Search span {
+        font-size: 24px;
+    }
+
+    .Start {
+        margin-top: 80px;
+    }
+
+    .Picture img {
+        width: 450px;
+    }
+
+    .Choice p {
+        font-size: 50px;
+    }
+
+    .Choice p1 {
+        font-size: 45px;
+        height: 450px;
+    }
+
+    .Rectangle {
+        width: 800px;
+    }
+
+    .Picture1 img {
+        width: 180px;
+    }
+
+    .Rectangle__info p {
+        font-size: 30px;
+    }
+
+    .Rectangle__info p1 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1220px) {
+    .Search {
+        width: 600px;
+        height: 40px;
+    }
+
+    .Picturea img {
+        height: 34px;
+    }
+
+    .Search span {
+        font-size: 20px;
+    }
+
+    .Start {
+        margin-top: 60px;
+    }
+
+    .Picture img {
+        width: 400px;
+    }
+
+    .Choice p {
+        font-size: 45px;
+    }
+
+    .Choice p1 {
+        font-size: 40px;
+        height: 400px;
+    }
+
+    .Rectangle {
+        width: 700px;
+    }
+
+    .Picture1 img {
+        width: 150px;
+    }
+
+    .Rectangle__info p {
+        font-size: 28px;
+    }
+
+    .Rectangle__info p1 {
+        font-size: 14px;
+    }
+
+    .Link {
+        font-size: 28px;
+    }
 }
