@@ -1,32 +1,34 @@
 import React from "react";
 import cl from "./helpModal.module.css";
 import userGuide from "../../../files/userGuide.pdf";
+import { getLang } from "../../../utils/langs";
 
-const HelpModal = ({active, setActive, lang}) => { 
+const HelpModal = ({active, setActive, langCode}) => { 
     const classes = cl.helpModal + " " + cl.active;
+    const lang = getLang(langCode)
     return (
         <div className={active ? classes : cl.helpModal} onClick={() => setActive(false)}>
             <div className={cl.helpModal__content} onClick={e => e.stopPropagation()}>
-                <p>Частые вопросы (FAQ)</p>
-                <h3>1. Сайт внезапно перестал отвечать или закрылся, можно ли вернуться к тренировке на том же моменте?</h3>
-                <h3>К сожалению, у нас пока не предусмотрен личный кабинет пользователя, а значит, ваш процесс не сохраняется. Вы можете заново открыть то же упражнение и перемотать на нужный отрезок времени.</h3>
-                <h3>2. Подходят ли программы тренировок для новичков?</h3>
-                <h3>Да, большинство наших программ построены по принципу увеличивающейся нагрузки. К тому же все тренировки имеют значок сложности, чтобы пользователь оценил справится он или нет.</h3>
-                <h3>3. Какие направления тренировок я могу выбрать?</h3>
-                <h3>Наш сайт предлагает множество направлений тренировок, к примеру:</h3>
+                <p>{lang.faq}</p>
+                <h3>{lang.title1}</h3>
+                <h3>{lang.text1}</h3>
+                <h3>{lang.title2}</h3>
+                <h3>{lang.text2}</h3>
+                <h3>{lang.title3}</h3>
+                <h3>{lang.text3}</h3>
                 <ul>
-                    <li>йога;</li>
-                    <li>пилатес;</li>
-                    <li>кроссфит;</li>
-                    <li>кардио; </li>
-                    <li>силовые тренировки.</li>
+                    <li>{lang.list1}</li>
+                    <li>{lang.list2}</li>
+                    <li>{lang.list3}</li>
+                    <li>{lang.list4}</li>
+                    <li>{lang.list5}</li>
                 </ul>
-                <h3>4. Какой инвентарь необходим?</h3>
-                <h3>Каждое направление есть с инвентарём и без. Специально, чтобы был выбор. Также большое количество тренировок сделано с подручными средствами для удобства использования в домашних условиях.</h3>
-                <h3>Если вы не нашли ответа на свой вопрос, пожалуйста, свяжитесь с нами.</h3>
-                <h3>Наши контакты: +79024716514, example@mail.ru.</h3>
-                <h3>Ссылка на полное руководство пользователя:</h3>
-                <a href={userGuide} target="_blank" rel="noreferrer">Руководство пользователя</a>
+                <h3>{lang.title4}</h3>
+                <h3>{lang.text4}</h3>
+                <h3>{lang.contactUs}</h3>
+                <h3>{lang.ourContacts}</h3>
+                <h3>{lang.link}</h3>
+                <a href={userGuide} target="_blank" rel="noreferrer">{lang.guide}</a>
             </div>
         </div>
     )

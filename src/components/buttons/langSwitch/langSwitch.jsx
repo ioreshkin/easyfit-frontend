@@ -4,10 +4,9 @@ import { getLang } from "../../../utils/langs";
 
 const LangSwitch = ({langCode, setLangCode}) => {
     const lang = getLang(langCode);
-    console.log(lang);
     return (
-        <div className={cl.langSwitch}>
-            <img src={lang.img} alt="" />
+        <div className={cl.langSwitch} onClick={ () => langCode=="en" ? setLangCode("ru") : setLangCode("en")} >
+            <img src={lang.img} alt="" className={langCode=="en" ? cl.en : ""} />
         </div>
     )
 }

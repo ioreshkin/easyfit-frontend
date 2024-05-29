@@ -23,20 +23,20 @@ const MainPage = ({langCode}) => {
                         <h2 className={cl.caption}>{lang.forGym}</h2>
                     </div>
                     <div className = {cl.columnText}>
-                        <h2>Степ-аэробика</h2>
-                        <h2>Body Sculpt</h2>
-                        <h2>Body Pump</h2>
+                        <h2>{lang.forGymText1}</h2>
+                        <h2>{lang.forGymText2}</h2>
+                        <h2>{lang.forGymText3}</h2>
                     </div>
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
                     <div className={cl.circle}>
-                        <h2 className={cl.caption}>Для дома</h2>
+                        <h2 className={cl.caption}>{lang.forHome}</h2>
                     </div>
                     <div className = {cl.columnText}>
-                        <h2>Кроссфит</h2>
-                        <h2>Стретчинг</h2>
-                        <h2>Калланетика</h2>
+                        <h2>{lang.forHomeText1}</h2>
+                        <h2>{lang.forHomeText2}</h2>
+                        <h2>{lang.forHomeText3}</h2>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@ const MainPage = ({langCode}) => {
                 <div className={cl.startTraining}>
                     <div className = {cl.textInRectangle}>
                         <div>
-                        <p>Занимайся в любое время, в любом месте</p>
-                        <span>Доступно на любых устройствах</span>
+                        <p>{lang.anyTime}</p>
+                        <span>{lang.anyDevices}</span>
                         </div>
                         <div className={cl.icons}>
                             <img src={phone} alt="" />
@@ -56,11 +56,11 @@ const MainPage = ({langCode}) => {
                     </div>
                     <div className ={cl.stickRectangle}></div>
                     <div className ={cl.startTrainingButton}>
-                        <p>Начать тренироваться</p>
+                        <p>{lang.startTraining}</p>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer langCode={langCode}/>
         </div>
     )
 }
