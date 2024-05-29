@@ -4,6 +4,7 @@ import Footer from "../../footer/footer";
 import weImage from "../../../images/we.png";
 import chbwomanImage from "../../../images/chbwoman.png";
 import usersImage from "../../../images/users.png";
+import maznyaImage from "../../../images/maznya.png";
 
 const AboutPage = ({langCode}) => {
     return (
@@ -11,29 +12,34 @@ const AboutPage = ({langCode}) => {
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>Фитнес-платформа для тренировок дома и в зале</h1>
-                    
-                </div>
-                   
+                </div>  
             </div>
             <div className={cl.about}></div>
                 <h2>Easy FIT — это</h2>
                 <div className={cl.stickRectangle}></div>
                 <div className={cl.rects}>
-                <div className={cl.rectangle1}>
-                    <img src={weImage} className={cl.we.png}/>
-                    <h2>Команда</h2>
-                    <p>В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации</p>
-                    </div> 
-                <div className={cl.rectangle2}>
-                    <img src={chbwomanImage} className={cl.chbwoman.png}/>
-                    <h2>Сборник упражнений</h2>
-                    <p>На нашем сайте собрано подовляющие количество упражнений для каждой тренировки и любого вкуса</p>
-                    </div>
-                <div className={cl.rectangle3}>
-                    <img src={usersImage} className={cl.users.png}/>
-                    <h2>Пользователи</h2>
-                    <p>Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям</p>
-                    </div>
+                <div className={cl.rectangle}>
+                    <img src={weImage}/>
+                    <p>Команда</p>
+                    <span>В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации</span>
+                </div> 
+                <div className={cl.rectangle}>
+                    <img src={chbwomanImage}/>
+                    <p>Сборник упражнений</p>
+                    <span>На нашем сайте собрано подовляющие количество упражнений для каждой тренировки и любого вкуса</span>
+                </div>
+                <div className={cl.rectangle}>
+                    <img src={usersImage}/>
+                    <p>Пользователи</p>
+                    <span>Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям</span>
+                </div>
+                </div>
+                <div className={cl.rectangleBig}>
+                    <img src={maznyaImage}/>
+                    <h1>Наша миссия</h1>    
+                    <span>Мы с любовью создаём фитнес-проект, который объединил лучших профессионалов, эффективные практики и методики, направленные на здоровье, красоту и долголетие людей</span>
+                    <p></p>
+                    <span>Наша цель: привлечь к домашнему фитнесу каждую семью страны, сделать людей счастливее, а их здоровье крепче.</span>
                 </div>
                 <Footer/>
             </div>
