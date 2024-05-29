@@ -1,10 +1,11 @@
 import React from "react";
 import cl from "./footer.module.css";
 import logo from "../../images/whiteLogo.png";
-import { getLang } from "../../utils/langs";
+import { getLang } from "../../utils/langs.js";
 
 const Footer = ({ langCode }) => {
-    const lang = getLang(langCode);
+    const lang = getLang(langCode); 
+    console.log(lang)
     return (
         <footer className={cl.footer}>
             <div className={cl.footer__content}>
