@@ -16,7 +16,7 @@ const Footer = ({ langCode }) => {
                     <img src={logo} alt=""/>
                 </a>
                 <div className={cl.footer__contacts}>
-                    <h3>{lang.contacts}</h3>
+                    <h3></h3>
                     <a href="tel:+79024716514" className={cl.phone}>
                         <h3>+7(902)471-65-14</h3>
                     </a>
