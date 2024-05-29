@@ -60,7 +60,7 @@ const MainPage = ({langCode}) => {
                     </div>
                 </div>
             </div>
-            <Footer langCode={langCode}/>
+            <Footer/>
         </div>
     )
 }
