@@ -1,6 +1,6 @@
 .Page{
     padding-top: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 110px;
 }
 
 .Search{
@@ -34,20 +34,19 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 295px;
+    margin-bottom: 30px;
 }
 
 .Picture img{
-    width: 400px;
+    width: 270px;
 }
 
 .Choice p1{
-    font-size: 40px;
+    margin-top: 10px;
     line-height: 1.5;
-    font-family: Ubuntu;
     display: flex;
-    justify-content: space-around; 
-    height: 500px;
+    height: 200px;
 }
 
 .Rectangle{
