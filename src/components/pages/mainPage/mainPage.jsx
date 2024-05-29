@@ -20,7 +20,7 @@ const MainPage = ({langCode}) => {
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
                     <div className={cl.circle}>
-                        <p className={cl.caption}></p>
+                        <h2 className={cl.caption}> Для зала</h2>
                     </div>
                     <div className = {cl.columnText}>
                         <h2>Степ-аэробика</h2>
