@@ -1,7 +1,7 @@
 import React from "react";
 import cl from "./aboutPage.module.css";
 import Footer from "../../footer/footer";
-import weImage from "./we.png";
+import weImage from "..//..//..//images/we.png"
 
 const AboutPage = ({langCode}) => {
     return (
