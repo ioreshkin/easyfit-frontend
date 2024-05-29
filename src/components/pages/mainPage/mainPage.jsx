@@ -5,7 +5,7 @@ import phone from "../../../images/phone.png";
 import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
 import desktop from "../../../images/desktop.png"; 
-import { getLang } from "../../../utils/langs";
+import getLang from "../../../utils/langs";
 
 const MainPage = ({langCode}) => {
     const lang = getLang(langCode)

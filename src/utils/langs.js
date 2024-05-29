@@ -119,9 +119,11 @@ const ru = {
 
 }
 
-export const getLang = (code) => {
+const getLang = (code) => {
     switch(code) {
         case "ru": return ru;
         case "en": return en;
     }
 }
+
+export default getLang;

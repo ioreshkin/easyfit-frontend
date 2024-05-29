@@ -4,7 +4,7 @@ import LangSwitch from "../buttons/langSwitch/langSwitch";
 import logo from "../../images/blackLogo.png";
 import Help from "../buttons/help/help";
 import { Link } from "react-router-dom";
-import { getLang } from "../../utils/langs";
+import getLang from "../../utils/langs";
 
 const Navigation = ({setActive, langCode, setLangCode}) => {
     const lang = getLang(langCode);

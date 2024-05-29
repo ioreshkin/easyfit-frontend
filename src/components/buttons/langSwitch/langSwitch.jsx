@@ -1,6 +1,6 @@
 import React from "react";
 import cl from "./langSwitch.module.css";
-import { getLang } from "../../../utils/langs";
+import getLang from "../../../utils/langs";
 
 const LangSwitch = ({langCode, setLangCode}) => {
     const lang = getLang(langCode);
