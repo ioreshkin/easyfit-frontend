@@ -3,58 +3,60 @@ import enImg from "../images/en.png";
 
 const en = {
     //navigation
-    programs: "",
-    exercises: "",
-    help: "",
-    about: "",
+    programs: "Programmes",
+    exercises: "Exercises",
+    help: "Help",
+    about: "About us",
     img: enImg,
 
     //help
-    faq: "",
-    title1: "",
-    text1: "",
-    title2: "",
-    text2: "",
-    title3: "",
-    text3: "",
-    list1: "",
-    list2: "",
-    list3: "",
-    list4: "",
-    list5: "",
-    title4: "",
-    text4: "",
-    contactUs: "",
-    ourContacts: "",
-    link: "",
+    faq: "FAQ",
+    title1: "The website suddenly stopped responding or closed, is it possible to return to the exercise in the programme I was on?",
+    text1: "Unfortunately, we do not yet provide a user account, which means your progress is not saved, but we are working on it. Currently you can reopen the tab and click on the exercise you need.",
+    title2: "Are the training programmes suitable for beginners?",
+    text2: "Yes, most of our programmes are made based on the principle of increasing difficulty. In addition, when picking a work-out you may pick the ones, which are marked with easy level.",
+    title3: "What types of training programmes can I choose?",
+    text3: "Our website offers many training areas, such as:",
+    list1: "yoga;",
+    list2: "pilates;",
+    list3: "crossfit;",
+    list4: "cardio;",
+    list5: "power trainings.",
+    title4: "What equipment is needed?",
+    text4: "Each training area is available with and without equipment. You can choose on your own. Also, some workouts present are made with tools available at home.",
+    contactUs: "If you haven't found answer to your question, please contact us.",
+    ourContacts: "Our contacts:+79024716514, example@mail.ru.",
+    link: "Link to full User Manual:",
     guide: "",
 
     //footer
-    contacts: "",
+    contacts: "Our contacts:",
 
     //mainPage
-    train : "",
-    forGym : "",
-    forGymText1: "",
-    forGymText2: "",
-    forGymText3: "",
-    forHome : "",
-    forHomeText1: "",
-    forHomeText2: "",
-    forHomeText3: "",
-    anyTime: "",
-    anyDevices: "",
-    startTraining: "",
+    train : "train with us",
+    forGym : "At the gym",
+    forGymText1: "Step-aerobics",
+    forGymText2: "Body Sculpt",
+    forGymText3: "Body Pump",
+    forHome : "At home",
+    forHomeText1: "Crossfit",
+    forHomeText2: "Stretching",
+    forHomeText3: "Callanetics",
+    anyTime: "Exercise anytime, anywhere",
+    anyDevices: "Available in any devices",
+    startTraining: "Start training",
 
     //exercisesPage
-    musculeGroup: "",
-    chset: "",
-    legs: "",
-    abs: "",
-    hands: "",
-    back: "",
+    musculeGroup: "Musclt groups:",
+    chset: "Chest",
+    legs: "Legs",
+    abs: "Abs",
+    hands: "Arms",
+    back: "Back",
 
     //aboutPage
+    woman: "",
+    EasyFitis: "",
 
 }
 
@@ -112,6 +114,8 @@ const ru = {
     back: "Спина",
 
     //aboutPage
+    woman: "",
+    EasyFitis: "",
 
 }
 
