@@ -22,6 +22,14 @@ const Exercises = () => {
             <div className={cl.Start}>
                 <div className={cl.Choice}>
                     <h2>Группы мышц:</h2>
+                    <div className={cl.Grupp}>
+                        <div className={cl.Circles}>
+                        <div className={cl.Circle}></div>
+                        <div className={cl.Circle}></div>
+                        <div className={cl.Circle}></div>
+                        <div className={cl.Circle}></div>
+                        <div className={cl.Circle}></div>
+                        </div>                       
                     <p1>Грудь
                         <br></br>
                         Ноги
@@ -32,6 +40,7 @@ const Exercises = () => {
                         <br></br>
                         Спина
                     </p1>
+                    </div>
                 </div>
                 <div className={cl.Picture}>
                     <img src={Picture} alt="" />
