@@ -9,6 +9,11 @@
     position: relative;
 }
 
+.image {
+    width: 100%;
+    height: auto;
+}
+
 .woman{
     width: 94%;
     height: 94%;
@@ -38,7 +43,7 @@
 }
 
 .about h2 {
-    padding-top: 300px;
+    padding-top: 200px;
     color: rgb(255, 255, 255);
     font-family: Ubuntu;
     font-size: 64px;
@@ -64,17 +69,15 @@
 }
 
 .rectangle1{
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-color:rgb(254, 254, 254);
     margin-bottom: 150px;
-    border-radius: 15px;
-
-       
+    border-radius: 15px;      
 }
 
 .rectangle2{
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-color:rgb(255, 255, 255);
     margin-bottom: 150px;
@@ -82,54 +85,35 @@
 }
 
 .rectangle3{
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-color:rgb(255, 255, 255);
     margin-bottom: 150px;
     border-radius: 15px;
 }
 
-.textRect1 h1{
-    /* Команда */
-
-position: absolute;
-width: 404px;
-height: 73px;
-left: 283px;
-top: 1998px;
-
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 57px;
-text-align: center;
+.we{
+    width: 190px;
+    height: 190px;
+    background-image: url(../../../images/we.png);
 }
 
-.textRect1 p{
-    /* В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации */
-
-position: absolute;
-width: 348px;
-height: 200px;
-left: 311px;
-top: 2107px;
-
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 300;
-font-size: 35px;
-line-height: 40px;
-text-align: center;
+.chbwoman{
+    width: 190px;
+    height: 190px;
+    background-image: url(../../../images/chbwoman.png);
 }
 
+.users{
+    width: 190px;
+    height: 190px;
+    background-image: url(../../../images/users.png);
+}
 
-
-
-
-
-
-
-
-
-    
+.rectangle4{
+    width: 1200px;
+    height: 600px;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 150px;
+    border-radius: 15px;
+}
