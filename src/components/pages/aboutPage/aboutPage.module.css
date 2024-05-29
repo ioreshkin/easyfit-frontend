@@ -93,31 +93,27 @@
 }
 
 .we{
-    width: 1%;
-    height: 1%;
+    width: 190px;
+    height: 190px;
     background-image: url(../../../images/we.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
 }
 
 .chbwoman{
-    width: 50%;
-    height: 50%;
+    width: 190px;
+    height: 190px;
     background-image: url(../../../images/chbwoman.png);
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center; */
 }
 
 .users{
-    width: 1%;
-    height: 1%;
+    width: 190px;
+    height: 190px;
     background-image: url(../../../images/users.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+}
+
+.rectangle4{
+    width: 1200px;
+    height: 600px;
+    background-color:rgb(255, 255, 255);
+    margin-bottom: 150px;
+    border-radius: 15px;
 }

@@ -1,7 +1,9 @@
 import React from "react";
 import cl from "./aboutPage.module.css";
 import Footer from "../../footer/footer";
-import weImage from "./we.png";
+import weImage from "../../../images/we.png";
+import chbwomanImage from "../../../images/chbwoman.png";
+import usersImage from "../../../images/users.png";
 
 const AboutPage = ({langCode}) => {
     return (
@@ -18,18 +20,17 @@ const AboutPage = ({langCode}) => {
                 <div className={cl.stickRectangle}></div>
                 <div className={cl.rects}>
                 <div className={cl.rectangle1}>
-                    <div className={cl.we.png}>
+                    <img src={weImage} className={cl.we.png}/>
                     <h2>Команда</h2>
                     <p>В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации</p>
-                    </div>
                     </div> 
                 <div className={cl.rectangle2}>
-
+                    <img src={chbwomanImage} className={cl.chbwoman.png}/>
                     <h2>Сборник упражнений</h2>
                     <p>На нашем сайте собрано подовляющие количество упражнений для каждой тренировки и любого вкуса</p>
                     </div>
                 <div className={cl.rectangle3}>
-
+                    <img src={usersImage} className={cl.users.png}/>
                     <h2>Пользователи</h2>
                     <p>Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям</p>
                     </div>
