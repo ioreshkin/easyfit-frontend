@@ -9,11 +9,6 @@
     position: relative;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-}
-
 .woman{
     width: 94%;
     height: 94%;
@@ -68,52 +63,29 @@
     align-items: center; /* Выравнивание элементов по центру по вертикали */
 }
 
-.rectangle1{
+.rectangle{
     width: 400px;
-    height: 600px;
+    height: 500px;
     background-color:rgb(254, 254, 254);
     margin-bottom: 150px;
-    border-radius: 15px;      
+    border-radius: 15px; 
+    padding-top: 20px;  
+    text-align: center;   
 }
 
-.rectangle2{
-    width: 400px;
-    height: 600px;
-    background-color:rgb(255, 255, 255);
-    margin-bottom: 150px;
-    border-radius: 15px;
+.rectangle img{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+
 }
 
-.rectangle3{
-    width: 400px;
-    height: 600px;
-    background-color:rgb(255, 255, 255);
-    margin-bottom: 150px;
-    border-radius: 15px;
-}
-
-.we{
-    width: 190px;
-    height: 190px;
-    background-image: url(../../../images/we.png);
-}
-
-.chbwoman{
-    width: 190px;
-    height: 190px;
-    background-image: url(../../../images/chbwoman.png);
-}
-
-.users{
-    width: 190px;
-    height: 190px;
-    background-image: url(../../../images/users.png);
-}
-
-.rectangle4{
+.rectangleBig{
     width: 1200px;
     height: 600px;
     background-color:rgb(255, 255, 255);
+    margin: auto;
     margin-bottom: 150px;
     border-radius: 15px;
+    
 }
