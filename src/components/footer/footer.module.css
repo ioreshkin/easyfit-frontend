@@ -27,13 +27,13 @@
     height: auto;
 }
 
-.footer__text span{
+.footer__text h3{
     color: white;
     display: flex;
     flex-direction: column;
 }
 
-.footer__contacts span{
+.footer__contacts h3{
     color: white;
     display: flex;
     flex-direction: column;
