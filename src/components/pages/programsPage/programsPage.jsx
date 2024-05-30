@@ -15,7 +15,7 @@ const ProgramsPage = ({langCode}) => {
             <div className ={cl.Program}>
                 <Program/>
             </div>
-            <Footer></Footer>
+            <Footer/>
         </div>    
     )
 }

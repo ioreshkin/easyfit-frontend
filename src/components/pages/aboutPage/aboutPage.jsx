@@ -4,7 +4,6 @@ import Footer from "../../footer/footer";
 import weImage from "../../../images/we.png";
 import chbwomanImage from "../../../images/chbwoman.png";
 import usersImage from "../../../images/users.png";
-import maznyaImage from "../../../images/maznya.png";
 
 const AboutPage = ({langCode}) => {
     return (
@@ -16,7 +15,7 @@ const AboutPage = ({langCode}) => {
             </div>
             <div className={cl.about}></div>
                 <h2>Easy FIT — это</h2>
-                <div className={cl.stickRectangle}></div>
+                <div className={cl.stickRectangle}/>
                 <div className={cl.rects}>
                 <div className={cl.rectangle}>
                     <img src={weImage}/>
