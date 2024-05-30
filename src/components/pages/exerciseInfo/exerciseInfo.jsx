@@ -1,11 +1,11 @@
 import React from "react";
-import cl from "./exercisesSearch.module.css";
+import cl from "./exerciseInfo.module.css";
 import Picture1 from "../../../images/exercises.png"
 import Picture2 from "../../../images/howtodoit2.png";
 import Picture3 from "../../../images/howtodoit.png";
 import Picture4 from "../../../images/video.png";
 
-const ExerciseSearch = () => {
+const ExerciseInfo = () => {
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>
@@ -51,4 +51,4 @@ const ExerciseSearch = () => {
     );
 }
 
-export default ExerciseSearch;
+export default ExerciseInfo;
