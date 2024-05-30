@@ -4,6 +4,7 @@ import Picture1 from "../../../images/exercises.png"
 import Picture2 from "../../../images/howtodoit2.png";
 import Picture3 from "../../../images/howtodoit.png";
 import Picture4 from "../../../images/video.png";
+import Footer from "../../footer/footer";
 
 const ExerciseInfo = () => {
     return (
@@ -47,6 +48,7 @@ const ExerciseInfo = () => {
                     <img src={Picture4} alt="" />
                 </div>                
             </div>
+            <Footer></Footer>
         </div>
     );
 }
