@@ -6,7 +6,7 @@ import Navigation from './components/navigation/navigation';
 import { useState } from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
-import ExercisesPageSearch from './components/pages/exercisesPageSearch/exercisesPageSearch';
+import ExerciseSearch from './components/pages/exercisesSearch/exercisesSearch';
 import AboutPage from './components/pages/aboutPage/aboutPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProgramsPageStart from './components/pages/programsPageStart/programsPageStart';
@@ -23,7 +23,7 @@ function App() {
           <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode}/>}/>
           <Route path="easyfit/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
           <Route path="easyfit/about" element={<AboutPage langCode = {langCode}/>}/>
-          <Route path="easyfit/exercisesSearch" element={<ExercisesPageSearch langCode = {langCode}/>}/>
+          <Route path="easyfit/exercisesSearch" element={<ExerciseSearch langCode = {langCode}/>}/>
           <Route path="easyfit/programs2" element={<ProgramsPageStart langCode = {langCode}/>}/>
         </Routes>
       </BrowserRouter>
