@@ -54,7 +54,7 @@ const MainPage = ({langCode}) => {
                             <img src={desktop} alt="" />
                         </div>
                     </div>
-                    <div className ={cl.stickRectangle}></div>
+                    <div className ={cl.stickRectangle}/>
                     <div className ={cl.startTrainingButton}>
                         <p>{lang.startTraining}</p>
                     </div>
