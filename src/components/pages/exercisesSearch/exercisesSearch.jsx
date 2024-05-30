@@ -1,13 +1,12 @@
 import React from "react";
 import cl from "./exercisesSearch.module.css";
-import Picture1 from "../../images/exercises.png"
-import Picture2 from "../../images/howtodoit2.png";
-import Picture3 from "../../images/howtodoit.png";
-import Picture4 from "../../images/video.png";
+import Picture1 from "../../../images/exercises.png"
+import Picture2 from "../../../images/howtodoit2.png";
+import Picture3 from "../../../images/howtodoit.png";
+import Picture4 from "../../../images/video.png";
 
-const ExercisesSearch = () => {
+const ExerciseSearch = () => {
     return (
-        
         <div className={cl.Page}>
             <div className={cl.Rectangle}>
                 <div className={cl.Start}>
@@ -52,4 +51,4 @@ const ExercisesSearch = () => {
     );
 }
 
-export default ExercisesSearch;
+export default ExerciseSearch;
