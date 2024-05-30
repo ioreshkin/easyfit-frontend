@@ -1,90 +1,78 @@
 .Page{
-    padding-top: 50px;
-    padding-bottom: 200px
+    padding-top: 20px;
+    padding-bottom: 110px;
 }
 
 .Rectangle{
     background-color: #A2D18C;
-    width: 900px;
-    height: 1300px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     border-radius: 15px;
-    padding-bottom: 140px
+    display: block;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.Start{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
 .Picture1 img{
-    margin-top: 30px;
-    margin-left: 30px;
-    width: 200px;
-    height: 200px;
+    width: 160px;
 }
 
-.Rectangle__info p {
-    font-family: Ubuntu;
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-    margin-top: -208px; 
-    font-weight: bold; 
+.Rectangle__info p1 {
+    margin-left: 20px;
 }
 
 .Rectangle__info span {
-    color: black;
-    text-align: center;
     display: flex;
-    justify-content: center; 
     margin-top: 10px; 
-    width: 160px;
-    margin-left: 254px;
-    line-height: 42px;
+    margin-left: 20px;
+    line-height: 30px;
 }
 
-.ExcInf span {
-    color: black;
-    display: flex;
-    margin-top: 20px; 
-    line-height: 30px;
-    width: 840px;
-    margin-left: 30px;
-    text-align:left;
+.ExcInf{
+    margin-top: 20px;
+}
+
+.ExcInf span{
+    line-height: 1.2;
 }
 
 .Head p {
-    font-family: Ubuntu;
-    color: black;
-    font-size: 35px;
     text-align: center;
     display: flex;
     justify-content: center; 
-    margin-top: 50px; 
-    font-weight: bold; 
+    margin-top: 30px; 
 }
 
 .Howtodoit {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-around; 
     align-items: center; 
 }
 
 .Picture2 img{
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .Picture3 img{
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .Picture4 img{
-    margin-top: 50px;
-    max-width: 800px;
+    margin-top: 30px;
+    max-width: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 1500px) {

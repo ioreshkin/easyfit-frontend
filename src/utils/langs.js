@@ -92,7 +92,7 @@ const ru = {
     contacts: "Контакты",
 
     //mainPage
-    train : "Трннируйтесь с нами",
+    train : "Тренируйтесь с нами",
     forGym : "Для зала",
     forGymText1: "Стэп-аэробика",
     forGymText2: "Body Sculp",

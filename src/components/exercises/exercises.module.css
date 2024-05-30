@@ -35,15 +35,33 @@
     display: flex;
     justify-content: center;
     gap: 295px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .Picture img{
     width: 270px;
 }
 
-.Choice p1{
+.Grupp{
+    display: flex;
+}
+
+.Circles{
+    display: block;
+    margin-top: 25px;
+}
+
+.Circle{
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.Grupp p1{
     margin-top: 10px;
+    margin-left: 10px;
     line-height: 1.5;
     display: flex;
     height: 200px;
