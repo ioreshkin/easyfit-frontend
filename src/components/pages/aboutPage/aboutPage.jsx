@@ -10,13 +10,14 @@ const AboutPage = ({langCode}) => {
         <div className={cl.aboutPage}>
             <div className={cl.over}>
                 <div className={cl.woman}>
-                    <h1>Фитнес-платформа для тренировок дома и в зале</h1>
+                    <h4>Фитнес-платформа для тренировок дома и в зале</h4>
                 </div>  
             </div>
-            <div className={cl.about}></div>
+            <div className={cl.about}>
                 <h2>Easy FIT — это</h2>
-                <div className={cl.stickRectangle}/>
-                <div className={cl.rects}>
+            </div>
+            <div className={cl.stickRectangle}/>
+            <div className={cl.rects}>
                 <div className={cl.rectangle}>
                     <img src={weImage}/>
                     <p>Команда</p>
@@ -32,15 +33,15 @@ const AboutPage = ({langCode}) => {
                     <p>Пользователи</p>
                     <span>Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям</span>
                 </div>
-                </div>
-                <div className={cl.rectangleBig}>
-                    <h1>Наша миссия</h1>    
-                    <span>Мы с любовью создаём фитнес-проект, который объединил лучших профессионалов, эффективные практики и методики, направленные на здоровье, красоту и долголетие людей</span>
-                    <p></p>
-                    <span>Наша цель: привлечь к домашнему фитнесу каждую семью страны, сделать людей счастливее, а их здоровье крепче.</span>
-                </div>
-                <Footer/>
             </div>
+            <div className={cl.rectangleBig}>
+                <h4>Наша миссия</h4>    
+                <span><strong>Мы с любовью создаём фитнес-проект</strong>, который объединил лучших профессионалов, эффективные практики и методики, направленные на здоровье, красоту и долголетие людей.</span>
+                <br></br>
+                <span><strong>Наша цель:</strong> привлечь к домашнему фитнесу каждую семью страны, сделать людей счастливее, а их здоровье крепче.</span>
+            </div>
+            <Footer/>
+        </div>
     )
 }
 
