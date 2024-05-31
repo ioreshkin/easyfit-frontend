@@ -1,7 +1,7 @@
 import React from "react";
 import cl from "./helpModal.module.css";
 import userGuide from "../../../files/userGuide.pdf";
-import { getLang } from "../../../utils/langs";
+import getLang from "../../../utils/langs";
 
 const HelpModal = ({active, setActive, langCode}) => { 
     const classes = cl.helpModal + " " + cl.active;
