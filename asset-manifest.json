@@ -1,20 +1,33 @@
 {
   "files": {
-    "main.css": "/easyfit/static/css/main.3d91caf1.css",
-    "main.js": "/easyfit/static/js/main.ddf7564c.js",
+    "main.css": "/easyfit/static/css/main.d40d6fd8.css",
+    "main.js": "/easyfit/static/js/main.1f47b112.js",
     "static/js/453.0b35de44.chunk.js": "/easyfit/static/js/453.0b35de44.chunk.js",
     "static/media/mainPageWoman.png": "/easyfit/static/media/mainPageWoman.01b700c4f053fb988d74.png",
-    "static/media/UserGuide.pdf": "/easyfit/static/media/UserGuide.e196ed1c294a0dbe753e.pdf",
+    "static/media/userGuide.pdf": "/easyfit/static/media/userGuide.e196ed1c294a0dbe753e.pdf",
+    "static/media/womansex.png": "/easyfit/static/media/womansex.91bdacd17744b5593dcd.png",
+    "static/media/coolgirls.png": "/easyfit/static/media/coolgirls.ef65e9fc7d0a0da79ac0.png",
+    "static/media/we.png": "/easyfit/static/media/we.f7f72dbbc29cf575cebf.png",
+    "static/media/howtodoit.png": "/easyfit/static/media/howtodoit.e5389442014d8ef07dc9.png",
+    "static/media/howtodoit2.png": "/easyfit/static/media/howtodoit2.3267e6ee4b652e198a4f.png",
     "static/media/Ubuntu-Regular.ttf": "/easyfit/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/users.png": "/easyfit/static/media/users.2eb1fb6fce630c97599b.png",
     "static/media/Ubuntu-Bold.ttf": "/easyfit/static/media/Ubuntu-Bold.fec2d0f1431a6114a6ce.ttf",
+    "static/media/hand.png": "/easyfit/static/media/hand.6fff1a8d7edbfc72b27e.png",
+    "static/media/exercises.png": "/easyfit/static/media/exercises.bbf5566f63d971c2a52b.png",
+    "static/media/Picture.png": "/easyfit/static/media/Picture.bd39a220e651e7a97aa6.png",
+    "static/media/maznya.png": "/easyfit/static/media/maznya.3695b288eaad4bb4cd93.png",
+    "static/media/chbwoman.png": "/easyfit/static/media/chbwoman.7975e0c6ac3165bb7b62.png",
+    "static/media/video.png": "/easyfit/static/media/video.5c17007c5b97f893bc13.png",
     "static/media/ru.png": "/easyfit/static/media/ru.e314a09bbab1844bfaea.png",
+    "static/media/en.png": "/easyfit/static/media/en.08a677f6c59bf69edf62.png",
     "index.html": "/easyfit/index.html",
-    "main.3d91caf1.css.map": "/easyfit/static/css/main.3d91caf1.css.map",
-    "main.ddf7564c.js.map": "/easyfit/static/js/main.ddf7564c.js.map",
+    "main.d40d6fd8.css.map": "/easyfit/static/css/main.d40d6fd8.css.map",
+    "main.1f47b112.js.map": "/easyfit/static/js/main.1f47b112.js.map",
     "453.0b35de44.chunk.js.map": "/easyfit/static/js/453.0b35de44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d91caf1.css",
-    "static/js/main.ddf7564c.js"
+    "static/css/main.d40d6fd8.css",
+    "static/js/main.1f47b112.js"
   ]
 }
