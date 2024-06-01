@@ -1,0 +1,127 @@
+.Rectangle{
+    background-color:#A2D18C;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    display: flex;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.ExcPicture img{
+    width: 160px;
+}
+
+.Rectangle__info p1{
+    margin-left: 20px;
+}
+
+.Rectangle__info p2{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: regular;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.Link * {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-wid:1500px) {
+    .Search {
+        width: 700px;
+    }
+    
+}
+/* @media (max-width: 1500px) {
+    .Search {
+        width: 700px;
+        height: 45px;
+    }
+
+    .Picturea img {
+        height: 38px;
+    }
+
+    .Search span {
+        font-size: 24px;
+    }
+
+    .Start {
+        margin-top: 80px;
+    }
+
+    .Picture img {
+        width: 450px;
+    }
+
+    .Choice p {
+        font-size: 50px;
+    }
+
+    .Choice p1 {
+        font-size: 45px;
+        height: 450px;
+    }
+
+    .Rectangle {
+        width: 700px;
+    }
+
+    .Picture1 img {
+        width: 180px;
+    }
+
+    .Rectangle__info p2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .Search {
+        width: 600px;
+        height: 40px;
+    }
+
+    .Picturea img {
+        height: 34px;
+    }
+
+    .Search span {
+        font-size: 20px;
+    }
+
+    .Start {
+        margin-top: 60px;
+    }
+
+    .Picture img {
+        width: 400px;
+    }
+
+    .Choice p {
+        font-size: 45px;
+    }
+
+    .Choice p1 {
+        font-size: 40px;
+        height: 400px;
+    }
+
+    .Rectangle {
+        width: 600px;
+    }
+
+    .Picture1 img {
+        width: 150px;
+    }
+
+    .Link {
+        font-size: 28px;
+    }
+} */
