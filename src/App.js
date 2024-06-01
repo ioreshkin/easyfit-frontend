@@ -14,13 +14,14 @@ import ProgramsPageStart from './components/pages/programsPageStart/programsPage
 function App() {
   const [helpActive, setHelpActive] = useState(false);
   const [langCode, setLangCode] = useState("ru");
+  const [category, setCategory] = useState("popular")
   return (
     <div className="App">
       <BrowserRouter>
         <Navigation setActive={setHelpActive} langCode = {langCode} setLangCode={setLangCode}/>
         <Routes>
-          <Route path="easyfit" element={<MainPage langCode = {langCode}/>}/>
-          <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode}/>}/>
+          <Route path="easyfit" element={<MainPage langCode = {langCode} setCategory={setCategory}/>}/>
+          <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory}/>}/>
           <Route path="easyfit/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
           <Route path="easyfit/about" element={<AboutPage langCode = {langCode}/>}/>
           <Route path="easyfit/exerciseInfo" element={<ExerciseInfo langCode = {langCode}/>}/>

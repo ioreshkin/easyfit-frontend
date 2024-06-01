@@ -1,4 +1,4 @@
-.ExercisesPage{
+.exercisesPage{
     background: linear-gradient(to bottom,
     #ffffff 0%,
     #bedfaf 29%,
@@ -10,7 +10,7 @@
     padding-top: 20px;
     padding-bottom: 110px;
 }
-.Search{
+.search{
     background-color:#A2D18C;
     width: 800px;
     height: 50px;
@@ -21,43 +21,91 @@
     display: flex; 
     align-items: center;
 }
-.PictureSearch img{
+
+.search input {
+    background-color: #A2D18C;
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    margin: 0 20px;
+    outline: none;
+}
+
+
+.pictureSearch{
     margin-left: 20px;
-    height: 42px;
+    height: 38px;
+    user-select: none;
+   
 } 
 
-.Search span {
+.search span {
     color: black;
     text-align: center;
     display: flex;
     margin-left: 30px;
     align-items: center;
 }
-.PictureChoose img{
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    position: relative;
+}
+
+.choice div {
+    margin-bottom: 18px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.choice label {
+    vertical-align: text-top;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.choice input {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid black;
+}
+
+.choice input:checked {
+    background-color: #9fee7b;
+}
+
+.pictureChoose img{
     width: 270px;
 }
-.Grupp{
+.group{
     display: flex;
 }
-.Circles{
+.circles{
     display: block;
     margin-top: 25px;
 }
-.Circle{
+.circle{
     width: 12px;
     height: 12px;
     background-color: black;
     border-radius: 50%;
     margin-bottom: 30px;
 }
-.Grupp p1{
+.group p1{
     margin-top: 10px;
     margin-left: 10px;
     line-height: 1.5;
     display: flex;
     height: 200px;
 }
-.Search span {
+.search span {
     color: black;
     text-align: center;
     display: flex;
@@ -65,12 +113,12 @@
     align-items: center;
 }
 
-.Start{
+.start{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     display: flex;
-    justify-content: center;
-    gap: 295px;
+    justify-content: space-between;
     margin-bottom: 10px;
+    width: 760px;
 }

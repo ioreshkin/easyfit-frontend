@@ -6,9 +6,10 @@ import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
 import desktop from "../../../images/desktop.png"; 
 import getLang from "../../../utils/langs";
+import { Link } from "react-router-dom";
 
-const MainPage = ({langCode}) => {
-    const lang = getLang(langCode)
+const MainPage = ({langCode, setCategory}) => {
+    const lang = getLang(langCode);
     return (
         <div className={cl.mainPage}>
             <div className={cl.over}>
@@ -19,9 +20,12 @@ const MainPage = ({langCode}) => {
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
-                    <div className={cl.circle}>
-                        <h2 className={cl.caption}>{lang.forGym}</h2>
-                    </div>
+                    <Link to={"/easyfit/programs"} onClick={() => setCategory("gym")}> 
+                        <div className={cl.circle}>
+                            <h2 className={cl.caption}>{lang.forGym}</h2>
+                        </div>
+                    </Link>
+                    
                     <div className = {cl.columnText}>
                         <h2>{lang.forGymText1}</h2>
                         <h2>{lang.forGymText2}</h2>
@@ -30,9 +34,11 @@ const MainPage = ({langCode}) => {
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
-                    <div className={cl.circle}>
-                        <h2 className={cl.caption}>{lang.forHome}</h2>
-                    </div>
+                    <Link to={"/easyfit/programs"} onClick={() => setCategory("home")}>
+                        <div className={cl.circle}>
+                            <h2 className={cl.caption}>{lang.forHome}</h2>
+                        </div>
+                    </Link>
                     <div className = {cl.columnText}>
                         <h2>{lang.forHomeText1}</h2>
                         <h2>{lang.forHomeText2}</h2>
@@ -55,9 +61,12 @@ const MainPage = ({langCode}) => {
                         </div>
                     </div>
                     <div className ={cl.stickRectangle}/>
-                    <div className ={cl.startTrainingButton}>
-                        <p>{lang.startTraining}</p>
-                    </div>
+                    <Link to={"/easyfit/programs"}>
+                        <div className ={cl.startTrainingButton}>
+                            <p>{lang.startTraining}</p>
+                        </div>
+                    </Link>
+                    
                 </div>
             </div>
             <Footer/>

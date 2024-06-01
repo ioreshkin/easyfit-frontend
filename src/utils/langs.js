@@ -55,8 +55,19 @@ const en = {
     back: "Back",
 
     //aboutPage
-    woman: "",
-    EasyFitis: "",
+    firnessPlatform : "",
+    easyFit: "",
+    team: "",
+    teamText: "",
+    exercisesCollection: "",
+    exercisesCollectionText: "",
+    users: "",
+    usersText: "",
+    ourMission: "",
+    ourMissionBold1: "",
+    ourMissionText1: "",
+    ourMissionBold2: "",
+    ourMissionText2: "",
 
 }
 
@@ -105,6 +116,11 @@ const ru = {
     anyDevices: "Доступно на любых устройствах",
     startTraining: "Начать тренироваться",
 
+    //programsPage
+    popular: "Популярное",
+    home: "Дома",
+    gym: "В зале",
+
     //exercisesPage
     musculeGroup: "Группы мышц:",
     chset: "Грудь",
@@ -114,9 +130,19 @@ const ru = {
     back: "Спина",
 
     //aboutPage
-    woman: "",
-    EasyFitis: "",
-
+    firnessPlatform : "Фитнес-платформа для тренировок дома и в зале",
+    easyFit: "Easy FIT — это",
+    team: "Команда",
+    teamText: "В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации",
+    exercisesCollection: "Сборник упражнений",
+    exercisesCollectionText: "На нашем сайте собрано подовляющие количество упражнений для каждой тренировки и любого вкуса",
+    users: "Пользователи",
+    usersText: "Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям",
+    ourMission: "Наша миссия",
+    ourMissionBold1: "Мы с любовью создаём фитнес-проект",
+    ourMissionText1: ", который объединил лучших профессионалов, эффективные практики и методики, направленные на здоровье, красоту и долголетие людей.",
+    ourMissionBold2: "Наша цель:",
+    ourMissionText2: " привлечь к домашнему фитнесу каждую семью страны, сделать людей счастливее, а их здоровье крепче.",
 }
 
 const getLang = (code) => {

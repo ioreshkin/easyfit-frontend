@@ -7,37 +7,38 @@ import ExcWomanYoga from "../../../images/coolgirls.png";
 
 const ExercisesPage = ({lang}) => {
     return (
-        <div className={cl.ExercisesPage}>
-            <div className={cl.Search}>
-               <div className={cl.PictureSearch}>
-                  <img src={ExcSearch} alt="" />
-                </div>
-                <span>Введите упражнение для поиска</span>
+        <div className={cl.exercisesPage}>
+            <div className={cl.search}>
+                <img src={ExcSearch} alt="" className={cl.pictureSearch} draggable={false}/>
+                <input type="text" name="exercise" placeholder="Введите упражнение для поиска"/>
             </div>
-            <div className={cl.Start}>
-                <div className={cl.Choice}>
+            <div className={cl.start}>
+                <form>
                     <h2>Группы мышц:</h2>
-                    <div className={cl.Grupp}>
-                        <div className={cl.Circles}>
-                        <div className={cl.Circle}></div>
-                        <div className={cl.Circle}></div>
-                        <div className={cl.Circle}></div>
-                        <div className={cl.Circle}></div>
-                        <div className={cl.Circle}></div>
-                        </div>                       
-                    <p1>Грудь
-                        <br></br>
-                        Ноги
-                        <br></br>
-                        Пресс
-                        <br></br>
-                        Руки
-                        <br></br>
-                        Спина
-                    </p1>
+                    <div className={cl.choice}>
+                        <div>
+                            <input type="radio" id="chest" name="group" value="chest"/>
+                            <label htmlFor="chest">Грудь</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="legs" name="group" value="legs"/>
+                            <label htmlFor="legs">Ноги</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="press" name="group" value="press"/>
+                            <label htmlFor="press">Пресс</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="arms" name="group" value="arms"/>
+                            <label htmlFor="arms">Руки</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="back" name="group" value="back"/>
+                            <label htmlFor="back">Спина</label>
+                        </div>
                     </div>
-                </div>
-                <div className={cl.PictureChoose}>
+                </form>
+                <div className={cl.pictureChoose}>
                     <img src={ExcWomanYoga} alt="" />
                 </div>
             </div>  
