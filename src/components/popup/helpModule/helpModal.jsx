@@ -1,6 +1,6 @@
 import React from "react";
 import cl from "./helpModal.module.css";
-import userGuide from "../../../files/UserGuide.pdf"
+import userGuide from "../../../files/userGuide.pdf"
 
 const HelpModal = ({active, setActive}) => { 
     const classes = cl.helpModal + " " + cl.active;
