@@ -4,6 +4,10 @@
     width: 100%;
     padding: 30px;
     box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 130px;
 }
 
 .footer__content{
@@ -11,11 +15,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px; 
 }
 
 .logo {
-    margin-right: 160px;
+    margin-right: 70px;
     cursor: pointer;
 } 
 
@@ -24,15 +27,30 @@
     height: auto;
 }
 
-.footer__text {
+.footer__text h3{
     color: white;
-    font-size: 25px;
-}
-
-.footer__contacts {
-    color: white;
-    font-size:20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.footer__contacts h3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.footer__contacts * {
+    margin-bottom: 4px;
+}
+
+.phone {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 1500px) {
+    .logo {
+        margin-right: 0;
+    }
 }

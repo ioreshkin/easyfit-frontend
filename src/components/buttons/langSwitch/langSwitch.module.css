@@ -9,4 +9,10 @@
 .langSwitch img {
     height: 39px;
     height: 39px;
+    transition: all 0.2s ease-in;
+    user-select: none;
+}
+
+.en {
+    margin-left: 40px
 }

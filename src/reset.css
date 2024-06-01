@@ -43,17 +43,24 @@ table {
 }
 
 body::-webkit-scrollbar {
-    width: 15px; /* Ширина всего элемента навигации */
+    width: 12px; /* Ширина всего элемента навигации */
+	background-color: #3E563E;
 }
 
 body::-webkit-scrollbar-track {
     background: #e0e0e0; /* Цвет дорожки */
+	border-radius: 20px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #3E563E; /* Цвет бегунка */
     opacity: 0.5;
-    border-radius: 20px; /* Округление бегунка */
+    border-radius: 6px; /* Округление бегунка */
+}
+
+.App {
+	position: relative;
+	min-height: 100%;
 }
 
 @font-face {
@@ -66,4 +73,42 @@ body::-webkit-scrollbar-thumb {
     font-family: Ubuntu;
     font-weight: 700;
     src: url("./components/fonts/Ubuntu-Bold.ttf");
+}
+p{
+	font-family:Ubuntu;
+    font-size: 30px;
+	font-weight: bold;
+}
+h1 {
+	font-family: Ubuntu;
+	font-size: 80px;
+	font-weight: bold;
+}
+h2{
+	font-size: 32px;
+    font-family: Ubuntu;
+	font-weight: bold;
+}
+span{
+	font-family:Ubuntu;
+    font-size: 25px;
+}
+h3{
+	font-family:Ubuntu;
+    font-size: 15px;
+	font-weight: normal;
+}
+p1{
+	font-family:Ubuntu;
+    font-size: 28px;
+	font-weight: bold;
+}
+p2{
+	font-family:Ubuntu;
+    font-size: 14px;
+}
+h4{
+	font-family: Ubuntu;
+	font-size: 60px;
+	font-weight: bold;
 }

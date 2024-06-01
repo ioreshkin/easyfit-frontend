@@ -5,37 +5,44 @@ import phone from "../../../images/phone.png";
 import pad from "../../../images/pad.png";
 import laptop from "../../../images/laptop.png";
 import desktop from "../../../images/desktop.png"; 
-const MainPage = () => {
+import getLang from "../../../utils/langs";
+import { Link } from "react-router-dom";
+
+const MainPage = ({langCode, setCategory}) => {
+    const lang = getLang(langCode);
     return (
         <div className={cl.mainPage}>
             <div className={cl.over}>
                 <div className={cl.woman}>
+                    <h1>{lang.train}</h1>
                 </div>
-                <div className = {cl.textOverlay}>
-                        <h1>Тренируйтесь с нами</h1>
-                    </div>
             </div>
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
-                    <div className={cl.circle}>
-                        <p className={cl.caption}>Для зала</p>
-                    </div>
+                    <Link to={"/easyfit/programs"} onClick={() => setCategory("gym")}> 
+                        <div className={cl.circle}>
+                            <h2 className={cl.caption}>{lang.forGym}</h2>
+                        </div>
+                    </Link>
+                    
                     <div className = {cl.columnText}>
-                        <p>Степ-аэробика</p>
-                        <p>Body Sculpt</p>
-                        <p>Body Pump</p>
+                        <h2>{lang.forGymText1}</h2>
+                        <h2>{lang.forGymText2}</h2>
+                        <h2>{lang.forGymText3}</h2>
                     </div>
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
-                    <div className={cl.circle}>
-                        <p className={cl.caption}>Для дома</p>
-                    </div>
+                    <Link to={"/easyfit/programs"} onClick={() => setCategory("home")}>
+                        <div className={cl.circle}>
+                            <h2 className={cl.caption}>{lang.forHome}</h2>
+                        </div>
+                    </Link>
                     <div className = {cl.columnText}>
-                        <p>Кроссфит</p>
-                        <p>Стретчинг</p>
-                        <p>Калланетика</p>
+                        <h2>{lang.forHomeText1}</h2>
+                        <h2>{lang.forHomeText2}</h2>
+                        <h2>{lang.forHomeText3}</h2>
                     </div>
                 </div>
             </div>
@@ -43,8 +50,8 @@ const MainPage = () => {
                 <div className={cl.startTraining}>
                     <div className = {cl.textInRectangle}>
                         <div>
-                        <p>Занимайся в любое время, в любом месте</p>
-                        <p1>Доступно на любых устройствах</p1>
+                        <p>{lang.anyTime}</p>
+                        <span>{lang.anyDevices}</span>
                         </div>
                         <div className={cl.icons}>
                             <img src={phone} alt="" />
@@ -53,16 +60,18 @@ const MainPage = () => {
                             <img src={desktop} alt="" />
                         </div>
                     </div>
-                    <div className ={cl.stickRectangle}></div>
-                    <div className ={cl.startTrainingButton}>
-                        <p>Начать тренироваться</p>
-                    </div>
+                    <div className ={cl.stickRectangle}/>
+                    <Link to={"/easyfit/programs"}>
+                        <div className ={cl.startTrainingButton}>
+                            <p>{lang.startTraining}</p>
+                        </div>
+                    </Link>
+                    
                 </div>
             </div>
             <Footer/>
         </div>
     )
 }
-// эщкере
 
 export default MainPage;

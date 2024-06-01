@@ -1,11 +1,12 @@
 import React from "react";
 import cl from "./langSwitch.module.css";
-import ru from "../../../images/ru.png";
+import getLang from "../../../utils/langs";
 
-const LangSwitch = () => {
+const LangSwitch = ({langCode, setLangCode}) => {
+    const lang = getLang(langCode);
     return (
-        <div className={cl.langSwitch}>
-            <img src={ru} alt="" />
+        <div className={cl.langSwitch} onClick={ () => langCode=="en" ? setLangCode("ru") : setLangCode("en")} >
+            <img src={lang.img} alt="" className={langCode=="en" ? cl.en : ""} />
         </div>
     )
 }
