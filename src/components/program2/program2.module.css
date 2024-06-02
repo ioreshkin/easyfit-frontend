@@ -107,93 +107,46 @@
     justify-content: flex-end;
 }
 
+/* Стили для ширины экрана до 1500 пикселей */
 @media (max-width: 1500px) {
     .Rectangle {
-        width: 800px;
-        height: 1500px;
-    }
-
-    .Picture img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .Rectangle__info p {
-        font-size: 30px;
-    }
-
-    .Rectangle__info p1 {
-        font-size: 25px;
-    }
-
-    .Rectangle_Program p {
-        font-size: 22px;
         width: 700px;
     }
 
-    .Rectangle_Program p1 {
-        font-size: 30px;
+    .Picture img {
+        width: 140px;
+        height: 140px;
     }
 
-    .Rectangle_Program p2, .Rectangle_Program p3, .Rectangle_Program p4 {
+    .Rectangle__info span {
+        margin-left: 15px;
+        line-height: 25px;
+    }
+
+    .Rectangle_Program p2 {
         font-size: 22px;
-    }
-
-    .Picture2 img {
-        height: 300px;
-    }
-
-    .Picture3 img {
-        max-width: 700px;
-    }
-
-    .Picture4 img {
-        max-width: 250px;
+        width: 700px;
     }
 }
 
+/* Стили для ширины экрана до 1220 пикселей */
 @media (max-width: 1220px) {
     .Rectangle {
-        width: 700px;
-        height: 1300px;
-    }
-
-    .Picture img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .Rectangle__info p {
-        font-size: 25px;
-    }
-
-    .Rectangle__info p1 {
-        font-size: 20px;
-    }
-
-    .Rectangle_Program p {
-        font-size: 20px;
         width: 600px;
     }
 
-    .Rectangle_Program p1 {
-        font-size: 28px;
+    .Picture img {
+        width: 120px;
+        height: 120px;
     }
 
-    .Rectangle_Program p2, .Rectangle_Program p3, .Rectangle_Program p4 {
+    .Rectangle__info span {
+        margin-left: 10px;
+        line-height: 20px;
+    }
+
+    .Rectangle_Program p2 {
         font-size: 20px;
-    }
-
-    .Picture2 img {
-        height: 250px;
-    }
-
-    .Picture3 img {
-        max-width: 600px;
-    }
-
-    .Picture4 img {
-        max-width: 200px;
+        width: 600px;
     }
 }
-

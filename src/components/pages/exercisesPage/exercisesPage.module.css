@@ -123,3 +123,26 @@
     margin-bottom: 10px;
     width: 760px;
 }
+
+/* Стили для ширины экрана до 1500 пикселей */
+@media (max-width: 1500px) {
+    .search {
+        width: 700px;
+    }
+    .start {
+        width: 700px;
+    }
+}
+
+/* Стили для ширины экрана до 1220 пикселей */
+@media (max-width: 1220px) {
+    .search {
+        width: 600px;
+    }
+    .start {
+        width: 600px;
+    }
+    .pictureChoose img {
+        width: 220px;
+    }
+}
