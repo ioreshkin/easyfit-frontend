@@ -97,3 +97,29 @@
     display: block;
 }
 
+
+@media (max-width:1620px) {
+    .over {
+        width: 1000px;
+        height: 670px;
+    }
+
+    .woman h4 {
+        padding-top: 160px;
+        width: 580px;
+        user-select: none;
+    }
+}
+
+@media (max-width:1320px) {
+    .over {
+        width: 850px;
+        height: 570px;
+    }
+
+    .woman h4 {
+        padding-top: 140px;
+        width: 550px;
+        user-select: none;
+    }
+}

@@ -148,7 +148,7 @@ a {
 
 @media (max-width: 1500px) {
     .splitSection {
-        width: 1200px;
+        width: 1000px;
     }
 
     .startTraining {
@@ -158,7 +158,7 @@ a {
 
 @media (max-width:1220px) {
     .splitSection {
-        width: 1000px;
+        width: 900px;
     }
 
     .startTraining {
