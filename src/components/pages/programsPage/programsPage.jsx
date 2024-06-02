@@ -9,12 +9,17 @@ const ProgramsPage = ({langCode, category, setCategory}) => {
     return (
         <div className={cl.programsPage}>
             <div className={cl.contentWrapper}>
-                <div className={cl.Choose}>
+                <div className={cl.choose}>
                     <h2 className={category == "popular" ? cl.selected : ""} onClick={() => setCategory("popular")}>{lang.popular}</h2>
                     <h2 className={category == "home" ? cl.selected : ""} onClick={() => setCategory("home")}>{lang.home}</h2> 
                     <h2 className={category == "gym" ? cl.selected : ""} onClick={() => setCategory("gym")}>{lang.gym}</h2>
                 </div>
-                <div className ={cl.Programs}>
+                <div className ={cl.programs}>
+                    <Program/>
+                    <Program/>
+                    <Program/>
+                    <Program/>
+                    <Program/>
                     <Program/>
                 </div>
             </div>

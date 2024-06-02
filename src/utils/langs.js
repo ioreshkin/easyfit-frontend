@@ -47,11 +47,12 @@ const en = {
     startTraining: "Start training",
 
     //exercisesPage
-    musculeGroup: "Musclt groups:",
-    chset: "Chest",
+    exercisesSearch: "",
+    musculeGroup: "Muscle groups:",
+    chest: "Chest",
     legs: "Legs",
     abs: "Abs",
-    hands: "Arms",
+    arms: "Arms",
     back: "Back",
 
     //aboutPage
@@ -122,11 +123,12 @@ const ru = {
     gym: "В зале",
 
     //exercisesPage
+    exercisesSearch: "Введите упражнение для поиска",
     musculeGroup: "Группы мышц:",
-    chset: "Грудь",
+    chest: "Грудь",
     legs: "Ноги",
     abs: "Пресс",
-    hands: "Руки",
+    arms: "Руки",
     back: "Спина",
 
     //aboutPage

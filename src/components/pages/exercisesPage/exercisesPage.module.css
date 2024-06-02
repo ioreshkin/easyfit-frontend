@@ -50,8 +50,9 @@
 .choice {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 15px;
     position: relative;
+    transition: all 0.5s ease-in;
 }
 
 .choice div {
@@ -78,7 +79,7 @@
 }
 
 .choice input:checked {
-    background-color: #9fee7b;
+    background-color: #6bd33b;
 }
 
 .pictureChoose img{
