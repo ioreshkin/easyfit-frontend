@@ -20,12 +20,12 @@ function App() {
       <BrowserRouter>
         <Navigation setActive={setHelpActive} langCode = {langCode} setLangCode={setLangCode}/>
         <Routes>
-          <Route path="easyfit" element={<MainPage langCode = {langCode} setCategory={setCategory}/>}/>
-          <Route path="easyfit/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory}/>}/>
-          <Route path="easyfit/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
-          <Route path="easyfit/about" element={<AboutPage langCode = {langCode}/>}/>
-          <Route path="easyfit/exerciseInfo" element={<ExerciseInfo langCode = {langCode}/>}/>
-          <Route path="easyfit/programs2" element={<ProgramsPageStart langCode = {langCode}/>}/>
+          <Route path="" element={<MainPage langCode = {langCode} setCategory={setCategory}/>}/>
+          <Route path="/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory}/>}/>
+          <Route path="/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
+          <Route path="/about" element={<AboutPage langCode = {langCode}/>}/>
+          <Route path="/exerciseInfo" element={<ExerciseInfo langCode = {langCode}/>}/>
+          <Route path="/programs2" element={<ProgramsPageStart langCode = {langCode}/>}/>
         </Routes>
       </BrowserRouter>
       <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>

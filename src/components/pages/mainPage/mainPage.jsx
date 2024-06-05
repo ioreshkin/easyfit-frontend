@@ -20,7 +20,7 @@ const MainPage = ({langCode, setCategory}) => {
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
-                    <Link to={"/easyfit/programs"} onClick={() => setCategory("gym")}> 
+                    <Link to={"/programs"} onClick={() => setCategory("gym")}> 
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forGym}</h2>
                         </div>
@@ -34,7 +34,7 @@ const MainPage = ({langCode, setCategory}) => {
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
-                    <Link to={"/easyfit/programs"} onClick={() => setCategory("home")}>
+                    <Link to={"/programs"} onClick={() => setCategory("home")}>
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forHome}</h2>
                         </div>
@@ -61,7 +61,7 @@ const MainPage = ({langCode, setCategory}) => {
                         </div>
                     </div>
                     <div className ={cl.stickRectangle}/>
-                    <Link to={"/easyfit/programs"}>
+                    <Link to={"/programs"}>
                         <div className ={cl.startTrainingButton}>
                             <p>{lang.startTraining}</p>
                         </div>
