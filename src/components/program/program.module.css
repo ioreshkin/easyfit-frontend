@@ -46,12 +46,28 @@
     }
 
     .Rectangle__info p2{
+        font-size: 16px;
+    }
+
+    .time p1{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Rectangle {
+        width: 750px;
+    }
+
+    .Rectangle__info h2{
+        font-size: 25px;
+    }
+
+    .Rectangle__info p2{
         font-size: 10px;
     }
 
     .time p1{
         font-size: 22px;
     }
-
-
 }
