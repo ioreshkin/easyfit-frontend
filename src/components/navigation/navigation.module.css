@@ -32,7 +32,10 @@
     font-size: 28px;
     font-weight: 700;
 }
-
+.VK img{
+    width: 40px;
+    height: 40px;
+}
 @media (max-width: 1500px) {
     .links {
         margin-right: 0;
