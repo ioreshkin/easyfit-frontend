@@ -79,7 +79,7 @@
 }
 
 .choice input:checked {
-    background-color: #6bd33b;
+    background-color: #3C5A3C;
 }
 
 .pictureChoose img{
@@ -123,6 +123,10 @@
     margin-bottom: 10px;
     width: 760px;
 }
+::placeholder {
+    color: #3E563E;
+    font-size: 22px;
+  }
 
 /* Стили для ширины экрана до 1500 пикселей */
 @media (max-width: 1500px) {
