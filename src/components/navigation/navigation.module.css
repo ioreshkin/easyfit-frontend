@@ -8,7 +8,8 @@
     position: fixed;
     z-index: 5;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;    
+    border-bottom-right-radius: 25px;
+    align-items: center;  
 }
 
 .logo img{
@@ -36,4 +37,20 @@
     .links {
         margin-right: 0;
     }    
+}
+
+@media (max-width: 1220px) {
+    .logo img{
+        width: 150px;
+        height: 30px;
+        margin-top: 10px;
+    }  
+
+    .links *{
+        font-size: 25px;
+    }
+
+    .links{
+        width: 600px;
+    }
 }
