@@ -57,8 +57,9 @@
         width: 120px;
     }
 
-    .Rectangle__info p1, .Rectangle__info p2 {
+    .Rectangle__info p1{
         margin-left: 10px;
+        font-size: 24px;
     }
 
     .Rectangle__info p2 {

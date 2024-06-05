@@ -117,6 +117,10 @@
     .Rectangle__info span {
         margin-left: 10px;
         line-height: 20px;
+        font-size: 24px;
+    }
+    .ExcInf span{
+        font-size: 24px;
     }
 
     .Picture2 img, .Picture3 img {
