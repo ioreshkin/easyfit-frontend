@@ -35,3 +35,23 @@
     bottom: 10px;
     right: 10px;
 }
+
+@media (max-width: 1220px) {
+    .Rectangle {
+        width: 750px;
+    }
+
+    .Rectangle__info h2{
+        font-size: 25px;
+    }
+
+    .Rectangle__info p2{
+        font-size: 10px;
+    }
+
+    .time p1{
+        font-size: 22px;
+    }
+
+
+}

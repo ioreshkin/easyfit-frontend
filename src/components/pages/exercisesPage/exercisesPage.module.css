@@ -141,9 +141,10 @@
 /* Стили для ширины экрана до 1220 пикселей */
 @media (max-width: 1220px) {
     .search {
-        width: 650px;
+        width: 800px;
     }
     .start {
         width: 600px;
     }
+
 }
