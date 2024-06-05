@@ -20,7 +20,7 @@ const MainPage = ({langCode, setCategory}) => {
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
-                    <Link to={"/programs"} onClick={() => setCategory("gym")}> 
+                    <Link to={"/programs"} onClick={() => {setCategory("gym"); window.scrollTo(0, 0);}}> 
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forGym}</h2>
                         </div>
@@ -34,7 +34,7 @@ const MainPage = ({langCode, setCategory}) => {
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
-                    <Link to={"/programs"} onClick={() => setCategory("home")}>
+                    <Link to={"/programs"} onClick={() => {setCategory("home"); window.scrollTo(0, 0);}}>
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forHome}</h2>
                         </div>
@@ -61,7 +61,7 @@ const MainPage = ({langCode, setCategory}) => {
                         </div>
                     </div>
                     <div className ={cl.stickRectangle}/>
-                    <Link to={"/programs"}>
+                    <Link to={"/programs"} onClick={() => {window.scrollTo(0, 0);}}>
                         <div className ={cl.startTrainingButton}>
                             <p>{lang.startTraining}</p>
                         </div>

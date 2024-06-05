@@ -148,3 +148,13 @@
     }
 
 }
+
+@media (max-width: 1000px) {
+    .search {
+        width: 800px;
+    }
+    .start {
+        width: 600px;
+    }
+
+}
