@@ -4,6 +4,7 @@
     background-color: #C9C8C8;
     border-radius: 50px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .langSwitch img {
