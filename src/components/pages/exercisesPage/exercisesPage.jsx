@@ -6,8 +6,12 @@ import ExcSearch from "../../../images/searchexercieses.png";
 import ExcWomanYoga from "../../../images/coolgirls.png";
 import getLang from "../../../utils/langs";
 
-
 const ExercisesPage = ({langCode}) => {
+    const response = fetch("http://26.79.198.107:3002/exercises").then(response => response.json());
+    response.then(result => result.forEach(element => {
+        console.log(element.name)
+    }));
+    
     const lang = getLang(langCode);
     return (
         <div className={cl.exercisesPage}>
