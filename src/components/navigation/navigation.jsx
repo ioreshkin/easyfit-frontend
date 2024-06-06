@@ -19,7 +19,7 @@ const Navigation = ({setActive, langCode, setLangCode}) => {
                 <Help text={lang.help} setActive={setActive}/>
                 <Link to={"/about"} onClick={() => {window.scrollTo(0, 0);}}><span>{lang.about}</span></Link>
             </div>
-            <Link className ={cl.VK} to="/"> <img src ={vk} alt =""/></Link>
+            <Link className ={cl.VK} to="/about"> <img src ={vk} alt =""/></Link>
             <LangSwitch langCode={langCode} setLangCode={setLangCode}/>
         </div>
     )
