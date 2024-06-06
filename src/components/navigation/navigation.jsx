@@ -5,6 +5,7 @@ import logo from "../../images/blackLogo.png";
 import Help from "../buttons/help/help";
 import { Link } from "react-router-dom";
 import getLang from "../../utils/langs";
+import vk from "../../images/vk 1.png";
 
 const Navigation = ({setActive, langCode, setLangCode}) => {
     const lang = getLang(langCode);
@@ -18,6 +19,7 @@ const Navigation = ({setActive, langCode, setLangCode}) => {
                 <Help text={lang.help} setActive={setActive}/>
                 <Link to={"/about"} onClick={() => {window.scrollTo(0, 0);}}><span>{lang.about}</span></Link>
             </div>
+            <Link className ={cl.VK} to="/about"> <img src ={vk} alt =""/></Link>
             <LangSwitch langCode={langCode} setLangCode={setLangCode}/>
         </div>
     )
