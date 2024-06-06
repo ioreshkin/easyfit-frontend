@@ -12,14 +12,13 @@ const Navigation = ({setActive, langCode, setLangCode}) => {
     return (
         <div className={cl.navigation}>
             <Link className={cl.logo} to="/" onClick={() => {window.scrollTo(0, 0);}}><img src={logo} alt=""/></Link>
-
+            <Link className ={cl.VK} to="/about"> <img src ={vk} alt =""/></Link>
             <div className={cl.links}>
                 <Link to={"/programs"} onClick={() => {window.scrollTo(0, 0);}}><span>{lang.programs}</span></Link>
                 <Link to={"/exercises"} onClick={() => {window.scrollTo(0, 0);}}><span>{lang.exercises}</span></Link>
                 <Help text={lang.help} setActive={setActive}/>
                 <Link to={"/about"} onClick={() => {window.scrollTo(0, 0);}}><span>{lang.about}</span></Link>
             </div>
-            <Link className ={cl.VK} to="/about"> <img src ={vk} alt =""/></Link>
             <LangSwitch langCode={langCode} setLangCode={setLangCode}/>
         </div>
     )
