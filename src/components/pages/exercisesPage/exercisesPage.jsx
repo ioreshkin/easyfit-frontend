@@ -18,9 +18,10 @@ const ExercisesPage = ({langCode, group, setGroup}) => {
             jsonData.map((item) => {
                 let name;
                 let shortDescription;
-                console.log(item.short_description_ru);
+                console.log(item);
                 if (langCode == "ru") {name = item.name_ru; shortDescription = item.short_description_ru}
-                if (langCode == "en") {name = item.name_en; shortDescription = item.short_description_en}
+                else if (langCode == "en") {name = item.name_en; shortDescription = item.short_description_en}
+                
                 dataArray.push(<Exercise name={name} description={shortDescription}/>)
             })
 
