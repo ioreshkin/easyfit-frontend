@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import cl from "./exercisesPage.module.css";
 import Exercise from "../../exercise/exercise";
 import Footer from "../../footer/footer";
@@ -6,12 +6,24 @@ import ExcSearch from "../../../images/searchexercieses.png";
 import ExcWomanYoga from "../../../images/coolgirls.png";
 import getLang from "../../../utils/langs";
 
-const ExercisesPage = ({langCode}) => {
-    const response = fetch("http://26.79.198.107:3002/exercises").then(response => response.json());
-    response.then(result => result.forEach(element => {
-        console.log(element.name)
-    }));
+const ExercisesPage = ({langCode, group, setGroup}) => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch('http://26.79.198.107:3002/exercises/' + group);
+            const jsonData = await response.json();
+            const dataArray = [];
     
+            jsonData.map((item) => {
+                dataArray.push(<Exercise name={item.name} description={item.description}/>)
+            })
+
+            setData(dataArray);
+        };
+        fetchData();
+      }, [data]);
+
     const lang = getLang(langCode);
     return (
         <div className={cl.exercisesPage}>
@@ -23,23 +35,23 @@ const ExercisesPage = ({langCode}) => {
                 <form>
                     <h2>{lang.musculeGroup}</h2>
                     <div className={cl.choice}>
-                        <div>
+                        <div onClick={() => {setGroup("chest"); setData([])}}>
                             <input type="radio" id="chest" name="group" value="chest"/>
                             <label htmlFor="chest">{lang.chest}</label>
                         </div>
-                        <div>
+                        <div onClick={() => {setGroup("legs"); setData([])}}>
                             <input type="radio" id="legs" name="group" value="legs"/>
                             <label htmlFor="legs">{lang.legs}</label>
                         </div>
-                        <div>
+                        <div onClick={() => {setGroup("abs"); setData([])}}>
                             <input type="radio" id="abs" name="group" value="abs"/>
                             <label htmlFor="abs">{lang.abs}</label>
                         </div>
-                        <div>
+                        <div onClick={() => {setGroup("arms"); setData([])}}>
                             <input type="radio" id="arms" name="group" value="arms"/>
                             <label htmlFor="arms">{lang.arms}</label>
                         </div>
-                        <div>
+                        <div onClick={() => {setGroup("back"); setData([])}}>
                             <input type="radio" id="back" name="group" value="back"/>
                             <label htmlFor="back">{lang.back}</label>
                         </div>
@@ -49,10 +61,10 @@ const ExercisesPage = ({langCode}) => {
                     <img src={ExcWomanYoga} alt="" />
                 </div>
             </div>  
-            <Exercise/>
-            <Exercise/>
-            <Exercise/>
-            <Exercise/>
+            <div>
+                {data}
+            </div>
+            
             <Footer/>
         </div>   
     )

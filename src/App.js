@@ -14,7 +14,8 @@ import ProgramsPageStart from './components/pages/programsPageStart/programsPage
 function App() {
   const [helpActive, setHelpActive] = useState(false);
   const [langCode, setLangCode] = useState("ru");
-  const [category, setCategory] = useState("popular")
+  const [category, setCategory] = useState("popular");
+  const [group, setGroup] = useState("");
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,7 +23,7 @@ function App() {
         <Routes>
           <Route path="" element={<MainPage langCode = {langCode} setCategory={setCategory}/>}/>
           <Route path="/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory}/>}/>
-          <Route path="/exercises" element={<ExercisesPage langCode = {langCode}/>}/>
+          <Route path="/exercises" element={<ExercisesPage langCode = {langCode} group={group} setGroup={setGroup}/>}/>
           <Route path="/about" element={<AboutPage langCode = {langCode}/>}/>
           <Route path="/exerciseInfo" element={<ExerciseInfo langCode = {langCode}/>}/>
           <Route path="/programs2" element={<ProgramsPageStart langCode = {langCode}/>}/>
