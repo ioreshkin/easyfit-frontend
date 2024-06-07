@@ -14,7 +14,7 @@ import ProgramsPageStart from './components/pages/programsPageStart/programsPage
 function App() {
   const [helpActive, setHelpActive] = useState(false);
   const [langCode, setLangCode] = useState("ru");
-  const [category, setCategory] = useState("popular");
+  const [category, setCategory] = useState("");
   const [group, setGroup] = useState("");
   return (
     <div className="App">

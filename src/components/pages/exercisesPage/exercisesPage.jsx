@@ -16,7 +16,12 @@ const ExercisesPage = ({langCode, group, setGroup}) => {
             const dataArray = [];
     
             jsonData.map((item) => {
-                dataArray.push(<Exercise name={item.name} description={item.description}/>)
+                let name;
+                let shortDescription;
+                console.log(item.short_description_ru);
+                if (langCode == "ru") {name = item.name_ru; shortDescription = item.short_description_ru}
+                if (langCode == "en") {name = item.name_en; shortDescription = item.short_description_en}
+                dataArray.push(<Exercise name={name} description={shortDescription}/>)
             })
 
             setData(dataArray);
@@ -35,23 +40,23 @@ const ExercisesPage = ({langCode, group, setGroup}) => {
                 <form>
                     <h2>{lang.musculeGroup}</h2>
                     <div className={cl.choice}>
-                        <div onClick={() => {setGroup("chest"); setData([])}}>
+                        <div onClick={() => {setGroup("chest"); setData([data])}}>
                             <input type="radio" id="chest" name="group" value="chest"/>
                             <label htmlFor="chest">{lang.chest}</label>
                         </div>
-                        <div onClick={() => {setGroup("legs"); setData([])}}>
+                        <div onClick={() => {setGroup("legs"); setData([data])}}>
                             <input type="radio" id="legs" name="group" value="legs"/>
                             <label htmlFor="legs">{lang.legs}</label>
                         </div>
-                        <div onClick={() => {setGroup("abs"); setData([])}}>
+                        <div onClick={() => {setGroup("abs"); setData([data])}}>
                             <input type="radio" id="abs" name="group" value="abs"/>
                             <label htmlFor="abs">{lang.abs}</label>
                         </div>
-                        <div onClick={() => {setGroup("arms"); setData([])}}>
+                        <div onClick={() => {setGroup("arms"); setData([data])}}>
                             <input type="radio" id="arms" name="group" value="arms"/>
                             <label htmlFor="arms">{lang.arms}</label>
                         </div>
-                        <div onClick={() => {setGroup("back"); setData([])}}>
+                        <div onClick={() => {setGroup("back"); setData([data])}}>
                             <input type="radio" id="back" name="group" value="back"/>
                             <label htmlFor="back">{lang.back}</label>
                         </div>

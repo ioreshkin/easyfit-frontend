@@ -9,27 +9,31 @@ const ProgramsPage = ({langCode, category, setCategory}) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://127.0.0.1:3002/programs');
+            const response = await fetch('http://127.0.0.1:3002/programs/' + category);
             const jsonData = await response.json();
             const dataArray = [];
     
             jsonData.map((item) => {
-                dataArray.push(<Program name={item.name} description={item.description}/>)
+                let name;
+                let shortDescription;
+                if (langCode == "ru") {name = item.name_ru; shortDescription = item.short_description_ru}
+                if (langCode == "en") {name = item.name_en; shortDescription = item.short_description_en}
+                dataArray.push(<Program name={name} description={shortDescription}/>)
             })
 
             setData(dataArray);
         };
         fetchData();
-      }, []);
+      }, [data]);
 
     const lang = getLang(langCode);
     return (
         <div className={cl.programsPage}>
             <div className={cl.contentWrapper}>
                 <div className={cl.choose}>
-                    <h2 className={category == "popular" ? cl.selected : ""} onClick={() => setCategory("popular")}>{lang.popular}</h2>
-                    <h2 className={category == "home" ? cl.selected : ""} onClick={() => setCategory("home")}>{lang.home}</h2> 
-                    <h2 className={category == "gym" ? cl.selected : ""} onClick={() => setCategory("gym")}>{lang.gym}</h2>
+                    <h2 className={category == "" ? cl.selected : ""} onClick={() => {setCategory(""); setData([data])}}>{lang.popular}</h2>
+                    <h2 className={category == "home" ? cl.selected : ""} onClick={() => {setCategory("home"); setData([data])}}>{lang.home}</h2> 
+                    <h2 className={category == "gym" ? cl.selected : ""} onClick={() => {setCategory("gym"); setData([data])}}>{lang.gym}</h2>
                 </div>
                 <div className ={cl.programs}>
                     {data}
