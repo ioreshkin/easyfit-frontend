@@ -11,7 +11,7 @@ const Exercise = ({name, description}) => {
             </div>
             <div className={cl.Rectangle__info}>
                 <div className={cl.Link}>
-                    <Link to={"/easyfit/exerciseInfo"}><h2>{name}</h2></Link>
+                    <Link to={"/exerciseInfo"}><h2>{name}</h2></Link>
                 </div>
                 <p2>{description}</p2>
             </div>
