@@ -11,7 +11,7 @@ const ExercisesPage = ({langCode, group, setGroup}) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://26.79.198.107:3002/exercises/' + group);
+            const response = await fetch('http://127.0.0.1:3002/exercises/' + group);
             const jsonData = await response.json();
             const dataArray = [];
     

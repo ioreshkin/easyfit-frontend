@@ -9,7 +9,7 @@ const ProgramsPage = ({langCode, category, setCategory}) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://26.79.198.107:3002/programs');
+            const response = await fetch('http://127.0.0.1:3002/programs');
             const jsonData = await response.json();
             const dataArray = [];
     
