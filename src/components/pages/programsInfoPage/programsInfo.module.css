@@ -1,6 +1,13 @@
 .Page{
     padding-top: 20px;
     padding-bottom: 110px;
+    background: linear-gradient(to bottom,
+    #ffffff 0%,
+    #bedfaf 29%,
+    #c2ddba 69%,
+    #ced9df 100%);
+    padding-top: 43px;
+    padding-bottom: 130px;
 }
 
 .Rectangle{

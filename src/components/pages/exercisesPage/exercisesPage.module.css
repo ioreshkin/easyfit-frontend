@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.search div {
+    width: fit-content;
+}
+
 .search input {
     background-color: #A2D18C;
     border: none;

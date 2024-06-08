@@ -6,7 +6,12 @@ import Picture3 from "../../../images/howtodoit.png";
 import Picture4 from "../../../images/video.png";
 import Footer from "../../footer/footer";
 
-const ExerciseInfo = () => {
+const ExerciseInfo = ({info, langCode}) => {
+    let name;
+    let shortDescription;
+    let description;
+    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru}
+    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en}
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>
@@ -15,20 +20,12 @@ const ExerciseInfo = () => {
                         <img src={Picture1} alt="" />
                     </div>
                     <div className={cl.Rectangle__info}>
-                        <p1>Название упражнения</p1>
-                        <span>* описание
-                        <br></br>
-                              * описание
-                        <br></br>
-                              * описание
-                        <br></br>
-                              * описание
-                        </span>
+                        <p1>{name}</p1>
+                        <span>{shortDescription}</span>
                     </div>
                 </div>    
                 <div className = {cl.ExcInf}>
-                    <span>Тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения тут очень длинное описание упражнения
-                        </span>
+                    <span>{description}</span>
                  </div>
                 <div className={cl.Head}>
                     <p>Выполнение упражнения</p>

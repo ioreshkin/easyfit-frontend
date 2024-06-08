@@ -3,7 +3,12 @@ import cl from "./exercise.module.css";
 import Picture from "../../images/exercises.png";
 import { Link } from "react-router-dom";
 
-const Exercise = ({name, description}) => {
+const Exercise = ({info, langCode}) => {
+    let name;
+    let shortDescription;
+    let description;
+    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru}
+    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en}
     return (
         <div className={cl.Rectangle}>
             <div className={cl.ExcPicture}>
@@ -11,9 +16,9 @@ const Exercise = ({name, description}) => {
             </div>
             <div className={cl.Rectangle__info}>
                 <div className={cl.Link}>
-                    <Link to={"/exerciseInfo"}><h2>{name}</h2></Link>
+                    <Link to={"/exercises/" + info.name_en}><h2>{name}</h2></Link>
                 </div>
-                <p2>{description}</p2>
+                <p2>{shortDescription}</p2>
             </div>
         </div>
     );

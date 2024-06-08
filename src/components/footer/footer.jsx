@@ -11,7 +11,7 @@ const Footer = () => {
                     <h3>©2024 La JuliaGoshaVaryaIlya</h3>
                     <h3>Easy FIT</h3>
                 </div>
-                <Link className={cl.logo} to="/easyfit" onClick={() => {window.scrollTo(0, 0);}}><img src={logo} alt=""/></Link>
+                <Link className={cl.logo} to="/" onClick={() => {window.scrollTo(0, 0);}}><img src={logo} alt=""/></Link>
                 <div className={cl.footer__contacts}>
                     <a href="tel:+79024716514" className={cl.phone}>
                         <h3>+7(902)471-65-14</h3>
