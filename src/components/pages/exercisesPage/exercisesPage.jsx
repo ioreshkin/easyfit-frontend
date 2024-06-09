@@ -4,7 +4,7 @@ import Exercise from "../../exercise/exercise";
 import Footer from "../../footer/footer";
 import getLang from "../../../utils/langs";
 
-const ExercisesPage = ({langCode, group, setGroup, data, setData}) => {
+const ExercisesPage = ({langCode, group, setGroup, data}) => {
     const [exercises, setExercises] = useState([]);
     const [search, setSearch] = useState("");
 

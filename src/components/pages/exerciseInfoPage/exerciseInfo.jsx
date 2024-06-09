@@ -26,19 +26,8 @@ const ExerciseInfo = ({info, langCode}) => {
                 <div className={cl.Head}>
                     <p>Выполнение упражнения</p>
                 </div>
-                <div className={cl.Howtodoit}>
-                    <div className={cl.Picture2}>
-                        {/* <img src={Picture2} alt="" /> */}
-                    </div>
-                    <div className={cl.Picture3}>
-                        {/* <img src={Picture3} alt="" /> */}
-                     </div>  
-                 </div>
-                <div className={cl.Head}>
-                    <p>Видео выполнения упражнения</p>
-                </div>
                 <div className={cl.Picture4}>
-                    {/* <img src={Picture4} alt="" /> */}
+                    <img src={info.gif} alt="" />
                 </div>                
             </div>
             <Footer></Footer>
