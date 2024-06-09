@@ -20,7 +20,6 @@ function App() {
   const [exercisesInfo, setExercisesInfo] = useState([]);
   const [programsInfo, setProgramsInfo] = useState([]);
   const [programs, setPrograms] = useState([]);
-  const [search, setSearch] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,29 +33,40 @@ function App() {
       setExercises(jsonData);
     };
   fetchData();
-  }, [exercises]);
+  }, [group]);
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('http://127.0.0.1:3002/programs/' + category);
       const jsonData = await response.json();
       const array = [];
+      const exercisesArray = [];
+      let exercisesIds = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode}/>}/>)
+        if (jsonData.length > 0) {
+          exercisesIds = item.exercises.split(",\s+");
+        }
+        exercises.map((exercise) => {
+          if (exercisesIds.indexOf(exercise.id)) {
+              exercisesArray.push(exercise);
+          }
+        })
+        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
       });
       setProgramsInfo(array);
       setPrograms(jsonData);
     };
   fetchData();
-  }, [programs]);
+  }, [exercises]);
+
   return (
     <div className="App">
       <BrowserRouter>
         <Navigation setActive={setHelpActive} langCode = {langCode} setLangCode={setLangCode}/>
         <Routes>
           <Route path="" element={<MainPage langCode = {langCode} setCategory={setCategory}/>}/>
-          <Route path="/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory} data={programs} setData={setPrograms}/>}/>
-          <Route path="/exercises" element={<ExercisesPage langCode = {langCode} group={group} setGroup={setGroup} data={exercises} setData={setExercises}/>}/>
+          <Route path="/programs" element={<ProgramsPage langCode = {langCode} category = {category} setCategory={setCategory} data={programs}/>}/>
+          <Route path="/exercises" element={<ExercisesPage langCode = {langCode} group={group} setGroup={setGroup} data={exercises}/>}/>
           {exercisesInfo}
           {programsInfo}
           <Route path="/about" element={<AboutPage langCode = {langCode}/>}/>

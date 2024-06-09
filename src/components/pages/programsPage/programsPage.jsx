@@ -4,13 +4,15 @@ import Program from "../../program/program";
 import Footer from "..//..//footer/footer";
 import getLang from "../../../utils/langs";
 
-const ProgramsPage = ({langCode, category, setCategory, data, setData}) => {
+const ProgramsPage = ({langCode, category, setCategory, data}) => {
     const [programs, setPrograms] = useState([]);
-
+    
+    
+   
     useEffect(() => {
-        const dataArray = []
+        const dataArray = [];
         data.map((item) => {
-            dataArray.push(<Program info = {item} langCode={langCode}/>)
+            dataArray.push(<Program info = {item} langCode = {langCode}/>)
         })
         setPrograms(dataArray);
       }, [data]);

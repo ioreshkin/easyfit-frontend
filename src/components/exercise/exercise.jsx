@@ -8,7 +8,6 @@ const Exercise = ({info, langCode}) => {
     let description;
     if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru}
     else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en}
-    console.log(info.preview)
     return (
         <Link to={"/exercises/" + info.name_en.toLowerCase()}>
             <div className={cl.Rectangle}>
