@@ -1,9 +1,5 @@
 import React from "react";
 import cl from "./exerciseInfo.module.css";
-import Picture1 from "../../../images/exercises.png"
-import Picture2 from "../../../images/howtodoit2.png";
-import Picture3 from "../../../images/howtodoit.png";
-import Picture4 from "../../../images/video.png";
 import Footer from "../../footer/footer";
 
 const ExerciseInfo = ({info, langCode}) => {
@@ -17,7 +13,7 @@ const ExerciseInfo = ({info, langCode}) => {
             <div className={cl.Rectangle}>
                 <div className={cl.Start}>
                     <div className={cl.Picture1}>
-                        <img src={Picture1} alt="" />
+                        <img src={info.preview} alt="" />
                     </div>
                     <div className={cl.Rectangle__info}>
                         <p1>{name}</p1>
@@ -32,17 +28,17 @@ const ExerciseInfo = ({info, langCode}) => {
                 </div>
                 <div className={cl.Howtodoit}>
                     <div className={cl.Picture2}>
-                        <img src={Picture2} alt="" />
+                        {/* <img src={Picture2} alt="" /> */}
                     </div>
                     <div className={cl.Picture3}>
-                        <img src={Picture3} alt="" />
+                        {/* <img src={Picture3} alt="" /> */}
                      </div>  
                  </div>
                 <div className={cl.Head}>
                     <p>Видео выполнения упражнения</p>
                 </div>
                 <div className={cl.Picture4}>
-                    <img src={Picture4} alt="" />
+                    {/* <img src={Picture4} alt="" /> */}
                 </div>                
             </div>
             <Footer></Footer>

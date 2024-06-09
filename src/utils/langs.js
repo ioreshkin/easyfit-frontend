@@ -1,5 +1,3 @@
-import ruImg from "../images/ru.png";
-import enImg from "../images/en.png";
 
 const en = {
     //navigation
@@ -7,7 +5,7 @@ const en = {
     exercises: "Exercises",
     help: "Help",
     about: "About us",
-    img: enImg,
+    img: "/images/navigation/en.png",
 
     //help
     faq: "FAQ",
@@ -84,7 +82,7 @@ const ru = {
     exercises: "Упражнения",
     help: "Помощь",
     about: "О нас",
-    img: ruImg,
+    img: "/images/navigation/ru.png",
 
     //help
     faq: "Частые вопросы (FAQ)",

@@ -1,10 +1,6 @@
 import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
-import phone from "../../../images/phone.png";
-import pad from "../../../images/pad.png";
-import laptop from "../../../images/laptop.png";
-import desktop from "../../../images/desktop.png"; 
 import getLang from "../../../utils/langs";
 import { Link } from "react-router-dom";
 
@@ -54,10 +50,10 @@ const MainPage = ({langCode, setCategory}) => {
                         <span>{lang.anyDevices}</span>
                         </div>
                         <div className={cl.icons}>
-                            <img src={phone} alt="" />
-                            <img src={pad} alt="" />
-                            <img src={laptop} alt="" />
-                            <img src={desktop} alt="" />
+                            <img src="images/mainPage/devices/phone.png" alt="" />
+                            <img src="images/mainPage/devices/pad.png" alt="" />
+                            <img src="images/mainPage/devices/laptop.png" alt="" />
+                            <img src="images/mainPage/devices/desktop.png" alt="" />
                         </div>
                     </div>
                     <div className ={cl.stickRectangle}/>

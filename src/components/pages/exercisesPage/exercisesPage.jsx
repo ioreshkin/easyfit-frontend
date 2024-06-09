@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import cl from "./exercisesPage.module.css";
 import Exercise from "../../exercise/exercise";
 import Footer from "../../footer/footer";
-import ExcSearch from "../../../images/searchexercieses.png";
-import ExcWomanYoga from "../../../images/coolgirls.png";
 import getLang from "../../../utils/langs";
 
 const ExercisesPage = ({langCode, group, setGroup, data, setData}) => {
@@ -26,37 +24,37 @@ const ExercisesPage = ({langCode, group, setGroup, data, setData}) => {
     return (
         <div className={cl.exercisesPage}>
             <div className={cl.search}>
-                <img src={ExcSearch} alt="" className={cl.pictureSearch} draggable={false}/>
+                <img src="/images/exercisesPage/searchexercieses.png" alt="" className={cl.pictureSearch} draggable={false}/>
                 <input type="text" name="exercise" placeholder={lang.exercisesSearch} onInput={(event) => setSearch(event.target.value.toLowerCase().trim())}/>
             </div>
             <div className={cl.start}>
                 <form>
                     <h2>{lang.musculeGroup}</h2>
                     <div className={cl.choice}>
-                        <div onClick={() => {setGroup("chest")}}>
-                            <input type="radio" id="chest" name="group" value="chest"/>
-                            <label htmlFor="chest">{lang.chest}</label>
+                        <div onClick={() => {group == "chest" ? setGroup("") : setGroup("chest")}}>
+                            <input type="radio" id="chest" name="group" value="chest" checked={group=="chest" ? true : false}/>
+                            <span htmlFor="chest">{lang.chest}</span>
                         </div>
-                        <div onClick={() => {setGroup("legs")}}>
-                            <input type="radio" id="legs" name="group" value="legs"/>
-                            <label htmlFor="legs">{lang.legs}</label>
+                        <div onClick={() => {group == "legs" ? setGroup("") : setGroup("legs")}}>
+                            <input type="radio" id="legs" name="group" value="legs" checked={group=="legs" ? true : false}/>
+                            <span htmlFor="legs">{lang.legs}</span>
                         </div>
-                        <div onClick={() => {setGroup("abs")}}>
-                            <input type="radio" id="abs" name="group" value="abs"/>
-                            <label htmlFor="abs">{lang.abs}</label>
+                        <div onClick={() => {group == "abs" ? setGroup("") : setGroup("abs")}}>
+                            <input type="radio" id="abs" name="group" value="abs" checked={group=="abs" ? true : false}/>
+                            <span htmlFor="abs">{lang.abs}</span>
                         </div>
-                        <div onClick={() => {setGroup("arms")}}>
-                            <input type="radio" id="arms" name="group" value="arms"/>
-                            <label htmlFor="arms">{lang.arms}</label>
+                        <div onClick={() => {group == "arms" ? setGroup("") : setGroup("arms")}}>
+                            <input type="radio" id="arms" name="group" value="arms" checked={group=="arms" ? true : false}/>
+                            <span htmlFor="arms">{lang.arms}</span>
                         </div>
-                        <div onClick={() => {setGroup("back")}}>
-                            <input type="radio" id="back" name="group" value="back"/>
-                            <label htmlFor="back">{lang.back}</label>
+                        <div onClick={() => {group == "back" ? setGroup("") : setGroup("back")}}>
+                            <input type="radio" id="back" name="group" value="back" checked={group=="back" ? true : false}/>
+                            <span htmlFor="back">{lang.back}</span>
                         </div>
                     </div>
                 </form>
                 <div className={cl.pictureChoose}>
-                    <img src={ExcWomanYoga} alt="" />
+                    <img src="/images/exercisesPage/coolgirls.png" alt="" />
                 </div>
             </div>  
             <div>

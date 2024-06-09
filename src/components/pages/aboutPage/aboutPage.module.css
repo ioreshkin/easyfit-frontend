@@ -10,7 +10,7 @@
 .woman{
     width: 94%;
     height: 94%;
-    background-image: url(../../../images/womansex.png);
+    background-image: url(/public/images/aboutPage/womansex.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -79,7 +79,7 @@
 
 .rectangleBig{
     width: 700px;
-    background-image: url(../../../images/maznya.png);
+    background-image: url(/public/images/aboutPage/maznya.png);
     background-repeat: no-repeat;
     background-position: right;
     background-color: rgb(255, 255, 255);

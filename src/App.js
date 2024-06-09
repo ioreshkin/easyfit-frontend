@@ -28,7 +28,7 @@ function App() {
       const jsonData = await response.json();
       const array = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/exercises/" + item.name_en}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>)
+        array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>)
       });
       setExercisesInfo(array);
       setExercises(jsonData);
@@ -42,7 +42,7 @@ function App() {
       const jsonData = await response.json();
       const array = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/programs/" + item.name_en}  element={<ProgramsInfo info = {item} langCode = {langCode}/>}/>)
+        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode}/>}/>)
       });
       setProgramsInfo(array);
       setPrograms(jsonData);

@@ -22,10 +22,6 @@
     align-items: center;
 }
 
-.search div {
-    width: fit-content;
-}
-
 .search input {
     background-color: #A2D18C;
     border: none;
@@ -57,30 +53,34 @@
     padding-top: 15px;
     position: relative;
     transition: all 0.5s ease-in;
-}
-
-.choice div {
-    margin-bottom: 18px;
-    font-family: Ubuntu;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.choice label {
-    vertical-align: text-top;
-    cursor: pointer;
-    padding-left: 5px;
+    user-select: none;
 }
 
 .choice input {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    margin: 0;
     cursor: pointer;
+    margin: 0;
     appearance: none;
     border: 1px solid black;
 }
+
+.choice div {
+    margin-bottom: 18px;
+    font-family: Ubuntu;
+    font-weight: bold;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.choice span {
+    vertical-align: bottom;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+
 
 .choice input:checked {
     background-color: #3C5A3C;
