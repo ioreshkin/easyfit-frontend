@@ -1,4 +1,4 @@
-import React, { useEffect, useState, componentDidMount } from "react";
+import React, { useEffect, useState} from "react";
 import cl from "./programsInfo.module.css";
 import Footer from "../../footer/footer";
 

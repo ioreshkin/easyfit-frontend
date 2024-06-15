@@ -15,7 +15,7 @@ const ProgramsPage = ({langCode, category, setCategory, data}) => {
             dataArray.push(<Program info = {item} langCode = {langCode}/>)
         })
         setPrograms(dataArray);
-      }, [data]);
+      }, [data, langCode]);
 
     const lang = getLang(langCode);
     return (

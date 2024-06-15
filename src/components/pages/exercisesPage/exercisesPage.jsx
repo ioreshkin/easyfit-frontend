@@ -9,7 +9,7 @@ const ExercisesPage = ({langCode, group, setGroup, data}) => {
     const [search, setSearch] = useState("");
 
     useEffect(() => {
-        const dataArray = []
+        const dataArray = [];
         data.map((item) => {
         if (item.name_ru.toLowerCase().includes(search) || item.description_ru.toLowerCase().includes(search) || 
           item.short_description_ru.toLowerCase().includes(search) || item.name_en.toLowerCase().includes(search) || 
@@ -18,14 +18,14 @@ const ExercisesPage = ({langCode, group, setGroup, data}) => {
         }
         })
         setExercises(dataArray);
-      }, [data]);
+      }, [data, search, langCode]);
 
     const lang = getLang(langCode);
     return (
         <div className={cl.exercisesPage}>
             <div className={cl.search}>
                 <img src="/images/exercisesPage/searchexercieses.png" alt="" className={cl.pictureSearch} draggable={false}/>
-                <input type="text" name="exercise" placeholder={lang.exercisesSearch} onInput={(event) => setSearch(event.target.value.toLowerCase().trim())}/>
+                <input type="text" name="exercise" placeholder={lang.exercisesSearch} onInput={(event) => {setSearch(event.target.value.toLowerCase().trim())}}/>
             </div>
             <div className={cl.start}>
                 <form>
