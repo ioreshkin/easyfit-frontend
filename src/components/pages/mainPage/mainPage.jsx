@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 const MainPage = ({langCode, setCategory}) => {
     const lang = getLang(langCode);
     return (
-        <div className={cl.mainPage}>
+        <>
+            <div className={cl.mainPage}>
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>{lang.train}</h1>
@@ -65,8 +66,11 @@ const MainPage = ({langCode, setCategory}) => {
                     
                 </div>
             </div>
-            <Footer/>
+           
         </div>
+        <Footer/>
+        </>
+        
     )
 }
 

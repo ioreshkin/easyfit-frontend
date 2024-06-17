@@ -6,8 +6,8 @@ const ExerciseInfo = ({info, langCode}) => {
     let name;
     let shortDescription;
     let description;
-    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru}
-    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en}
+    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_on_page_ru; description = info.description_ru}
+    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_on_page_en; description = info.description_en}
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>

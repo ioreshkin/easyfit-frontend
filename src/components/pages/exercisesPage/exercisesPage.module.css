@@ -1,9 +1,5 @@
+
 .exercisesPage{
-    background: linear-gradient(to bottom,
-    #ffffff 0%,
-    #bedfaf 29%,
-    #c2ddba 69%,
-    #ced9df 100%);
     width: 100%;
     height: 100%;
     position: relative;
@@ -131,6 +127,12 @@
     color: #3E563E;
     font-size: 22px;
   }
+
+.exercises a{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}  
 
 /* Стили для ширины экрана до 1500 пикселей */
 @media (max-width: 1500px) {

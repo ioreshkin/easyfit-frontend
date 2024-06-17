@@ -59,8 +59,20 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px; /* Округление бегунка */
 }
 
-.App {
+html{
+	min-height: 100%;
 	position: relative;
+}
+
+body {
+	background: linear-gradient(to bottom,
+    #ffffff 0%,
+    #bedfaf 29%,
+    #c2ddba 69%,
+    #ced9df 100%);
+}
+
+.App {
 	min-height: 100%;
 }
 
