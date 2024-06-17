@@ -163,19 +163,14 @@
 }
 @media (max-width: 1000px){
     .splitSection {
-        width: 800px;
-    }
-
-    .startTraining {
-        width: 800px;
-    }
-}
-@media (max-width: 800px){
-    .splitSection {
         width: 700px;
     }
 
     .startTraining {
-        width: 700px;
+        width: 800px;
+    }
+
+    .rectangle {
+        padding: 20px 0;
     }
 }

@@ -1,11 +1,6 @@
 .Page{
     padding-top: 20px;
     padding-bottom: 110px;
-    background: linear-gradient(to bottom,
-    #ffffff 0%,
-    #bedfaf 29%,
-    #c2ddba 69%,
-    #ced9df 100%);
 }
 
 .Rectangle{
@@ -27,7 +22,7 @@
 }
 
 .Picture1 img{
-    width: 160px;
+    height: 155px;
 }
 
 .Rectangle__info p1 {
@@ -35,6 +30,7 @@
 }
 
 .Rectangle__info span {
+    white-space: pre-wrap;
     display: flex;
     margin-top: 10px; 
     margin-left: 20px;
@@ -80,54 +76,3 @@
     margin-bottom: 40px;
 }
 
-/* Стили для ширины экрана до 1500 пикселей */
-@media (max-width: 1500px) {
-    .Rectangle {
-        width: 700px;
-    }
-
-    .Picture1 img {
-        width: 140px;
-    }
-
-    .Rectangle__info p1 {
-        margin-left: 15px;
-    }
-
-    .Rectangle__info span {
-        margin-left: 15px;
-        line-height: 25px;
-    }
-}
-
-/* Стили для ширины экрана до 1220 пикселей */
-@media (max-width: 1220px) {
-    .Rectangle {
-        width: 600px;
-    }
-
-    .Picture1 img {
-        width: 120px;
-    }
-
-    .Rectangle__info p1 {
-        margin-left: 10px;
-    }
-
-    .Rectangle__info span {
-        margin-left: 10px;
-        line-height: 20px;
-        font-size: 24px;
-    }
-    .ExcInf span{
-        font-size: 24px;
-    }
-
-    .Picture2 img, .Picture3 img {
-        max-width: 250px;
-    }
-
-    .Picture4 img {
-        max-width: 500px;
-    }
-}

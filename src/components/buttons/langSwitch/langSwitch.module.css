@@ -17,3 +17,17 @@
 .en {
     margin-left: 40px
 }
+
+@media (max-width: 890px) {
+    .langSwitch {
+        width: 39px;
+    }
+
+    .langSwitch img {
+        transition: 0;
+    }
+
+    .en {
+        margin-left: 0;
+    }
+}

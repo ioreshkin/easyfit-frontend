@@ -21,43 +21,65 @@ function App() {
   const [programsInfo, setProgramsInfo] = useState([]);
   const [programs, setPrograms] = useState([]);
 
+  const fetchData = async () => {
+    return await fetch('http://127.0.0.1:3002/exercises/' + group).then(async response => {
+      if (!response.ok) {
+        throw new Error('Ошибка сервера: ' + response.status);
+      } else {
+        return response.json();
+      }
+    }).catch(err => {
+        return Promise.reject(err);
+    });
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('http://127.0.0.1:3002/exercises/' + group);
-      const jsonData = await response.json();
+    fetchData().then(jsonData => {
       const array = [];
       jsonData.map((item) => {
         array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>)
       });
       setExercisesInfo(array);
+      console.log(jsonData)
       setExercises(jsonData);
-    };
-  fetchData();
+    }).catch(err => {
+      console.log("Ошибка сервера")
+    })
+    
+        
   }, [group]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('http://127.0.0.1:3002/programs/' + category);
-      const jsonData = await response.json();
-      const array = [];
-      const exercisesArray = [];
-      let exercisesIds = [];
-      jsonData.map((item) => {
-        if (jsonData.length > 0) {
-          exercisesIds = item.exercises.split(",\s+");
-        }
-        exercises.map((exercise) => {
-          if (exercisesIds.indexOf(exercise.id)) {
-              exercisesArray.push(exercise);
-          }
-        })
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
-      });
-      setProgramsInfo(array);
-      setPrograms(jsonData);
-    };
-  fetchData();
-  }, [exercises]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await fetch('http://127.0.0.1:3002/programs/' + category).then(response => {
+  //       if (!response.ok) {
+  //         throw new Error('Ошибка сервера: ' + response.status);
+  //       } else {
+  //           const jsonData = response.json();
+  //           const array = [];
+  //           const exercisesArray = [];
+  //           let exercisesIds = [];
+  //           jsonData.map((item) => {
+  //             if (jsonData.length > 0) {
+  //               exercisesIds = item.exercises.split(",\s+");
+  //             }
+  //             exercises.map((exercise) => {
+  //               if (exercisesIds.indexOf(exercise.id)) {
+  //                   exercisesArray.push(exercise);
+  //               }
+  //             })
+  //             array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
+  //           });
+  //           setProgramsInfo(array);
+  //           setPrograms(jsonData);
+  //       }
+  //     })
+      
+  //   };
+  // fetchData().catch(err => {
+  //   console.log("Ошибка сервера 2");
+  // });
+  // }, [category]);
 
   return (
     <div className="App">
