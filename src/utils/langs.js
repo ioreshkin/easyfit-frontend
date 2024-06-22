@@ -159,3 +159,4 @@ const getLang = (code) => {
 }
 
 export default getLang;
+// i18next

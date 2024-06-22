@@ -21,24 +21,45 @@ function App() {
   const [programsInfo, setProgramsInfo] = useState([]);
   const [programs, setPrograms] = useState([]);
 
+  const fetchExercises = async () => {
+    return await fetch('http://83.220.173.178:3002/exercises/' + group).then(async response => {
+      if (!response.ok) {
+        throw new Error('Ошибка сервера: ' + response.status);
+      } else {
+        return response.json();
+      }
+    }).catch(err => {
+        return Promise.reject(err);
+    });
+  }
+
+  const fetchPrograms = async () => {
+    return await fetch('http://83.220.173.178:3002/programs/' + category).then(async response => {
+      if (!response.ok) {
+        throw new Error('Ошибка сервера: ' + response.status);
+      } else {
+        return response.json();
+      }
+    }).catch(err => {
+        return Promise.reject(err);
+    });
+  }
+
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('http://127.0.0.1:3002/exercises/' + group);
-      const jsonData = await response.json();
+    fetchExercises().then(jsonData => {
       const array = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>)
+        array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>);
       });
       setExercisesInfo(array);
       setExercises(jsonData);
-    };
-  fetchData();
+    }).catch(err => {
+      console.log("Ошибка сервера");
+    });
   }, [group]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch('http://127.0.0.1:3002/programs/' + category);
-      const jsonData = await response.json();
+    fetchPrograms().then(jsonData => {
       const array = [];
       const exercisesArray = [];
       let exercisesIds = [];
@@ -55,9 +76,11 @@ function App() {
       });
       setProgramsInfo(array);
       setPrograms(jsonData);
-    };
-  fetchData();
-  }, [exercises]);
+    }).catch(err => {
+      console.log("Ошибка сервера");
+    });
+           
+    }, [category]);
 
   return (
     <div className="App">
