@@ -94,8 +94,8 @@ function App() {
           {programsInfo}
           <Route path="/about" element={<AboutPage langCode = {langCode}/>}/>
         </Routes>
+        <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>
       </BrowserRouter>
-      <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>
     </div>
   );
 }
