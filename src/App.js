@@ -22,7 +22,7 @@ function App() {
   const [programs, setPrograms] = useState([]);
 
   const fetchExercises = async () => {
-    return await fetch('http://83.220.173.178:3002/exercises/' + group).then(async response => {
+    return await fetch('http://127.0.0.1:3002/exercises/' + group).then(async response => {
       if (!response.ok) {
         throw new Error('Ошибка сервера: ' + response.status);
       } else {
@@ -34,7 +34,7 @@ function App() {
   }
 
   const fetchPrograms = async () => {
-    return await fetch('http://83.220.173.178:3002/programs/' + category).then(async response => {
+    return await fetch('http://127.0.0.1:3002/programs/' + category).then(async response => {
       if (!response.ok) {
         throw new Error('Ошибка сервера: ' + response.status);
       } else {
