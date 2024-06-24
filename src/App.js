@@ -62,16 +62,8 @@ function App() {
     fetchPrograms().then(jsonData => {
       const array = [];
       const exercisesArray = [];
-      let exercisesIds = [];
       jsonData.map((item) => {
-        if (jsonData.length > 0) {
-          exercisesIds = item.exercises.split(",\s+");
-        }
-        exercises.map((exercise) => {
-          if (exercisesIds.indexOf(exercise.id)) {
-              exercisesArray.push(exercise);
-          }
-        })
+        
         array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
       });
       setProgramsInfo(array);
