@@ -48,7 +48,6 @@ const ProgramsInfo = ({info, langCode, data}) => {
                     {/* <div className={cl.Picture2}>
                         <img src={exerciseImg} alt="" />
                     </div> */}
-                    <p>Видео выполнения упражнения</p>
                     <div className={cl.Picture3}>
                         <img src={exerciseGif} alt="" />
                     </div>
