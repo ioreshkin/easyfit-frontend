@@ -42,7 +42,15 @@ const ProgramsInfo = ({info, langCode, data}) => {
                     </div>
                 </div>
                 <div className={cl.Rectangle_Program}>
-                    <span>{description}</span>
+                    <span>
+                        {description.split("\\n").map((line, index) =>(
+                        <React.Fragment key={index}>
+                        {line}
+                        <br/>
+                        <br/>
+                        </React.Fragment> 
+                        ))}
+                    </span>
                     <p2>Тренировка состоит из {exercises.length} упражнений, после выполнения каждого нажмите на кнопку “далее”.</p2>
                     <p>Выполнение упражнения</p>
                     <p3>{currentExercise + 1}.{exerciseName}</p3>

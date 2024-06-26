@@ -17,11 +17,26 @@ const ExerciseInfo = ({info, langCode}) => {
                     </div>
                     <div className={cl.Rectangle__info}>
                         <p1>{name}</p1>
-                        <span>{shortDescription}</span>
+                        <span>
+                            {shortDescription.split('\\n').map((line, index) => (
+                            <React.Fragment key={index}>
+                            {line}
+                            <br/>
+                            </React.Fragment>
+                            ))}
+                        </span>
                     </div>
                 </div>    
                 <div className = {cl.ExcInf}>
-                    <span>{description}</span>
+                    <span>
+                        {description.split("\\n").map((line, index) =>(
+                        <React.Fragment key={index}>
+                        {line}
+                        <br/>
+                        <br/>
+                        </React.Fragment> 
+                        ))}
+                    </span>
                  </div>
                 <div className={cl.Head}>
                     <p>Выполнение упражнения</p>
