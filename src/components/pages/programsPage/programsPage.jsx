@@ -6,9 +6,6 @@ import getLang from "../../../utils/langs";
 
 const ProgramsPage = ({langCode, category, setCategory, data}) => {
     const [programs, setPrograms] = useState([]);
-    
-    
-   
     useEffect(() => {
         const dataArray = [];
         data.map((item) => {

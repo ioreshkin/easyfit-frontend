@@ -62,7 +62,6 @@ function App() {
     fetchPrograms().then(jsonData => {
       const array = [];
       const exercisesArray = [];
-      let exercisesIds = [];
       jsonData.map((item) => {
         if (jsonData.length > 0) {
           exercisesIds = item.exercises.split(",\s+");

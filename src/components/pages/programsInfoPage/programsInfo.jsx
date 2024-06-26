@@ -4,11 +4,13 @@ import Footer from "../../footer/footer";
 
 const ProgramsInfo = ({info, langCode, data}) => {
     const [exercises, setExercises] = useState([]);
-    const [curerentExercise, setCurrentExercise] = useState(0);
+    const [currentExercise, setCurrentExercise] = useState(0);
     const [repeats, setRepeats] = useState(0);
     const [exerciseName, setExerciseName] = useState("");
     const [exerciseImg, setExerciseImg] = useState("");
     const [exerciseGif, setExerciseGif] = useState("");
+    console.log(info);
+    console.log(data);
 
     let name;
     let shortDescription;
@@ -19,13 +21,12 @@ const ProgramsInfo = ({info, langCode, data}) => {
     
     useEffect(() => {
         setExercises(data)
-        console.log("хуй")
         if (exercises.length > 0) {
-            setExerciseImg(exercises[curerentExercise].preview);
-            setExerciseGif(exercises[curerentExercise].gif);
-            if (langCode == "ru") {setExerciseName(exercises[curerentExercise].name_ru)}
+            setExerciseImg(exercises[currentExercise].preview);
+            setExerciseGif(exercises[currentExercise].gif);
+            if (langCode == "ru") {setExerciseName(exercises[currentExercise].name_ru)}
         }
-        setRepeats(info.exercises_repeats.split(",\s+")[curerentExercise]);
+        setRepeats(info.exercises_repeats.split(",")[currentExercise]);
  
     }, [exercises])
     return (
@@ -44,17 +45,13 @@ const ProgramsInfo = ({info, langCode, data}) => {
                     <span>{description}</span>
                     <p2>Тренировка состоит из {exercises.length} упражнений, после выполнения каждого нажмите на кнопку “далее”.</p2>
                     <p>Выполнение упражнения</p>
-                    <p3>{curerentExercise + 1}. {exerciseName}</p3>
+                    <p3>{currentExercise + 1}.{exerciseName}</p3>
                     <p4>{repeats} повторений</p4>
-                    {/* <div className={cl.Picture2}>
-                        <img src={exerciseImg} alt="" />
-                    </div> */}
-                    <p>Видео выполнения упражнения</p>
                     <div className={cl.Picture3}>
                         <img src={exerciseGif} alt="" />
                     </div>
-                    <div className={cl.next} onClick={() => {if(exercises[curerentExercise + 1]) {setCurrentExercise(curerentExercise + 1)}}}>
-                        <img src={"/images/later.png"} alt="" />
+                    <div className={cl.next} onClick={() => {if(exercises[currentExercise + 1]) {setCurrentExercise(currentExercise + 1)}}}>
+                        <img src={"/images/later.png"} alt=""/>
                     </div>
                 </div>
             </div>
