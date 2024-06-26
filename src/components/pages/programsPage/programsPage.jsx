@@ -9,7 +9,7 @@ const ProgramsPage = ({langCode, category, setCategory, data}) => {
     useEffect(() => {
         const dataArray = [];
         data.map((item) => {
-            dataArray.push(<Program info = {item} langCode = {langCode}/>)
+            dataArray.push(<Program key={item.name_ru} info = {item} langCode = {langCode}/>)
         })
         setPrograms(dataArray);
       }, [data, langCode]);

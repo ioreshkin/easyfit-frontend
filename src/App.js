@@ -49,7 +49,7 @@ function App() {
     fetchExercises().then(jsonData => {
       const array = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>);
+        array.push(<Route key={item.length} path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>);
       });
       setExercisesInfo(array);
       setExercises(jsonData);
@@ -74,7 +74,7 @@ function App() {
             includingExercises.push(allExercisesArray[i]);
           }
       }
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={includingExercises}/>}/>)
+        array.push(<Route key={item.length} path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={includingExercises}/>}/>)
         
       });
       setProgramsInfo(array);
