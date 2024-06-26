@@ -1,7 +1,6 @@
 import React from "react";
 import cl from "./exerciseInfo.module.css";
 import Footer from "../../footer/footer";
-import getLang from "../../../utils/langs";
 
 const ExerciseInfo = ({info, langCode}) => {
     let name;
