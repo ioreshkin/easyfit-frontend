@@ -56,7 +56,7 @@ function App() {
     }).catch(err => {
       console.log("Ошибка сервера");
     });
-  }, [group]);
+  }, [group, langCode]);
 
   useEffect(() => {
     fetchPrograms().then(async jsonData => {
@@ -82,7 +82,7 @@ function App() {
     }).catch(err => {
       console.log(err);
     });
-    }, [category]);
+    }, [category, langCode]);
 
   return (
     <div className="App">
