@@ -67,17 +67,14 @@ function App() {
         if (jsonData.length > 0) {
           exercisesIds = item.exercises.split(",\s+");
         }
-        exercises.map((exercise) => {
-          if (exercisesIds.indexOf(exercise.id)) {
-              exercisesArray.push(exercise);
-          }
-        })
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
+        console.log(exercisesArray);
+        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesIds}/>}/>)
+        
       });
       setProgramsInfo(array);
       setPrograms(jsonData);
     }).catch(err => {
-      console.log("Ошибка сервера");
+      console.log(err);
     });
            
     }, [category]);

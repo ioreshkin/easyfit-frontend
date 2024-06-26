@@ -15,10 +15,11 @@ const ProgramsInfo = ({info, langCode, data}) => {
     let description;
     if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru}
     else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en}
-    setTimeout(() => {console.log(data); setExercises(data)}, 1);
 
     
     useEffect(() => {
+        setExercises(data)
+        console.log("хуй")
         if (exercises.length > 0) {
             setExerciseImg(exercises[curerentExercise].preview);
             setExerciseGif(exercises[curerentExercise].gif);
