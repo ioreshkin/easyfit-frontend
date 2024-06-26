@@ -1,13 +1,19 @@
 import React from "react";
 import cl from "./exerciseInfo.module.css";
 import Footer from "../../footer/footer";
+import { useEffect, useState} from 'react';
 
 const ExerciseInfo = ({info, langCode}) => {
-    let name;
-    let shortDescription;
-    let description;
-    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_on_page_ru; description = info.description_ru}
-    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_on_page_en; description = info.description_en}
+    const [name, setName] = useState("");
+    const [shortDescription, setShortDescription] = useState("");
+    const [description, setDescription] = useState("");
+    useEffect(()=> {
+        console.log(123)
+        if (langCode == "ru") 
+            {setName(info.name_ru); setShortDescription(info.short_description_on_page_ru); setDescription(info.description_ru)}
+        else if (langCode == "en") 
+            {setName(info.name_en); setShortDescription(info.short_description_on_page_en); setDescription(info.description_en)}
+    },[langCode])
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>

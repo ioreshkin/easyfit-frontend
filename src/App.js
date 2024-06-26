@@ -3,7 +3,7 @@ import './components/pages/mainPage/mainPage';
 import MainPage from './components/pages/mainPage/mainPage';
 import HelpModal from './components/popup/helpModule/helpModal';
 import Navigation from './components/navigation/navigation';
-import { useEffect, useState, useContext} from 'react';
+import { useEffect, useState} from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
 import ExerciseInfo from './components/pages/exerciseInfoPage/exerciseInfo';
