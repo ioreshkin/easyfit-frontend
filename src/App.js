@@ -3,7 +3,7 @@ import './components/pages/mainPage/mainPage';
 import MainPage from './components/pages/mainPage/mainPage';
 import HelpModal from './components/popup/helpModule/helpModal';
 import Navigation from './components/navigation/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext} from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
 import ExerciseInfo from './components/pages/exerciseInfoPage/exerciseInfo';
@@ -59,15 +59,22 @@ function App() {
   }, [group]);
 
   useEffect(() => {
-    fetchPrograms().then(jsonData => {
+    fetchPrograms().then(async jsonData => {
       const array = [];
-      const exercisesArray = [];
-      jsonData.map((item) => {
-        if (jsonData.length > 0) {
-          exercisesIds = item.exercises.split(",\s+");
-        }
-        console.log(exercisesArray);
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesIds}/>}/>)
+      const allExercisesArray = [];
+      await fetchExercises().then( exrc =>  {
+        exrc.map(item => {
+           allExercisesArray.push(item);
+        })
+      })
+      jsonData.map(async (item) => {
+        const includingExercises = [];
+        for (let i = 0; i < allExercisesArray.length; i++) {
+          if (item.exercises.includes(allExercisesArray[i].id)) {
+            includingExercises.push(allExercisesArray[i]);
+          }
+      }
+        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={includingExercises}/>}/>)
         
       });
       setProgramsInfo(array);
@@ -75,7 +82,6 @@ function App() {
     }).catch(err => {
       console.log(err);
     });
-           
     }, [category]);
 
   return (

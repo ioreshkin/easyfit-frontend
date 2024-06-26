@@ -9,8 +9,6 @@ const ProgramsInfo = ({info, langCode, data}) => {
     const [exerciseName, setExerciseName] = useState("");
     const [exerciseImg, setExerciseImg] = useState("");
     const [exerciseGif, setExerciseGif] = useState("");
-    console.log(info);
-    console.log(data);
 
     let name;
     let shortDescription;
@@ -28,7 +26,7 @@ const ProgramsInfo = ({info, langCode, data}) => {
         }
         setRepeats(info.exercises_repeats.split(",")[currentExercise]);
  
-    }, [exercises])
+    }, [exercises, currentExercise])
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>

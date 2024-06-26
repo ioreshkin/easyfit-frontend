@@ -8,7 +8,6 @@ const ExerciseInfo = ({info, langCode}) => {
     let description;
     if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_on_page_ru; description = info.description_ru}
     else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_on_page_en; description = info.description_en}
-    console.log(shortDescription.split("\\n"))
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>
