@@ -7,7 +7,6 @@ const ProgramsInfo = ({info, langCode, data}) => {
     const [currentExercise, setCurrentExercise] = useState(0);
     const [repeats, setRepeats] = useState(0);
     const [exerciseName, setExerciseName] = useState("");
-    const [exerciseImg, setExerciseImg] = useState("");
     const [exerciseGif, setExerciseGif] = useState("");
 
     let name;
@@ -20,13 +19,17 @@ const ProgramsInfo = ({info, langCode, data}) => {
     useEffect(() => {
         setExercises(data)
         if (exercises.length > 0) {
-            setExerciseImg(exercises[currentExercise].preview);
+
             setExerciseGif(exercises[currentExercise].gif);
-            if (langCode == "ru") {setExerciseName(exercises[currentExercise].name_ru)}
+            if (langCode == "ru") {
+                setExerciseName(exercises[currentExercise].name_ru)
+            } else {
+                setExerciseName(exercises[currentExercise].name_en)
+            }
         }
         setRepeats(info.exercises_repeats.split(",")[currentExercise]);
  
-    }, [exercises, currentExercise])
+    }, [exercises, currentExercise, langCode])
     return (
         <div className={cl.Page}>
             <div className={cl.Rectangle}>
@@ -42,11 +45,11 @@ const ProgramsInfo = ({info, langCode, data}) => {
                 <div className={cl.Rectangle_Program}>
                     <span>
                         {description.split("\\n").map((line, index) =>(
-                        <React.Fragment key={index}>
+                        <>
                         {line}
                         <br/>
                         <br/>
-                        </React.Fragment> 
+                        </> 
                         ))}
                     </span>
                     <p2>Тренировка состоит из {exercises.length} упражнений, после выполнения каждого нажмите на кнопку “далее”.</p2>

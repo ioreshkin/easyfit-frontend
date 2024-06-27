@@ -19,10 +19,10 @@ const ExerciseInfo = ({info, langCode}) => {
                         <p1>{name}</p1>
                         <span>
                             {shortDescription.split('\\n').map((line, index) => (
-                            <React.Fragment key={index}>
+                            <>
                             {line}
                             <br/>
-                            </React.Fragment>
+                            </>
                             ))}
                         </span>
                     </div>
@@ -30,11 +30,11 @@ const ExerciseInfo = ({info, langCode}) => {
                 <div className = {cl.ExcInf}>
                     <span>
                         {description.split("\\n").map((line, index) =>(
-                        <React.Fragment key={index}>
+                        <>
                         {line}
                         <br/>
                         <br/>
-                        </React.Fragment> 
+                        </> 
                         ))}
                     </span>
                  </div>
