@@ -54,7 +54,7 @@ const ProgramsInfo = ({info, langCode, data}) => {
                     </span>
                     <p2>Тренировка состоит из {exercises.length} упражнений, после выполнения каждого нажмите на кнопку “далее”.</p2>
                     <p>Выполнение упражнения</p>
-                    <p3>{currentExercise + 1}.{exerciseName}</p3>
+                    <p3>{currentExercise + 1}. {exerciseName}</p3>
                     <p4>{repeats} повторений</p4>
                     <div className={cl.Picture3}>
                         <img src={exerciseGif} alt="" />
