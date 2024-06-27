@@ -5,6 +5,16 @@
     position: relative;
     padding-top: 20px;
     padding-bottom: 110px;
+        background: linear-gradient(to bottom,
+            #ffffff 0%,
+            #e8f5e2 4%,
+            #bedfaf 20%,
+            #aed8b2 36%,
+            #c2ddba 52%,
+            #b6d3c8 68%,
+            #ced9df 84%,
+            #d7e3e5 100%);
+    
 }
 .search{
     background-color:#A2D18C;
