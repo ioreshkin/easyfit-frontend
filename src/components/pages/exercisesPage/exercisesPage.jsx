@@ -15,7 +15,7 @@ const ExercisesPage = ({langCode, group, setGroup, data}) => {
         if (item.name_ru.toLowerCase().includes(search) || item.description_ru.toLowerCase().includes(search) || 
           item.short_description_off_page_ru.toLowerCase().includes(search) || item.name_en.toLowerCase().includes(search) || 
           item.description_en.toLowerCase().includes(search) || item.short_description_off_page_en.toLowerCase().includes(search)) {
-            dataArray.push(<Exercise info = {item} langCode={langCode}/>)
+            dataArray.push(<Exercise key={item.id} info = {item} langCode={langCode}/>)
         }
         })
         setExercises(dataArray);

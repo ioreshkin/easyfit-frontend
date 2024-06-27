@@ -13,15 +13,30 @@ const ExerciseInfo = ({info, langCode}) => {
             <div className={cl.Rectangle}>
                 <div className={cl.Start}>
                     <div className={cl.Picture1}>
-                        <img src={info.preview} alt="" />
+                        <img src={info.preview} alt=""/>
                     </div>
                     <div className={cl.Rectangle__info}>
                         <p1>{name}</p1>
-                        <span>{shortDescription}</span>
+                        <span>
+                            {shortDescription.split('\\n').map((line, index) => (
+                            <>
+                            {line}
+                            <br/>
+                            </>
+                            ))}
+                        </span>
                     </div>
                 </div>    
                 <div className = {cl.ExcInf}>
-                    <span>{description}</span>
+                    <span>
+                        {description.split("\\n").map((line, index) =>(
+                        <>
+                        {line}
+                        <br/>
+                        <br/>
+                        </> 
+                        ))}
+                    </span>
                  </div>
                 <div className={cl.Head}>
                     <p>Выполнение упражнения</p>

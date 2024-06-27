@@ -3,7 +3,7 @@ import './components/pages/mainPage/mainPage';
 import MainPage from './components/pages/mainPage/mainPage';
 import HelpModal from './components/popup/helpModule/helpModal';
 import Navigation from './components/navigation/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState} from 'react';
 import ProgramsPage from './components/pages/programsPage/programsPage';
 import ExercisesPage from './components/pages/exercisesPage/exercisesPage';
 import ExerciseInfo from './components/pages/exerciseInfoPage/exerciseInfo';
@@ -22,7 +22,7 @@ function App() {
   const [programs, setPrograms] = useState([]);
 
   const fetchExercises = async () => {
-    return await fetch('http://83.220.173.178:3002/exercises/' + group).then(async response => {
+    return await fetch('http://127.0.0.1:3002/exercises/' + group).then(async response => {
       if (!response.ok) {
         throw new Error('Ошибка сервера: ' + response.status);
       } else {
@@ -34,7 +34,7 @@ function App() {
   }
 
   const fetchPrograms = async () => {
-    return await fetch('http://83.220.173.178:3002/programs/' + category).then(async response => {
+    return await fetch('http://127.0.0.1:3002/programs/' + category).then(async response => {
       if (!response.ok) {
         throw new Error('Ошибка сервера: ' + response.status);
       } else {
@@ -49,38 +49,40 @@ function App() {
     fetchExercises().then(jsonData => {
       const array = [];
       jsonData.map((item) => {
-        array.push(<Route path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>);
+        array.push(<Route key={item.length} path={"/exercises/" + item.name_en.toLowerCase()}  element={<ExerciseInfo info = {item} langCode = {langCode}/>}/>);
       });
       setExercisesInfo(array);
       setExercises(jsonData);
     }).catch(err => {
       console.log("Ошибка сервера");
     });
-  }, [group]);
+  }, [group, langCode]);
 
   useEffect(() => {
-    fetchPrograms().then(jsonData => {
+    fetchPrograms().then(async jsonData => {
       const array = [];
-      const exercisesArray = [];
-      let exercisesIds = [];
-      jsonData.map((item) => {
-        if (jsonData.length > 0) {
-          exercisesIds = item.exercises.split(",\s+");
-        }
-        exercises.map((exercise) => {
-          if (exercisesIds.indexOf(exercise.id)) {
-              exercisesArray.push(exercise);
-          }
+      const allExercisesArray = [];
+      await fetchExercises().then( exrc =>  {
+        exrc.map(item => {
+           allExercisesArray.push(item);
         })
-        array.push(<Route path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={exercisesArray}/>}/>)
+      })
+      jsonData.map(async (item) => {
+        const includingExercises = [];
+        for (let i = 0; i < allExercisesArray.length; i++) {
+          if (item.exercises.includes(allExercisesArray[i].id)) {
+            includingExercises.push(allExercisesArray[i]);
+          }
+      }
+        array.push(<Route key={item.length} path={"/programs/" + item.name_en.toLowerCase()}  element={<ProgramsInfo info = {item} langCode = {langCode} data={includingExercises}/>}/>)
+        
       });
       setProgramsInfo(array);
       setPrograms(jsonData);
     }).catch(err => {
-      console.log("Ошибка сервера");
+      console.log(err);
     });
-           
-    }, [category]);
+    }, [category, langCode]);
 
   return (
     <div className="App">
@@ -94,8 +96,8 @@ function App() {
           {programsInfo}
           <Route path="/about" element={<AboutPage langCode = {langCode}/>}/>
         </Routes>
+        <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>
       </BrowserRouter>
-      <HelpModal active={helpActive} setActive={setHelpActive} langCode = {langCode}/>
     </div>
   );
 }
