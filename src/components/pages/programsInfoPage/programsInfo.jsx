@@ -1,6 +1,7 @@
 import React, { useEffect, useState} from "react";
 import cl from "./programsInfo.module.css";
 import Footer from "../../footer/footer";
+import getLang from "../../../utils/langs";
 
 const ProgramsInfo = ({info, langCode, data}) => {
     const [exercises, setExercises] = useState([]);
@@ -9,6 +10,7 @@ const ProgramsInfo = ({info, langCode, data}) => {
     const [exerciseName, setExerciseName] = useState("");
     const [exerciseGif, setExerciseGif] = useState("");
 
+    const lang = getLang(langCode)
     let name;
     let shortDescription;
     let description;
@@ -52,10 +54,10 @@ const ProgramsInfo = ({info, langCode, data}) => {
                         </> 
                         ))}
                     </span>
-                    <p2>Тренировка состоит из {exercises.length} упражнений, после выполнения каждого нажмите на кнопку “далее”.</p2>
-                    <p>Выполнение упражнения</p>
+                    <p2>{lang.consists} {exercises.length} {lang.pressNext}.</p2>
+                    <p>{lang.execution}</p>
                     <p3>{currentExercise + 1}. {exerciseName}</p3>
-                    <p4>{repeats} повторений</p4>
+                    <p4>{repeats} {lang.repeats}</p4>
                     <div className={cl.Picture3}>
                         <img src={exerciseGif} alt="" />
                     </div>

@@ -50,6 +50,11 @@ const en = {
     gym: "At the gym",
     time: "min",
 
+    //programsInfo
+    consists: "The training consists of",
+    pressNext: "exercises, after completing each exercise, click on the “Next” button",
+    repeats: "repeats",
+
     //exercisesPage
     exercisesSearch: "Enter the search exercise",
     musculeGroup: "Muscle groups:",
@@ -58,6 +63,9 @@ const en = {
     abs: "Abs",
     arms: "Arms",
     back: "Back",
+
+    //exerciseInfo
+    execution: "Performing the exercise",
 
     //aboutPage
     firnessPlatform : "A fitness platform for training at home and in the gym",
@@ -126,6 +134,11 @@ const ru = {
     home: "Дома",
     gym: "В зале",
 
+    //programsInfo
+    consists: "Тренировка состоит из",
+    pressNext: "упражнений, после выполнения каждого нажмите на кнопку “далее”",
+    repeats: "повторений",
+
     //exercisesPage
     exercisesSearch: "Введите упражнение для поиска",
     musculeGroup: "Группы мышц:",
@@ -134,6 +147,9 @@ const ru = {
     abs: "Пресс",
     arms: "Руки",
     back: "Спина",
+
+    //exerciseInfo
+    execution: "Выполнение упражнения",
 
     //aboutPage
     firnessPlatform : "Фитнес-платформа для тренировок дома и в зале",

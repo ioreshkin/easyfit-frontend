@@ -1,11 +1,13 @@
 import React from "react";
 import cl from "./exerciseInfo.module.css";
 import Footer from "../../footer/footer";
+import getLang from "../../../utils/langs";
 
 const ExerciseInfo = ({info, langCode}) => {
     let name;
     let shortDescription;
     let description;
+    const lang = getLang(langCode)
     if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_on_page_ru; description = info.description_ru}
     else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_on_page_en; description = info.description_en}
     return (
@@ -39,7 +41,7 @@ const ExerciseInfo = ({info, langCode}) => {
                     </span>
                  </div>
                 <div className={cl.Head}>
-                    <p>Выполнение упражнения</p>
+                    <p>{lang.execution}</p>
                 </div>
                 <div className={cl.Picture4}>
                     <img src={info.gif} alt="" />
