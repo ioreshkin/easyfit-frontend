@@ -1,0 +1,157 @@
+.Page{
+    padding-top: 20px;
+    padding-bottom: 110px;
+    background: linear-gradient(to bottom,
+    #ffffff 0%,
+    #bedfaf 29%,
+    #c2ddba 69%,
+    #ced9df 100%);
+    padding-top: 43px;
+    padding-bottom: 130px;
+}
+
+.Rectangle{
+    background-color: #A2D18C;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    display: block;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.Rectangle_info{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.Rectangle__info p1{
+    margin-left: 20px;
+}
+
+.Picture img{
+    width: 160px;
+    height: 160px;
+}
+
+.Rectangle__info span{
+    display: flex;
+    margin-top: 10px; 
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.Rectangle_Program{
+    margin-top: 20px;
+    overflow-wrap: break-word;
+}
+
+.Rectangle_Program span {
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.Rectangle_Program p {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px;  
+}
+
+.Rectangle_Program p2 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.Rectangle_Program p3 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    font-weight: bold;
+    justify-content: center; 
+}
+
+.Rectangle_Program p4 {
+    font-family: Ubuntu;
+    font-size: 25px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center; 
+}
+
+.Picture2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Picture2 img {
+    margin-top: 30px;
+    max-width: 600px;
+}
+
+.Picture3 img{
+    margin-top: 30px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.next {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next img{
+    margin-top: 30px;
+    max-width: 150px;
+}
+
+/* Стили для ширины экрана до 1500 пикселей */
+@media (max-width: 1500px) {
+    .Rectangle {
+        width: 700px;
+    }
+
+    .Picture img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .Rectangle__info span {
+        margin-left: 15px;
+        line-height: 25px;
+    }
+
+    .Rectangle_Program p2 {
+        font-size: 22px;
+    }
+}
+
+/* Стили для ширины экрана до 1220 пикселей */
+@media (max-width: 1220px) {
+    .Rectangle {
+        width: 600px;
+    }
+
+    .Picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Rectangle__info span {
+        margin-left: 10px;
+        line-height: 20px;
+    }
+
+    .Rectangle_Program p2 {
+        font-size: 20px;
+    }
+}

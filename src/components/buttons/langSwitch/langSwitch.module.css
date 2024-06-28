@@ -4,6 +4,7 @@
     background-color: #C9C8C8;
     border-radius: 50px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .langSwitch img {
@@ -15,4 +16,18 @@
 
 .en {
     margin-left: 40px
+}
+
+@media (max-width: 890px) {
+    .langSwitch {
+        width: 39px;
+    }
+
+    .langSwitch img {
+        transition: 0;
+    }
+
+    .en {
+        margin-left: 0;
+    }
 }

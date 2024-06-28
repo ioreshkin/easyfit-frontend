@@ -1,0 +1,78 @@
+.Page{
+    padding-top: 20px;
+    padding-bottom: 110px;
+}
+
+.Rectangle{
+    background-color: #A2D18C;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    display: block;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.Start{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.Picture1 img{
+    height: 155px;
+}
+
+.Rectangle__info p1 {
+    margin-left: 20px;
+}
+
+.Rectangle__info span {
+    white-space: pre-wrap;
+    display: flex;
+    margin-top: 10px; 
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.ExcInf{
+    margin-top: 20px;
+}
+
+.ExcInf span{
+    line-height: 1.2;
+}
+
+.Head p {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    margin-top: 30px; 
+}
+
+.Howtodoit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.Picture2 img{
+    max-width: 300px;
+}
+
+.Picture3 img{
+    max-width: 300px;
+}
+
+.Picture4 img{
+    margin-top: 30px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+

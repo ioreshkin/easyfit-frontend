@@ -1,8 +1,3 @@
-.Page{
-    padding-top: 20px;
-    padding-bottom: 200px;
-}
-
 .Rectangle{
     background-color:#A2D18C;
     width: 750px;
@@ -10,6 +5,7 @@
     display: flex;
     padding: 25px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .Picture img{
@@ -18,10 +14,14 @@
 
 .Rectangle__info {
     margin-left: 20px;
+    width: 500px;
+    color: black;
 }
 
 .Rectangle__info p2{
     line-height: 1.3;
+    word-wrap: break-word;
+    
 }
 
 .Link {
@@ -29,13 +29,50 @@
 }
 
 .Link * {
-    color: black;
+    /* color: black; */
     text-decoration: none;
     cursor: pointer;
 }
 
 .time {
     position: absolute;
+    color: black;
     bottom: 10px;
     right: 10px;
+}
+
+@media (max-width: 1220px) {
+    .Rectangle {
+        width: 750px;
+    }
+
+    .Rectangle__info h2{
+        font-size: 25px;
+    }
+
+    .Rectangle__info p2{
+        font-size: 16px;
+    }
+
+    .time p1{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Rectangle {
+        width: 750px;
+    }
+
+    .Rectangle__info h2{
+        font-size: 25px;
+    }
+
+    .Rectangle__info p2{
+        font-size: 10px;
+    }
+
+    .time p1{
+        font-size: 22px;
+    }
 }

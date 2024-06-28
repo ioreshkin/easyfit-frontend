@@ -16,6 +16,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -58,21 +59,33 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px; /* Округление бегунка */
 }
 
-.App {
+html{
+	min-height: 100%;
 	position: relative;
+}
+
+body {
+	background: linear-gradient(to bottom,
+    #ffffff 0%,
+    #bedfaf 29%,
+    #c2ddba 69%,
+    #ced9df 100%);
+}
+
+.App {
 	min-height: 100%;
 }
 
 @font-face {
     font-family: Ubuntu;
     font-weight: 400;
-    src: url("./components/fonts/Ubuntu-Regular.ttf");
+    src: url("../public/fonts/Ubuntu-Regular.ttf");
 }
 
 @font-face {
     font-family: Ubuntu;
     font-weight: 700;
-    src: url("./components/fonts/Ubuntu-Bold.ttf");
+    src: url("../public/fonts/Ubuntu-Bold.ttf");
 }
 p{
 	font-family:Ubuntu;
@@ -91,7 +104,7 @@ h2{
 }
 span{
 	font-family:Ubuntu;
-    font-size: 25px;
+    font-size: 20px;
 }
 h3{
 	font-family:Ubuntu;
@@ -100,12 +113,12 @@ h3{
 }
 p1{
 	font-family:Ubuntu;
-    font-size: 28px;
+    font-size: 26px;
 	font-weight: bold;
 }
 p2{
 	font-family:Ubuntu;
-    font-size: 14px;
+    font-size: 16px;
 }
 h4{
 	font-family: Ubuntu;

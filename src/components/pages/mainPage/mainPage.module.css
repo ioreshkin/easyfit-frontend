@@ -4,9 +4,6 @@
     #bedfaf 29%,
     #c2ddba 69%,
     #ced9df 100%);
-    width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .over {
@@ -20,7 +17,7 @@
     position: absolute;
     width: 100%;
     height: 800px;
-    background-image: url(../../../images/mainPageWoman.png);
+    background-image: url(/public/images/mainPage/mainPageWoman.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -111,10 +108,6 @@
     margin:auto;    
 }
 
-a { 
-    text-decoration: none;
-}
-
 .startTraining{
     width: 1240px;
     margin: auto;
@@ -151,7 +144,7 @@ a {
 
 @media (max-width: 1500px) {
     .splitSection {
-        width: 1200px;
+        width: 1000px;
     }
 
     .startTraining {
@@ -161,10 +154,23 @@ a {
 
 @media (max-width:1220px) {
     .splitSection {
-        width: 1000px;
+        width: 900px;
     }
 
     .startTraining {
         width: 900px;
+    }
+}
+@media (max-width: 1000px){
+    .splitSection {
+        width: 700px;
+    }
+
+    .startTraining {
+        width: 800px;
+    }
+
+    .rectangle {
+        padding: 20px 0;
     }
 }

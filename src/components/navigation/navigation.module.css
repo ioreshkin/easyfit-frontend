@@ -8,7 +8,8 @@
     position: fixed;
     z-index: 5;
     border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;    
+    border-bottom-right-radius: 25px;
+    align-items: center;  
 }
 
 .logo img{
@@ -20,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     width: 800px;
-    margin-right: 120px;
+    margin-right: 90px;
     margin-top: 5px;
 }
 
@@ -36,4 +37,26 @@
     .links {
         margin-right: 0;
     }    
+}
+
+@media (max-width: 1220px) {
+    .logo img{
+        width: 150px;
+        height: 30px;
+        margin-top: 10px;
+    }  
+
+    .links *{
+        font-size: 25px;
+    }
+
+    .links{
+        width: 600px;
+    }
+}
+
+@media (max-width: 890px) {
+    .navigation {
+        padding: 12px 10px;
+    }
 }

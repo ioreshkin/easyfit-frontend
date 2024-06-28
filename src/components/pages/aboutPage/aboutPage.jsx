@@ -1,9 +1,6 @@
 import React from "react";
 import cl from "./aboutPage.module.css";
 import Footer from "../../footer/footer";
-import weImage from "../../../images/we.png";
-import chbwomanImage from "../../../images/chbwoman.png";
-import usersImage from "../../../images/users.png";
 import getLang from "../../../utils/langs";
 
 const AboutPage = ({langCode}) => {
@@ -20,17 +17,17 @@ const AboutPage = ({langCode}) => {
                 <div className={cl.stickRectangle}/>
                 <div className={cl.rects}>
                     <div className={cl.rectangle}>
-                        <img src={weImage}/>
+                        <img src="/images/aboutPage/we.png"/>
                         <p>{lang.team}</p>
                         <span>{lang.teamText}</span>
                     </div> 
                     <div className={cl.rectangle}>
-                        <img src={chbwomanImage}/>
+                        <img src="/images/aboutPage/chbwoman.png"/>
                         <p>{lang.exercisesCollection}</p>
                         <span>{lang.exercisesCollectionText}</span>
                     </div>
                     <div className={cl.rectangle}>
-                        <img src={usersImage}/>
+                        <img src="/images/aboutPage/users.png"/>
                         <p>{lang.users}</p>
                         <span>{lang.usersText}</span>
                     </div>

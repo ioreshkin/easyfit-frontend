@@ -1,24 +1,30 @@
 import React from "react";
 import cl from "./program.module.css";
-import Picture from "..//..//images/Picture.png";
 import { Link } from "react-router-dom";
 
-const Program = () => {
+const Program = ({info, langCode}) => {
+    let name;
+    let shortDescription;
+    let description;
+    let time;
+    if (langCode == "ru") {name = info.name_ru; shortDescription = info.short_description_ru; description = info.description_ru; time = info.time_ru}
+    else if (langCode == "en") {name = info.name_en; shortDescription = info.short_description_en; description = info.description_en; time = info.time_en}
     return (
-        <div className={cl.Page}>
+        <Link to={"/programs/" + info.name_en.toLowerCase()}>
             <div className={cl.Rectangle}>
                 <div className={cl.Picture}>
-                    <img src={Picture} alt="" />
+                    <img src={info.preview} alt="" />
                 </div>
                 <div className={cl.Rectangle__info}>
                     <div className={cl.Link}>
-                        <Link to={"/easyfit/programs2"}><h2>Название тренировки тут написано</h2></Link>
+                        <h2>{name}</h2>
                     </div>
-                    <p2> Описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание описание</p2>  
+                    <p2>{shortDescription}</p2>  
                 </div>
-                <p1 className={cl.time}>15 мин</p1>
+                <div className={cl.time}><p1>{time}</p1></div>
             </div>
-        </div>
+        </Link>
+        
     )
 }
 

@@ -1,17 +1,14 @@
 import React from "react";
 import Footer from "../../footer/footer";
 import cl from "./mainPage.module.css";
-import phone from "../../../images/phone.png";
-import pad from "../../../images/pad.png";
-import laptop from "../../../images/laptop.png";
-import desktop from "../../../images/desktop.png"; 
 import getLang from "../../../utils/langs";
 import { Link } from "react-router-dom";
 
 const MainPage = ({langCode, setCategory}) => {
     const lang = getLang(langCode);
     return (
-        <div className={cl.mainPage}>
+        <>
+            <div className={cl.mainPage}>
             <div className={cl.over}>
                 <div className={cl.woman}>
                     <h1>{lang.train}</h1>
@@ -20,7 +17,7 @@ const MainPage = ({langCode, setCategory}) => {
             
             <div className = {cl.splitSection}>
                 <div className = {cl.column}>
-                    <Link to={"/easyfit/programs"} onClick={() => setCategory("gym")}> 
+                    <Link to={"/programs"} onClick={() => {setCategory("gym"); window.scrollTo(0, 0);}}> 
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forGym}</h2>
                         </div>
@@ -34,7 +31,7 @@ const MainPage = ({langCode, setCategory}) => {
                 </div>
                 <div className = {cl.stick}></div>
                 <div className = {cl.column}>
-                    <Link to={"/easyfit/programs"} onClick={() => setCategory("home")}>
+                    <Link to={"/programs"} onClick={() => {setCategory("home"); window.scrollTo(0, 0);}}>
                         <div className={cl.circle}>
                             <h2 className={cl.caption}>{lang.forHome}</h2>
                         </div>
@@ -54,14 +51,14 @@ const MainPage = ({langCode, setCategory}) => {
                         <span>{lang.anyDevices}</span>
                         </div>
                         <div className={cl.icons}>
-                            <img src={phone} alt="" />
-                            <img src={pad} alt="" />
-                            <img src={laptop} alt="" />
-                            <img src={desktop} alt="" />
+                            <img src="images/mainPage/devices/phone.png" alt="" />
+                            <img src="images/mainPage/devices/pad.png" alt="" />
+                            <img src="images/mainPage/devices/laptop.png" alt="" />
+                            <img src="images/mainPage/devices/desktop.png" alt="" />
                         </div>
                     </div>
                     <div className ={cl.stickRectangle}/>
-                    <Link to={"/easyfit/programs"}>
+                    <Link to={"/programs"} onClick={() => {window.scrollTo(0, 0);}}>
                         <div className ={cl.startTrainingButton}>
                             <p>{lang.startTraining}</p>
                         </div>
@@ -69,8 +66,11 @@ const MainPage = ({langCode, setCategory}) => {
                     
                 </div>
             </div>
-            <Footer/>
+           
         </div>
+        <Footer/>
+        </>
+        
     )
 }
 

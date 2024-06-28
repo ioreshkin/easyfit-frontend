@@ -13,115 +13,54 @@
     width: 160px;
 }
 
-.Rectangle__info p1{
+.Rectangle__info{
+    color: black;
     margin-left: 20px;
+    width: 500px;
 }
 
 .Rectangle__info p2{
-    margin-left: 20px;
-    margin-top: 5px;
-    font-weight: regular;
-    line-height: 1.5;
-    display: flex;
-    justify-content: space-around; 
+    
+    line-height: 1.3;
+    word-wrap: break-word;
+}
+
+.Link {
+    margin-bottom: 5px;
 }
 
 .Link * {
-    color: black;
+    /* color: black; */
     text-decoration: none;
     cursor: pointer;
 }
 
-@media (max-wid:1500px) {
-    .Search {
-        width: 700px;
-    }
-    
-}
-/* @media (max-width: 1500px) {
-    .Search {
-        width: 700px;
-        height: 45px;
-    }
-
-    .Picturea img {
-        height: 38px;
-    }
-
-    .Search span {
-        font-size: 24px;
-    }
-
-    .Start {
-        margin-top: 80px;
-    }
-
-    .Picture img {
-        width: 450px;
-    }
-
-    .Choice p {
-        font-size: 50px;
-    }
-
-    .Choice p1 {
-        font-size: 45px;
-        height: 450px;
-    }
-
+/* Стили для ширины экрана до 1500 пикселей */
+@media (max-width: 1500px) {
     .Rectangle {
         width: 700px;
     }
 
-    .Picture1 img {
-        width: 180px;
+    .ExcPicture img {
+        width: 140px;
+    }
+}
+
+/* Стили для ширины экрана до 1220 пикселей */
+@media (max-width: 1220px) {
+    .Rectangle {
+        width: 750px;
     }
 
-    .Rectangle__info p2 {
+    .Rectangle__info h2{
+        font-size: 30px;
+    }
+
+    .Rectangle__info p2{
         font-size: 16px;
     }
+
+    .ExcPicture img {
+        width: 160px;
+    }
 }
-
-@media (max-width: 1220px) {
-    .Search {
-        width: 600px;
-        height: 40px;
-    }
-
-    .Picturea img {
-        height: 34px;
-    }
-
-    .Search span {
-        font-size: 20px;
-    }
-
-    .Start {
-        margin-top: 60px;
-    }
-
-    .Picture img {
-        width: 400px;
-    }
-
-    .Choice p {
-        font-size: 45px;
-    }
-
-    .Choice p1 {
-        font-size: 40px;
-        height: 400px;
-    }
-
-    .Rectangle {
-        width: 600px;
-    }
-
-    .Picture1 img {
-        width: 150px;
-    }
-
-    .Link {
-        font-size: 28px;
-    }
-} */

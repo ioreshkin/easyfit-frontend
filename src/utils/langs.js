@@ -1,5 +1,3 @@
-import ruImg from "../images/ru.png";
-import enImg from "../images/en.png";
 
 const en = {
     //navigation
@@ -7,7 +5,7 @@ const en = {
     exercises: "Exercises",
     help: "Help",
     about: "About us",
-    img: enImg,
+    img: "/images/navigation/en.png",
 
     //help
     faq: "FAQ",
@@ -27,7 +25,7 @@ const en = {
     contactUs: "If you haven't found answer to your question, please contact us.",
     ourContacts: "Our contacts:+79024716514, example@mail.ru.",
     link: "Link to full User Manual:",
-    guide: "",
+    guide: "User Manual",
 
     //footer
     contacts: "Our contacts:",
@@ -46,28 +44,43 @@ const en = {
     anyDevices: "Available in any devices",
     startTraining: "Start training",
 
+    //programsPage
+    popular: "Popular",
+    home: "At home",
+    gym: "At the gym",
+    time: "min",
+
+    //programsInfo
+    consists: "The training consists of",
+    pressNext: "exercises, after completing each exercise, click on the “Next” button",
+    repeats: "repeats",
+
     //exercisesPage
-    musculeGroup: "Musclt groups:",
-    chset: "Chest",
+    exercisesSearch: "Enter the search exercise",
+    musculeGroup: "Muscle groups:",
+    chest: "Chest",
     legs: "Legs",
     abs: "Abs",
-    hands: "Arms",
+    arms: "Arms",
     back: "Back",
 
+    //exerciseInfo
+    execution: "Performing the exercise",
+
     //aboutPage
-    firnessPlatform : "",
-    easyFit: "",
-    team: "",
-    teamText: "",
-    exercisesCollection: "",
-    exercisesCollectionText: "",
-    users: "",
-    usersText: "",
-    ourMission: "",
-    ourMissionBold1: "",
-    ourMissionText1: "",
-    ourMissionBold2: "",
-    ourMissionText2: "",
+    firnessPlatform : "A fitness platform for training at home and in the gym",
+    easyFit: "Easy FIT — is",
+    team: "Team",
+    teamText: "Our team has enough experienced people who are ready to help you with any question in a difficult situation",
+    exercisesCollection: "A collection of exercises",
+    exercisesCollectionText: "Our website contains an overwhelming amount of exercises for every workout and every taste",
+    users: "Users",
+    usersText: "Our users make a great contribution, thanks to reviews, results and recommendations",
+    ourMission: "Our mission",
+    ourMissionBold1: "We are lovingly creating a fitness project",
+    ourMissionText1: " that brings together the best professionals, effective practices and techniques aimed at people's health, beauty and longevity.",
+    ourMissionBold2: "Our goal is:",
+    ourMissionText2: " to involve every family in the country in home fitness, to make people happier and their health stronger.",
 
 }
 
@@ -77,7 +90,7 @@ const ru = {
     exercises: "Упражнения",
     help: "Помощь",
     about: "О нас",
-    img: ruImg,
+    img: "/images/navigation/ru.png",
 
     //help
     faq: "Частые вопросы (FAQ)",
@@ -121,13 +134,22 @@ const ru = {
     home: "Дома",
     gym: "В зале",
 
+    //programsInfo
+    consists: "Тренировка состоит из",
+    pressNext: "упражнений, после выполнения каждого нажмите на кнопку “далее”",
+    repeats: "повторений",
+
     //exercisesPage
+    exercisesSearch: "Введите упражнение для поиска",
     musculeGroup: "Группы мышц:",
-    chset: "Грудь",
+    chest: "Грудь",
     legs: "Ноги",
     abs: "Пресс",
-    hands: "Руки",
+    arms: "Руки",
     back: "Спина",
+
+    //exerciseInfo
+    execution: "Выполнение упражнения",
 
     //aboutPage
     firnessPlatform : "Фитнес-платформа для тренировок дома и в зале",
@@ -135,7 +157,7 @@ const ru = {
     team: "Команда",
     teamText: "В нашей команде достаточно опытных людей готовых помочь вам с любым вопросом в трудной ситуации",
     exercisesCollection: "Сборник упражнений",
-    exercisesCollectionText: "На нашем сайте собрано подовляющие количество упражнений для каждой тренировки и любого вкуса",
+    exercisesCollectionText: "На нашем сайте собрано подавляющее количество упражнений для каждой тренировки и любого вкуса",
     users: "Пользователи",
     usersText: "Наши пользователи делают большой вклад, благодаря отзывам, результатам и рекомендациям",
     ourMission: "Наша миссия",
@@ -153,3 +175,4 @@ const getLang = (code) => {
 }
 
 export default getLang;
+// i18next
